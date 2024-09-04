@@ -3,3 +3,43 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* melike/BE-21-footer-top section started */
+.get-started {
+  background-image: url("../images/Rectangle.png"); 
+  background-size: cover; 
+  background-position: center;
+  height: 130vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden; 
+}
+
+
+.get-started p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 66px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-block: 60px;
+}
+
+.get-started .btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: rgba(48, 79, 254, 1);
+  padding: 30px 86px;
+  border-radius: 50px;
+  transition: background-color 0.8s ease;
+}
+
+.get-started .btn:hover {
+  opacity: 0.8;
+}
+
+/* melike/BE-21-footer-top section finished */
