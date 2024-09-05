@@ -42,4 +42,46 @@
   opacity: 0.8;
 }
 
+@media(max-width:1200px){
+  .get-started{
+    height: 100vh;
+  }
+}
+
+@media(max-width: 1000px){
+  .get-started{
+    background-size: calc(100% + 15px)100%;
+  }
+  .get-started p{
+    font-size: 25px;
+  }
+}
+
+@media(max-width: 720px){
+  .get-started{
+    background-size: cover;
+    height: 100vh;
+
+  }
+  .get-started p{
+    font-size: 20px;
+  }
+  .get-started .btn{
+    padding: 15px 40px;
+  }
+}
+
+@media(max-width: 550px){
+  .get-started{
+    background-position: right;
+  }
+  .get-started p{
+    font-size: 18px;
+    margin-block: 35px;
+  }
+  .get-started .btn{
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+}
 /* melike/BE-21-footer-top section finished */
