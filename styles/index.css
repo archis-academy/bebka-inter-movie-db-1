@@ -21,19 +21,19 @@
 .get-started p {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 66px;
+  font-size: 30px;
   color: rgba(0, 0, 0, 0.87);
-  margin-block: 60px;
+  margin-block: 50px;
 }
 
 .get-started .btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 18px;
   text-decoration: none;
   color: #FFFFFF;
   background-color: rgba(48, 79, 254, 1);
-  padding: 30px 86px;
+  padding: 20px 60px;
   border-radius: 50px;
   transition: background-color 0.8s ease;
 }
