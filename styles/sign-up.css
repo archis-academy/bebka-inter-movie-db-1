@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Montserrat", sans-serif;
+
+  --fw-thin: 400;
+  --fw-reg: 500;
+  --fw-bold: 700;
+
+  --fs-h1: 50px;
+  --fs-h2: 45px;
+  --fs-h3: 36px;
+  --fs-h4: 26px;
+  --fs-h5: 16px;
+
+  --bg-primary: #880e4f;
+  --bg-blur: rgba(255, 255, 255, 0.01);
+  --bg-white: white;
+  --fc-primary: white;
+  --fc-secondary: rgba(0, 0, 0, 0.281);
+  --fc-black: rgba(0, 0, 0, 0.87);
+  --fc-third: #304ffe;
+
+  --bs: 0px 3px 49px 9px rgba(0, 0, 0, 0.16);
+
+  --lh-high: 94px;
+  --lh-high-medium: 50px;
+  --lh-medium: 39px;
+  --lh-low: 29px;
+}
+
+.wave-background {
+  background-image: url(../image/[BE-27]Register/pink-wave.svg),
+    url(../image/[BE-27]Register/blue-wave.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right center;
+  background-color: var(--bg-primary);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tranparent-card {
+  max-width: 2232px;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.welcome-div {
+  box-shadow: var(--bs);
+  background-color: var(--bg-blur);
+  padding: 50px;
+  border-radius: 24px 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-width: 850px;
+}
+.netflux-home-logo {
+  max-width: 40px;
+  position: absolute;
+  top: 0;
+  margin: 40px;
+}
+.netflux-logo {
+  max-width: 120px;
+}
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-title,
+.welcome-subtitle {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-reg);
+  color: var(--fc-primary);
+}
+.welcome-subtitle {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-thin);
+}
+.form-area-div {
+  max-width: 1440px;
+  background-color: var(--bg-white);
+  border-radius: 0 24px 24px 0;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+}
+.register-title-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.register-title {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  color: var(--fc-black);
+}
+.login-link-div {
+  display: flex;
+  justify-content: center;
+}
+.close-icon {
+  max-width: 16px;
+}
+.login-link {
+  color: var(--fc-third);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-reg);
+  padding-left: 8px;
+}
+.social-media-div {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.social-container-facebook,
+.social-container-twitter,
+.social-container-google {
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  padding: 8px 24px;
+  border-radius: 36px;
+}
+.social-link {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-bold);
+  color: var(--bg-white);
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+}
+.social-container-facebook {
+  background-color: rgba(88, 86, 214, 1);
+}
+.social-container-twitter {
+  background-color: rgba(0, 188, 212, 1);
+}
+.social-container-google {
+  background-color: rgba(216, 66, 38, 1);
+}
+
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background-color: var(--fc-secondary);
+  margin: 10px;
+}
+.line::before {
+  content: "Or register with email";
+  color: var(--fc-secondary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-white);
+  padding: 10px 10px;
+}
+.form-section {
+  max-width: 1042px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input-field-div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  flex: 1;
+}
+.input-div {
+  padding: 10px;
+  border-radius: 12px;
+  border-color: var(--fc-secondary);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h5);
+}
+input:focus {
+  outline: none;
+  border-color: var(--fc-third);
+}
+.password-container {
+  display: flex;
+}
+.privacy-continue-button {
+  display: flex;
+  gap: 30px;
+}
+.privacy-policy {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-reg);
+  max-width: 30ch;
+  gap: 10px;
+}
+.register-button {
+  background-color: var(--fc-third);
+  color: var(--bg-white);
+  font-size: var(--fs-h6);
+  font-weight: var(--fw-bold);
+  padding: 10px 16px;
+  border: none;
+  border-radius: 35px;
+}
+.register-first-area-div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
