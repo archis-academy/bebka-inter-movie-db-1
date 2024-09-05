@@ -1,7 +1,7 @@
 /* Asli/Hero-Section-Başlangıç */
 .hero-section {
     font-family: 'Montserrat', sans-serif;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -53,7 +53,7 @@ video {
 .hero-content {
     position: absolute;
     left: 50px;  
-    bottom: 120px; 
+    bottom: 170px; 
     z-index: 2; 
     color: #fff;
     max-width: 90%; 
@@ -63,18 +63,18 @@ video {
 .hero-content h2 {
     margin: 0;
     font-weight: 600;
-    font-size: 35px; 
+    font-size: 25px; 
 }
 
 .hero-content p {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300; 
 }
 
 .hero-button {
     position: absolute;
-    bottom: 370px; 
+    bottom: 340px; 
     z-index: 2;
     background-color: transparent;
     color: white;
