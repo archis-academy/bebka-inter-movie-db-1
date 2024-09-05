@@ -3,3 +3,235 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*deniz-BE18-pricing-plan started*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-section {
+  text-align: center;
+  padding: 50px 10px;
+  position: relative;
+
+}
+
+.pricing-section h1 {
+  font-size: 3.5em;
+  margin-bottom: 40px;
+  
+}
+
+.pricing-section h1 span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.pricing-cards-container {
+  display:flex;
+  justify-content: center;
+  gap:0px;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  width: 100%;
+
+}
+
+.card-basic {
+  height:430px;
+  width:300px;
+  background-color: white;
+  border:5px solid rgba(48, 79, 254, 0.05);
+  border-radius: 25px;
+  padding:20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: 50px;
+}
+.card-basic h2 {
+  color: #007bff;
+  font-size: 34px;
+}
+
+.card-basic .price {
+  font-size: 2.5em;
+  color: black;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+
+/* Best Value Plan */
+
+.card-best {
+  background-color: #fff;
+  border-radius: 25px;
+  border:solid 0.4px  #ff3366;
+  width:340px;
+  height: 550px;
+  align-self: flex-start;
+  position: relative;
+  text-align: center;
+}
+
+
+.card-best h2 {
+  background: linear-gradient(135deg, rgba(48, 79, 254, 1),rgba(233, 30, 99, 1)
+ );
+  color: white;
+  width: 340px;
+  height:190px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 130px;
+  border-bottom-right-radius: 130px;
+  font-size: 1.8em;
+  top: -22px;
+  position: relative; 
+  text-align: center; 
+} 
+
+
+.card-best .price {
+  font-size: 2.5em;
+  color: #ff3366;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-top: 20px; 
+  text-align: center
+  
+}
+.card-best h2 .dollar {
+  font-size: 0.6em; 
+  vertical-align: super; 
+  margin-right: 5px; 
+}
+
+.card-pro{
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  padding:20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border:5px solid rgba(48, 79, 254, 0.05);
+ 
+}
+.card-pro h2 {
+  color: #ff3366;;
+}
+
+.card-pro .price {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.card-pro .price::before {
+  content: '$';
+  font-size: 0.6em;
+  vertical-align: super;
+}
+
+.card-enterprise{
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  padding:20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border:5px solid rgba(48, 79, 254, 0.05);
+ 
+}
+
+.card-enterprise h2 {
+  color:pink
+}
+
+.card-enterprise .price {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.card-enterprise .price::before {
+  content: '$';
+  font-size: 0.6em;
+  vertical-align: super;
+}
+
+/* Button Styling */
+.choose-basic{
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top:25px;
+  transition: background-color 0.3s ease;
+}
+
+.choose-best {
+  background-color:rgba(233, 30, 99, 1);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top:25px;
+  transition: background-color 0.3s ease;
+}
+.choose-pro {
+  background-color:rgba(233, 30, 99, 1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top:25px;
+  transition: background-color 0.3s ease;
+}
+
+.choose-enterprice {
+  background-color: rgba(233, 30, 99, 1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top:25px;
+  transition: background-color 0.3s ease;
+}
+.choose:hover {
+  background-color: #0056b3;
+}
+.card-basic:hover, 
+.card-best:hover, 
+.card-pro:hover, 
+.card-enterprise:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none; 
+  padding: 0;
+}
+li {
+  margin-bottom: 10px; 
+  color:black;
+}
+
+.rectancle-background img{
+  width:100%;
+  height:auto;
+  position: absolute;
+  top:0;
+  z-index: -1;
+  background-size: cover;
+  
+}
+/*deniz-BE18-pricing-plan started*/
