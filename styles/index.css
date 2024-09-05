@@ -23,7 +23,7 @@
   transition: all .5s;
 }
 .header .nav-link:hover {
-  border-radius: 30px;
+  border-radius: 20px;
   background-color: #E91E63;
   padding: 5px 20px;
   color: white;
@@ -38,7 +38,7 @@
   max-width: 100%;
 }
 .header .nav-list {
-  font-size: 30px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 46.32px;
   text-align: left;
@@ -62,10 +62,11 @@
 }
 .header .main{
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 .fs-fw{
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 600;
 }
 .header .btn-main{
@@ -97,8 +98,7 @@
   cursor: pointer;
 }
 .header .line {
-  border-left: 2px solid black;
-  height: 25px;
+  height: 20px;
   width: 1px;       
 }
 /* ----- Büşra - Header Section End ----- */
