@@ -17,15 +17,18 @@ body {
 
 }
 
-.pricing-section h1 {
-  font-size: 3.5em;
-  margin-bottom: 40px;
-  
+.price-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 54px;
+  font-weight: 600; 
+  color: #2D2D2D;
+  text-align: center;
 }
 
 .pricing-section h1 span {
   color: #007bff;
-  font-weight: bold;
+  display: block; 
+  font-size: 54px
 }
 
 .pricing-cards-container {
@@ -60,54 +63,49 @@ body {
   margin-bottom: 30px;
   font-weight: bold;
 }
-
-
-/* Best Value Plan */
-
 .card-best {
   background-color: #fff;
   border-radius: 25px;
   border:solid 0.4px  #ff3366;
-  width:340px;
-  height: 550px;
+  width:300px;
+  height: 500px;
   align-self: flex-start;
   position: relative;
   text-align: center;
 }
 
-
-.card-best h2 {
-  background: linear-gradient(135deg, rgba(48, 79, 254, 1),rgba(233, 30, 99, 1)
- );
+.value-header {
+  background: linear-gradient(80deg, hsl(271, 86%, 40%), #E91E63 );
   color: white;
-  width: 340px;
-  height:190px;
-  border-top-left-radius: 28px;
-  border-top-right-radius: 28px;
-  border-bottom-left-radius: 130px;
-  border-bottom-right-radius: 130px;
-  font-size: 1.8em;
-  top: -22px;
+  clip-path: ellipse(100% 80% at 50% 0%);
+  height: 160px;
+  font-size: 12px;
+  border-top-left-radius:25px;
+  border-top-right-radius:25px;
   position: relative; 
   text-align: center; 
+  padding: 20px;
 } 
-
-
-.card-best .price {
-  font-size: 2.5em;
-  color: #ff3366;
+.value-header h2{
+  font-size: 24px;
+  color: white;
   margin-bottom: 20px;
   font-weight: bold;
-  margin-top: 20px; 
+  margin-top: 8px; 
   text-align: center
   
 }
-.card-best h2 .dollar {
-  font-size: 0.6em; 
+.value-header span {
+  display: block;
+  font-size:34px; 
   vertical-align: super; 
   margin-right: 5px; 
 }
-
+.value-header span::before {
+  content: '$';
+  font-size: 0.6em;
+  vertical-align: super;
+}
 .card-pro{
   width: 300px;
   height: 500px;
@@ -120,7 +118,8 @@ body {
  
 }
 .card-pro h2 {
-  color: #ff3366;;
+  color:rgba(233, 30, 99, 1);
+
 }
 
 .card-pro .price {
@@ -128,6 +127,8 @@ body {
   color: #333;
   margin-bottom: 20px;
   font-weight: bold;
+  margin-top:15px;
+ 
 }
 .card-pro .price::before {
   content: '$';
@@ -148,12 +149,13 @@ body {
 }
 
 .card-enterprise h2 {
-  color:pink
+  color: rgba(233, 30, 99, 1);
 }
 
 .card-enterprise .price {
   font-size: 2em;
   color: #333;
+  margin-top:15px;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -162,47 +164,66 @@ body {
   font-size: 0.6em;
   vertical-align: super;
 }
-
-/* Button Styling */
 .choose-basic{
-  background-color: #007bff;
+  font-family: 'Montserrat';
+  background-color: #304FFE;
   color: white;
+  width: 200px;
+  height:50px;
   padding: 10px 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 25px;
   cursor: pointer;
-  margin-top:25px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top:10px;
   transition: background-color 0.3s ease;
 }
 
 .choose-best {
-  background-color:rgba(233, 30, 99, 1);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 15px;
-  cursor: pointer;
-  margin-top:25px;
-  transition: background-color 0.3s ease;
-}
-.choose-pro {
+  font-family: 'Montserrat';
+  width: 200px;
+  height:50px;
   background-color:rgba(233, 30, 99, 1);
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  margin-top:25px;
+  margin-top:15px;
+  transition: background-color 0.3s ease;
+}
+.choose-pro {
+  font-family: 'Montserrat';
+  width: 200px;
+  height:50px;
+  background-color:rgba(233, 30, 99, 1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top:10px;
   transition: background-color 0.3s ease;
 }
 
 .choose-enterprice {
-  background-color: rgba(233, 30, 99, 1);
+  font-family: 'Montserrat';
+  width: 200px;
+  height:50px;
+  background-color:   rgba(233, 30, 99, 1);
   color: white;
   padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
   border: none;
-  border-radius: 10px;
+  border-radius: 25px;
   cursor: pointer;
-  margin-top:25px;
+  margin-top:10px;
   transition: background-color 0.3s ease;
 }
 .choose:hover {
@@ -215,10 +236,17 @@ body {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
+.card-best ul{
+  margin-top: 0;
+}
 ul {
+  font-family: 'Montserrat';
   list-style: none; 
   padding: 0;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  
 }
 li {
   margin-bottom: 10px; 
@@ -234,4 +262,31 @@ li {
   background-size: cover;
   
 }
+
+.basic-description,
+.pro-description,
+.enterprice-description{
+  margin-top: 65px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+  font-family: 'Montserrat';
+  font-weight: 400
+}
+
+.best-description{
+  font-size: 14px;
+  color: #555;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  margin-top: 45px;
+}
+
+
+.plan-features li:nth-child(2),
+.plan-features li:nth-child(3),
+.plan-features li:nth-child(4) {
+  margin-left: 40px; 
+}
+
 /*deniz-BE18-pricing-plan started*/
