@@ -1,7 +1,7 @@
 /* Asli/Hero-Section-Başlangıç */
 .hero-section {
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -11,8 +11,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     overflow: hidden;
 }
@@ -30,6 +30,26 @@ video {
     object-fit: cover;
 }
 
+.custom-shape-divider-bottom-1725539209 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1725539209 svg {
+    position: relative;
+    display: block;
+    width: calc(263% + 1.3px);
+    height: 184px;
+}
+
+.custom-shape-divider-bottom-1725539209 .shape-fill {
+    fill: #FFFFFF;
+}
+
 .hero-content {
     position: absolute;
     left: 50px;  
@@ -44,7 +64,6 @@ video {
     margin: 0;
     font-weight: 600;
     font-size: 35px; 
-    
 }
 
 .hero-content p {
