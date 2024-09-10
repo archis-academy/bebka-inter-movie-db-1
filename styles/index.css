@@ -8,9 +8,7 @@
 
 .promotion-banner-container {
   display: flex;
-  justify-content: center;
   gap: 2%;
-  align-items: center;
   width: 100%; 
   max-height: 500px; 
   position: relative;
@@ -102,7 +100,7 @@
   right: 1%; 
 }
 .promotion-banner-container-center h2 span.free {
-  font-size: 5vw; 
+  font-size: 3vw; 
   line-height: 1;
   display: block;
   text-align: right;
@@ -111,7 +109,7 @@
 }
 
 .promotion-banner-container-center h2 span.movies {
-  font-size: 7vw;
+  font-size: 5vw;
   line-height: 1.2;
   display: block;
   margin-right: 40px
@@ -125,8 +123,8 @@
 }
 .promotion-banner-container-center img[alt="implement-promotion-banner-middle-icon"] {
   position: absolute;
-  bottom: calc(10% + 9vw);
-  right: 45%;
+  bottom: calc(8% + 7vw);
+  right: 30%;
   z-index: 3;
   width: 7vw;
   height: auto;
