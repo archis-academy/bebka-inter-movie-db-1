@@ -98,7 +98,6 @@ body {
 .value-header span {
   display: block;
   font-size:34px; 
-  vertical-align: super; 
   margin-right: 5px; 
 }
 .value-header span::before {
@@ -165,7 +164,7 @@ body {
   vertical-align: super;
 }
 .choose-basic{
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   background-color: #304FFE;
   color: white;
   width: 200px;
@@ -181,7 +180,7 @@ body {
 }
 
 .choose-best {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   width: 200px;
   height:50px;
   background-color:rgba(233, 30, 99, 1);
@@ -196,7 +195,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .choose-pro {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   width: 200px;
   height:50px;
   background-color:rgba(233, 30, 99, 1);
@@ -212,7 +211,7 @@ body {
 }
 
 .choose-enterprice {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   width: 200px;
   height:50px;
   background-color:   rgba(233, 30, 99, 1);
@@ -240,7 +239,7 @@ body {
   margin-top: 0;
 }
 ul {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   list-style: none; 
   padding: 0;
   margin-top: 30px;
@@ -270,14 +269,14 @@ li {
   margin-bottom: 15px;
   font-size: 14px;
   color: #555;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   font-weight: 400
 }
 
 .best-description{
   font-size: 14px;
   color: #555;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   font-weight: 400;
   margin-top: 45px;
 }
