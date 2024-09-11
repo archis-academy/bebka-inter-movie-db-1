@@ -1,9 +1,11 @@
 /* Asli/Hero-Section-Başlangıç */
 .hero-section {
     font-family: 'Montserrat', sans-serif;
-    height: 40vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
 }
 
@@ -53,30 +55,31 @@ video {
 }
 
 .hero-content {
-    position: absolute;
-    left: 50px;  
-    bottom: 170px; 
-    z-index: 1; 
+    align-self: flex-start; 
+    position: relative;
+    padding-left: 30px;
+    top: 15%;
+    left: 20px; 
+    z-index: 1;
     color: #fff;
-    max-width: 90%; 
-    padding: 20px; 
 }
 
 .hero-content h2 {
     margin: 0;
     font-weight: 600;
-    font-size: 25px; 
+    font-size: 30px; 
 }
 
 .hero-content p {
     margin-bottom: 10px;
-    font-size: 15px;
-    font-weight: 300; 
+    font-size: 16px; 
+    font-weight: 300;
 }
 
+
 .hero-button {
-    position: absolute;
-    bottom: 340px; 
+    position: relative;
+    bottom: 150px; 
     z-index: 1;
     background-color: transparent;
     color: white;
