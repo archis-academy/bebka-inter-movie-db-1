@@ -289,3 +289,62 @@ li {
 }
 
 /*deniz-BE18-pricing-plan started*/
+@media screen and (max-width: 1024px) {
+  .pricing-section {
+    background-size: cover; 
+  }
+  .price-title h1 {
+    font-size: 42px;
+  }
+
+  .price-title h1 span {
+    font-size: 42px;
+  }
+  .pricing-cards-container {
+    justify-content: center;
+    align-items: center;
+    gap: 0; 
+  }
+
+  .card-basic, .card-best, .card-pro, .card-enterprise {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pricing-section {
+    background-size: cover; 
+  }
+  .price-title h1 {
+    font-size: 32px;
+  }
+  .price-title h1 span {
+    font-size: 32px;
+  }
+  .pricing-cards-container {
+    align-items: center; 
+    gap: 0; 
+    display:grid;
+  
+  }
+
+  .card-basic, .card-best, .card-pro, .card-enterprise {
+    width: 100%; 
+    max-width: 350px; 
+    margin:15px;
+  }
+
+  .value-header {
+    height: 120px; 
+  }
+
+  .value-header h2 {
+    font-size: 20px; 
+  }
+
+  .value-header span {
+    font-size: 30px; 
+  }
+}
+
+/*deniz-BE18-pricing-plan responsive finished*/
+
