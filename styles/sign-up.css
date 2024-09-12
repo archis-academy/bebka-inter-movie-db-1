@@ -352,4 +352,15 @@ input:focus {
   }
 }
 
+/*ERROR*/
+
+.error-message {
+  color: red;
+  display: none;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h6);
+  margin-top: -20px;
+  padding-left: 10px;
+}
+
 /*melekmahmutoglu/BE-27/Sign-Up-Css */
