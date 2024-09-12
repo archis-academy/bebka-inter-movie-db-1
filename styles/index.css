@@ -21,7 +21,7 @@
 .promotion-banner-container-left {
   width: 25vw;
   max-width: 607px;
-  height: 500px;
+  height: 400px;
   position: relative; 
   border-radius: 40px; 
   overflow: hidden;
@@ -61,7 +61,7 @@
 
 .promotion-banner-container-center {
   width: 50vw;
-  height: 500px;
+  height: 400px;
   position: relative;
   overflow: hidden;
   border-radius: 40px;
