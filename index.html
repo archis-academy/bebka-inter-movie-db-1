@@ -1,49 +1,133 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İnter Movie DB</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieDB</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="index.js"></script>
 
-    <!--Asli/Hero-Section-Başlangıç-->
-    <section class="hero-section">
-        <div class="hero-overlay">
-            <div class="video-background">
-                <video id="myVideo" muted loop>
-                    <source src="images/belgesel.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="custom-shape-divider-bottom-1725539209">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                    </svg>
-                </div>
+ <!--Asli/Hero-Section-Başlangıç-->
+<section class="hero-section">
+    <div class="hero-overlay">
+        <div class="video-background">
+            <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/CqRb4bO-rJw?controls=0&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="custom-shape-divider-bottom-1725539209">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
             </div>
         </div>
+    </div>
 
-        <div class="hero-content">
-            <p>Vivamus sit amet interdum elit</p> 
-            <h2>Mancing Mania</h2>
-            <h2>The Movie</h2>
-            <p>On the air: 01.11.20</p>
+    <div class="hero-content">
+        <p>Vivamus sit amet interdum elit</p> 
+        <h2>Mancing Mania</h2>
+        <h2>The Movie</h2>
+        <p>On the air: 01.11.20</p>
+    </div>
+
+    <div class="hero-button">
+        <p class="hero-button-p">
+            WATCH
+            <button class="watch-trailer-btn" onclick="playVideo()">
+                <img class="play-button" src="images/transparent-play-button.png" alt="play">
+            </button>
+            TRAILER
+        </p>
+    </div>
+</section>
+<!--Asli/Hero-Section-Bitiş-->
+
+
+    <!--deniz-BE18-pricing-plan started-->
+    <section>
+      <div class="pricing-section">
+        <div class="price-title">
+            <h1>Flexible
+             <span>Pricing and Plan</span>
+            </h1>
         </div>
-       
-        <div class="hero-button">
-            <p class="hero-button-p">
-                WATCH
-                <button class="watch-trailer-btn" onclick="playVideo()">
-                    <img class="play-button" src="images/transparent-play-button.png" alt="play">
-                </button>
-                TRAILER
-            </p>
-        </div>
-    </section>
-    <!--Asli/Hero-Section-Bitiş-->
-</body>
+        
+          <div class="pricing-cards-container">
+              <div class="card-basic">
+                  <h2>BASIC</h2>
+                  <p class="price">Free</p>
+                  <ul>
+                      <li>Nam sollicitudin dignissim</li>
+                      <li>Cras convallis lacus</li>
+                      <li>Quisque ut metus</li>
+                  </ul>
+                  <p class="basic-description">
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  </p>
+                  <button class="choose-basic">CHOOSE PLAN</button>
+              </div>
+              
+              <div class="card-best">
+                  <div class="value-header">
+                    <h2>BEST VALUE
+                    <span class="dollar">24</span>
+                    </h2>
+                  </div>
+                  
+                  <ul>
+                      <li>Nam sollicitudin dignissim</li>
+                      <li>Cras convallis lacus</li>
+                      <li>Quisque ut metus</li>
+                      <li>Vivamus sit amet</li>
+                      <li>Cras convallis lacus orci</li>
+                  </ul>
+                  <p class="best-description">
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  </p>
+                  <button class="choose-best">CHOOSE PLAN</button>
+              </div>
+              
+              <div class="card-pro">
+                  <h2>PRO</h2>
+                  <p class="price">54</p>
+                  <ul>
+                      <li>Nam sollicitudin dignissim</li>
+                      <li>Cras convallis lacus</li>
+                      <li>Quisque ut metus</li>
+                      <li>Vivamus sit amet</li>
+                      <li>Cras convallis lacus orci</li>
+                  </ul>
+
+                  <p class="pro-description">
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  </p>
+                  <button class="choose-pro">CHOOSE PLAN</button> 
+              </div>
+              
+              <div class="card-enterprise">
+                  <h2>ENTERPRİSE</h2>
+                  <p class="price">99</p>
+                  <ul>
+                      <li>Nam sollicitudin dignissim</li>
+                      <li>Cras convallis lacus</li>
+                      <li>Quisque ut metus</li>
+                      <li>Vivamus sit amet</li>
+                      <li>Cras convallis lacus orci</li>
+                  </ul>
+                  <p class="enterprice-description">
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  </p>
+                  <button class="choose-enterprice">CHOOSE PLAN</button>
+              </div>
+          </div>
+      </div>
+
+          <div class="rectancle-background">
+              <img src="images/pricingimgs/rectangleimg.svg">
+          </div>
+
+      </section>
+       <!--deniz-BE-18-pricing-plan finished-->
+  </body>
 </html>
