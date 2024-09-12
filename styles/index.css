@@ -4,6 +4,116 @@
   box-sizing: border-box;
 }
 
+/* Asli/Hero-Section-Başlangıç */
+.hero-section {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+video, iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100%;
+}
+
+.custom-shape-divider-bottom-1725539209 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1725539209 svg {
+  position: relative;
+  display: block;
+  width: calc(263% + 1.3px);
+  height: 184px;
+}
+
+.custom-shape-divider-bottom-1725539209 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.hero-content {
+  align-self: flex-start; 
+  position: relative;
+  padding-left: 30px;
+  top: 15%;
+  left: 20px; 
+  z-index: 1;
+  color: #fff;
+}
+
+.hero-content h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px; 
+}
+
+.hero-content p {
+  margin-bottom: 10px;
+  font-size: 16px; 
+  font-weight: 300;
+}
+
+.hero-button {
+  position: relative;
+  bottom: 150px; 
+  z-index: 1;
+  background-color: transparent;
+  color: white;
+  font-size: 25px; 
+  font-weight: 500;
+  text-align: center;
+}
+
+.hero-button-p {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 0; 
+}
+
+.watch-trailer-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: 0;
+}
+
+.play-button {
+  width: 70px;
+  height: 70px;
+}
+
+/* Asli/Hero-Section-Bitiş */
+
+
 /*deniz-BE18-pricing-plan started*/
 
 body {
