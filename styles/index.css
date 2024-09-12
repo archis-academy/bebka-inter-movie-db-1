@@ -3,7 +3,105 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* ----- Büşra - Header Section Start ----- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat",sans-serif;
+  padding-top: 7px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.header ul {
+  list-style: none;
+}
+.header .nav-link {
+  text-decoration: none;
+  color: black;
+  transition: all .5s;
+}
+.header .nav-link:hover {
+  border-radius: 20px;
+  background-color: #E91E63;
+  padding: 5px 20px;
+  color: white;
+}
+.header a.active{
+  background-color: #E91E63;
+  border-radius: 30px;
+  color: white;
+  padding: 5px 20px;
+}
+.header img {
+  max-width: 100%;
+}
+.header .nav-list {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 46.32px;
+  text-align: left;
+}
+.header .logo{
+  width: 92px;
+  height: 96px;
+}
+.header .nav,
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+.header .nav {
+  column-gap: 80px;
+}
+.header .nav-list{
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+.header .main{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.fs-fw{
+  font-size: 18px;
+  font-weight: 600;
+}
+.header .btn-main{
+  text-decoration: none;
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 30px;
+  color: black;
+  transition: all .5s;
+}
+.header .btn-main:hover{
+  text-decoration: none;
+  border-radius: 30px;
+  color: #304FFE;
+  background-color: #C5CAE9;
+  padding: 5px 20px;
+}
+.header .main .active{
+  background-color: #C5CAE9;
+  border-radius: 30px;
+  color: #304FFE;
+  padding: 5px 20px;
+}
+.header .ic-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.header .line {
+  height: 20px;
+  width: 1px;       
+}
+/* ----- Büşra - Header Section End ----- */
 /* Cerenucak/BE-15-implement-promotion-banner */
 
 .promotion-banner-container {
@@ -142,3 +240,289 @@
 }
 
 /* END- Cerenucak/BE-15-implement-promotion-banner */ 
+/*deniz-BE18-pricing-plan started*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-section {
+  text-align: center;
+  padding: 50px 10px;
+  position: relative;
+
+}
+
+.price-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 54px;
+  font-weight: 600; 
+  color: #2D2D2D;
+  text-align: center;
+}
+
+.pricing-section h1 span {
+  color: #007bff;
+  display: block; 
+  font-size: 54px
+}
+
+.pricing-cards-container {
+  display:flex;
+  justify-content: center;
+  gap:0px;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  width: 100%;
+
+}
+
+.card-basic {
+  height:430px;
+  width:300px;
+  background-color: white;
+  border:5px solid rgba(48, 79, 254, 0.05);
+  border-radius: 25px;
+  padding:20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: 50px;
+}
+.card-basic h2 {
+  color: #007bff;
+  font-size: 34px;
+}
+
+.card-basic .price {
+  font-size: 2.5em;
+  color: black;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.card-best {
+  background-color: #fff;
+  border-radius: 25px;
+  border:solid 0.4px  #ff3366;
+  width:300px;
+  height: 500px;
+  align-self: flex-start;
+  position: relative;
+  text-align: center;
+}
+
+.value-header {
+  background: linear-gradient(80deg, hsl(271, 86%, 40%), #E91E63 );
+  color: white;
+  clip-path: ellipse(70% 80% at 50% 0%);
+  height: 160px;
+  font-size: 12px;
+  border-top-left-radius:25px;
+  border-top-right-radius:25px;
+  position: relative; 
+  text-align: center; 
+  padding: 20px;
+} 
+.value-header h2{
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-top: 8px; 
+  text-align: center
+  
+}
+.value-header span {
+  display: block;
+  font-size:34px; 
+  margin-right: 5px; 
+}
+.value-header span::before {
+  content: '$';
+  font-size: 0.6em;
+  vertical-align: super;
+}
+.card-pro{
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  padding:20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border:5px solid rgba(48, 79, 254, 0.05);
+ 
+}
+.card-pro h2 {
+  color:rgba(233, 30, 99, 1);
+
+}
+
+.card-pro .price {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-top:15px;
+ 
+}
+.card-pro .price::before {
+  content: '$';
+  font-size: 0.6em;
+  vertical-align: super;
+}
+
+.card-enterprise{
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  padding:20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border:5px solid rgba(48, 79, 254, 0.05);
+ 
+}
+
+.card-enterprise h2 {
+  color: rgba(233, 30, 99, 1);
+}
+
+.card-enterprise .price {
+  font-size: 2em;
+  color: #333;
+  margin-top:15px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.card-enterprise .price::before {
+  content: '$';
+  font-size: 0.6em;
+  vertical-align: super;
+}
+.choose-basic{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #304FFE;
+  color: white;
+  width: 200px;
+  height:50px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top:10px;
+  transition: background-color 0.3s ease;
+}
+
+.choose-best {
+  font-family: 'Montserrat',sans-serif;
+  width: 200px;
+  height:50px;
+  background-color:rgba(233, 30, 99, 1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top:15px;
+  transition: background-color 0.3s ease;
+}
+.choose-pro {
+  font-family: 'Montserrat',sans-serif;
+  width: 200px;
+  height:50px;
+  background-color:rgba(233, 30, 99, 1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top:10px;
+  transition: background-color 0.3s ease;
+}
+
+.choose-enterprice {
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+  height:50px;
+  background-color:   rgba(233, 30, 99, 1);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top:10px;
+  transition: background-color 0.3s ease;
+}
+.choose:hover {
+  background-color: #0056b3;
+}
+.card-basic:hover, 
+.card-best:hover, 
+.card-pro:hover, 
+.card-enterprise:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card-best ul{
+  margin-top: 0;
+}
+ul {
+  font-family: 'Montserrat',sans-serif;
+  list-style: none; 
+  padding: 0;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+li {
+  margin-bottom: 10px; 
+  color:black;
+}
+
+.rectancle-background img{
+  width:100%;
+  height:auto;
+  position: absolute;
+  top:0;
+  z-index: -1;
+  background-size: cover;
+  
+}
+
+.basic-description,
+.pro-description,
+.enterprice-description{
+  margin-top: 65px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400
+}
+
+.best-description{
+  font-size: 14px;
+  color: #555;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  margin-top: 45px;
+}
+
+
+.plan-features li:nth-child(2),
+.plan-features li:nth-child(3),
+.plan-features li:nth-child(4) {
+  margin-left: 40px; 
+}
+
+/*deniz-BE18-pricing-plan started*/
+

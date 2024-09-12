@@ -5,36 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MovieDB</title>
     <link rel="stylesheet" href="styles/index.css" />
+<!-- Fonts   -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
   </head>
   <body>
-    <!-- Cerenucak/BE-15-implement-promotion-banner -->
-    <div class="promotion-banner-container">
-      <div class="promotion-banner-container-right">
-        <h2> 
-          <span>FREE</span> 
-          <span>Rent 3 Days </span>
-        </h2>
-        <img src="implement-promotion-banner/Bitmap2.png" alt="implement-promotion-banner-left">
-      </div>
-      <div class="promotion-banner-container-center">
-        <h2>  
-          <span class="free">FREE</span> 
-          <span class="movies">MOVIES</span> </h2>
-        <img src="implement-promotion-banner/Bitmap1.png" alt="implement-promotion-banner-center-img">
-        <img src="implement-promotion-banner/coffee.svg" alt="implement-promotion-banner-middle-icon">
+    <!-- Büşra - Header Section Start  -->
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="logo"><img src="img/header_section/header-logo.png" alt="#"></a>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link active ">Featured</a></li>
+            <li><a href="#" class="nav-link">Top Categories</a></li>
+            <li><a href="#" class="nav-link">All Categories</a></li>
+            <li><a href="#" class="nav-link">Pricing</a></li>
+          </ul>
+        </div>
+        <hr class="line">
+        <div class="main">
+          <a href="#" class="btn-main fs-fw main:hover">LOGIN</a>
+          <a href="#" class="btn-main fs-fw main:hover active">REGISTER</a>
+          <div class="ic-settings"><i class="fa-solid fa-gear fa-xl"></i></div>
+        </div>
+      </nav>
+    </header>
+    <!--  Büşra - Header Section End  -->
+      <!-- Cerenucak/BE-15-implement-promotion-banner -->
+      <div class="promotion-banner-container">
+        <div class="promotion-banner-container-right">
+          <h2> 
+            <span>FREE</span> 
+            <span>Rent 3 Days </span>
+          </h2>
+          <img src="implement-promotion-banner/Bitmap2.png" alt="implement-promotion-banner-left">
+        </div>
+        <div class="promotion-banner-container-center">
+          <h2>  
+            <span class="free">FREE</span> 
+            <span class="movies">MOVIES</span> </h2>
+          <img src="implement-promotion-banner/Bitmap1.png" alt="implement-promotion-banner-center-img">
+          <img src="implement-promotion-banner/coffee.svg" alt="implement-promotion-banner-middle-icon">
+          
+        </div>
+        <div class="promotion-banner-container-left">
+          <h2><span>FREE</span>
+            <span>Up to 5 Episodes</span>
+          </h2>
+          <img src="implement-promotion-banner/Bitmap.png" alt="implement-promotion-banner-rigt">
+        </div>
+      </div> 
+           <!-- END Cerenucak/BE-15-implement-promotion-banner -->
+    <!--deniz-BE18-pricing-plan started-->
+    <section>
+      <div class="pricing-section">
+        <div class="price-title">
+            <h1>Flexible
+             <span>Pricing and Plan</span>
+            </h1>
+        </div>
         
+          <div class="pricing-cards-container">
+              <div class="card-basic">
+                  <h2>BASIC</h2>
+                  <p class="price">Free</p>
+                  <ul>
+                      <li>Nam sollicitudin dignissim</li>
+                      <li>Cras convallis lacus</li>
+                      <li>Quisque ut metus</li>
+                  </ul>
+                  <p class="basic-description">
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  </p>
+                  <button class="choose-basic">CHOOSE PLAN</button>
+              </div>
+              
+              <div class="card-best">
+                  <div class="value-header">
+                    <h2>BEST VALUE
+                    <span class="dollar">24</span>
+                    </h2>
+                  </div>
+                  
+                  <ul>
+                      <li>Nam sollicitudin dignissim</li>
+                      <li>Cras convallis lacus</li>
+                      <li>Quisque ut metus</li>
+                      <li>Vivamus sit amet</li>
+                      <li>Cras convallis lacus orci</li>
+                  </ul>
+                  <p class="best-description">
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  </p>
+                  <button class="choose-best">CHOOSE PLAN</button>
+              </div>
+              
+              <div class="card-pro">
+                  <h2>PRO</h2>
+                  <p class="price">54</p>
+                  <ul>
+                      <li>Nam sollicitudin dignissim</li>
+                      <li>Cras convallis lacus</li>
+                      <li>Quisque ut metus</li>
+                      <li>Vivamus sit amet</li>
+                      <li>Cras convallis lacus orci</li>
+                  </ul>
+
+                  <p class="pro-description">
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  </p>
+                  <button class="choose-pro">CHOOSE PLAN</button> 
+              </div>
+              
+              <div class="card-enterprise">
+                  <h2>ENTERPRİSE</h2>
+                  <p class="price">99</p>
+                  <ul>
+                      <li>Nam sollicitudin dignissim</li>
+                      <li>Cras convallis lacus</li>
+                      <li>Quisque ut metus</li>
+                      <li>Vivamus sit amet</li>
+                      <li>Cras convallis lacus orci</li>
+                  </ul>
+                  <p class="enterprice-description">
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  </p>
+                  <button class="choose-enterprice">CHOOSE PLAN</button>
+              </div>
+          </div>
       </div>
-      <div class="promotion-banner-container-left">
-        <h2><span>FREE</span>
-          <span>Up to 5 Episodes</span>
-        </h2>
-        <img src="implement-promotion-banner/Bitmap.png" alt="implement-promotion-banner-rigt">
-      </div>
-    </div> 
-         <!-- END Cerenucak/BE-15-implement-promotion-banner -->
-    <script src="index.js"></script>
+
+          <div class="rectancle-background">
+              <img src="images/pricingimgs/rectangleimg.svg">
+          </div>
+
+      </section>
+       <!--deniz-BE-18-pricing-plan finished-->
+      <script src="index.js"></script>
   </body>
 </html>
