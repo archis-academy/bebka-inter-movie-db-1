@@ -3,6 +3,361 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* ----- Büşra - Header Section Start ----- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat",sans-serif;
+  padding-top: 7px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.header ul {
+  list-style: none;
+}
+.header .nav-link {
+  text-decoration: none;
+  color: black;
+  transition: all .5s;
+}
+.header .nav-link:hover {
+  border-radius: 20px;
+  background-color: #E91E63;
+  padding: 5px 20px;
+  color: white;
+}
+.header a.active{
+  background-color: #E91E63;
+  border-radius: 30px;
+  color: white;
+  padding: 5px 20px;
+}
+.header img {
+  max-width: 100%;
+}
+.header .nav-list {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 46.32px;
+  text-align: left;
+}
+.header .logo{
+  width: 92px;
+  height: 96px;
+}
+.header .nav,
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+.header .nav {
+  column-gap: 80px;
+}
+.header .nav-list{
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+.header .main{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.fs-fw{
+  font-size: 18px;
+  font-weight: 600;
+}
+.header .btn-main{
+  text-decoration: none;
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 30px;
+  color: black;
+  transition: all .5s;
+}
+.header .btn-main:hover{
+  text-decoration: none;
+  border-radius: 30px;
+  color: #304FFE;
+  background-color: #C5CAE9;
+  padding: 5px 20px;
+}
+.header .main .active{
+  background-color: #C5CAE9;
+  border-radius: 30px;
+  color: #304FFE;
+  padding: 5px 20px;
+}
+.header .ic-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.header .line {
+  height: 20px;
+  width: 1px;       
+}
+/* ----- Büşra - Header Section End ----- */
+/* Cerenucak/BE-15-implement-promotion-banner */
+
+.promotion-banner-container {
+  display: flex;
+  gap: 1%;
+  width: 100%; 
+  max-height: 500px; 
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.promotion-banner-container-right,
+.promotion-banner-container-left {
+  width: 25vw;
+  max-width: 607px;
+  height: 400px;
+  position: relative; 
+  border-radius: 40px; 
+  overflow: hidden;
+  display: flex ;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; 
+  padding-bottom: 20px;
+  
+}
+
+.promotion-banner-container-right::before,
+.promotion-banner-container-left::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315.16deg, rgba(233, 30, 99, 0.5) 19%, rgba(48, 79, 254, 0.5) 86.85%);
+  z-index: 1; 
+  pointer-events: none; 
+}
+.promotion-banner-container-right h2,
+.promotion-banner-container-left h2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+  color: white; 
+  text-align: center;
+  bottom: 10%;
+}
+
+.promotion-banner-container-right img,
+.promotion-banner-container-left img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+
+}
+
+.promotion-banner-container-center {
+  width: 50vw;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.promotion-banner-container-center::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.0001) -152.12%, rgba(0, 0, 0, 0.64) 90%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.promotion-banner-container-center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #304FFE; 
+  opacity: 0.3; 
+  z-index: 1;
+  pointer-events: none;
+}
+.promotion-banner-container-center h2 {
+  position: absolute; 
+  z-index: 3; 
+  font-family: 'Montserrat', sans-serif;
+  color: white; 
+  bottom: 10%; 
+  right: 1%; 
+}
+.promotion-banner-container-center h2 span.free {
+  font-size: 3vw; 
+  line-height: 1;
+  display: block;
+  text-align: right;
+  margin-right: 20%;
+
+}
+
+.promotion-banner-container-center h2 span.movies {
+  font-size: 5vw;
+  line-height: 1.2;
+  display: block;
+  margin-right: 40px
+}
+
+.promotion-banner-container-center img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.promotion-banner-container-center img[alt="implement-promotion-banner-middle-icon"] {
+  position: absolute;
+  bottom: calc(8% + 7vw);
+  right: 30%;
+  z-index: 3;
+  width: 7vw;
+  height: auto;
+
+}
+
+/* END- Cerenucak/BE-15-implement-promotion-banner */ 
+/* ====== Büşra - Top Categories Start ====== */
+.top-categories-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.top-categories-section .top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.top-categories-section .title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.top-categories-section .title span {
+  color: #3957fe;
+}
+.top-categories-section .small-cards {
+  display: flex;
+  gap: 20px;
+}
+.top-categories-section .card {
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.top-categories-section .card:hover {
+  transform: scale(1.05);
+}
+.top-categories-section .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  position: absolute; 
+  z-index: 1;
+}
+.top-categories-section .card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.top-categories-section .card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.top-categories-section .card .content {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.top-categories-section .explore-btn {
+  padding: 10px 30px;
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+}
+.top-categories-section .explore-btn:hover {
+  color: #12131c;
+  background-color: white;
+}
+.top-categories-section .card.large {
+  height: 290px; 
+  width: 100%;
+}
+.top-categories-section .card.small {
+  height: 160px;
+  width: 270px;
+}
+.top-categories-section .card.super-heroes {
+  width: 100%;
+  height: 470px;
+}
+.top-categories-section .bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+.top-categories-section .left-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  height: 100%;
+}
+.top-categories-section .right-card-container {
+  flex: 1;
+}
+/* ====== Responsiveness ====== */
+@media (max-width: 790px) {
+  .top-categories-section .top-section,
+  .top-categories-section .bottom-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-card-container {
+    width: 240px;
+  }
+  .top-categories-section .small-cards {
+    flex-direction: column;
+  }
+}
+/* ====== Büşra - Top Categories End ====== */
 
 /*deniz-BE18-pricing-plan started*/
 
@@ -288,6 +643,7 @@ li {
   margin-left: 40px; 
 }
 
+/*deniz-BE18-pricing-plan started*/
 /*deniz-BE18-pricing-plan responssvive started*/
 @media screen and (max-width: 1024px) {
   .pricing-section {
@@ -346,4 +702,5 @@ li {
 }
 
 /*deniz-BE18-pricing-plan responsive finished*/
+
 
