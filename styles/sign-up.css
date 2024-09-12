@@ -286,6 +286,10 @@ input:focus {
     width: 100%;
     border-radius: 24px 24px 0 0;
   }
+  .wave-background {
+    background-size: cover;
+    height: auto;
+  }
 }
 @media (max-width: 650px) {
   .wave-background {
@@ -307,8 +311,8 @@ input:focus {
     font-size: var(--fs-h3);
   }
   .register-button {
-    font-size: var(--fs-h6);
-    padding: 6px;
+    font-size: var(--fs-h7);
+    padding: 7px;
   }
   .privacy-policy {
     font-size: var(--fs-h6);
@@ -322,6 +326,7 @@ input:focus {
   }
   .register-title-div {
     flex-direction: column;
+    gap: 10px;
   }
   .password-container {
     flex-direction: column;
@@ -341,6 +346,9 @@ input:focus {
   }
   .login-link {
     padding-left: 0px;
+  }
+  .close-icon {
+    display: none;
   }
 }
 
