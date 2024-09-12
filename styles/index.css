@@ -288,7 +288,7 @@ li {
   margin-left: 40px; 
 }
 
-/*deniz-BE18-pricing-plan started*/
+/*deniz-BE18-pricing-plan responssvive started*/
 @media screen and (max-width: 1024px) {
   .pricing-section {
     background-size: cover; 
@@ -324,7 +324,6 @@ li {
     align-items: center; 
     gap: 0; 
     display:grid;
-  
   }
 
   .card-basic, .card-best, .card-pro, .card-enterprise {
