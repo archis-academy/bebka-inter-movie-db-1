@@ -227,6 +227,7 @@ input:focus {
   padding: 10px 16px;
   border: none;
   border-radius: 35px;
+  cursor: pointer;
 }
 .register-first-area-div {
   display: flex;

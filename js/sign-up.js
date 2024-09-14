@@ -3,11 +3,16 @@ document.querySelector(".form-section").addEventListener("submit",
         event.preventDefault();
 
 
-        const name = document.querySelector("input[placeholder='Name']").value;
-        const email = document.querySelector("input[placeholder='Email']").value;
-        const password = document.querySelector("input[placeholder='Password*']").value;
-        const passwordConfirmation = document.querySelector("input[placeholder='Repeat Password*']").value;
-        const errorMessage = document.querySelector("#error-message");
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const passwordConfirmation = document.getElementById("repeat-password").value;
+        const errorMessage = document.getElementById("error-message");
+
+        if (!name || !email || !password || !passwordConfirmation) {
+            alert("Name, Email, Password fields cannot be empty!");
+            return;  
+        }
 
         const newUserData = {
             name: name,
@@ -22,7 +27,7 @@ document.querySelector(".form-section").addEventListener("submit",
         }else if(password === passwordConfirmation){
             errorMessage.style.display = "none";
         }
-
+    
 
         let users =  JSON.parse(localStorage.getItem("users")) || [];
 
