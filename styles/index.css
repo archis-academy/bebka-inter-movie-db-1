@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-top: 7px;
   margin: 0 auto;
   padding-left: 12px;
@@ -20,16 +20,16 @@
 .header .nav-link {
   text-decoration: none;
   color: black;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .header .nav-link:hover {
   border-radius: 20px;
-  background-color: #E91E63;
+  background-color: #e91e63;
   padding: 5px 20px;
   color: white;
 }
-.header a.active{
-  background-color: #E91E63;
+.header a.active {
+  background-color: #e91e63;
   border-radius: 30px;
   color: white;
   padding: 5px 20px;
@@ -43,7 +43,7 @@
   line-height: 46.32px;
   text-align: left;
 }
-.header .logo{
+.header .logo {
   width: 92px;
   height: 96px;
 }
@@ -55,39 +55,39 @@
 .header .nav {
   column-gap: 80px;
 }
-.header .nav-list{
+.header .nav-list {
   display: flex;
   gap: 35px;
   align-items: center;
 }
-.header .main{
+.header .main {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.fs-fw{
+.fs-fw {
   font-size: 18px;
   font-weight: 600;
 }
-.header .btn-main{
+.header .btn-main {
   text-decoration: none;
   border-color: transparent;
   background-color: transparent;
   border-radius: 30px;
   color: black;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-.header .btn-main:hover{
+.header .btn-main:hover {
   text-decoration: none;
   border-radius: 30px;
-  color: #304FFE;
-  background-color: #C5CAE9;
+  color: #304ffe;
+  background-color: #c5cae9;
   padding: 5px 20px;
 }
-.header .main .active{
-  background-color: #C5CAE9;
+.header .main .active {
+  background-color: #c5cae9;
   border-radius: 30px;
-  color: #304FFE;
+  color: #304ffe;
   padding: 5px 20px;
 }
 .header .ic-settings {
@@ -99,7 +99,7 @@
 }
 .header .line {
   height: 20px;
-  width: 1px;       
+  width: 1px;
 }
 /* ----- Büşra - Header Section End ----- */
 /* Cerenucak/BE-15-implement-promotion-banner */
@@ -107,28 +107,28 @@
 .promotion-banner-container {
   display: flex;
   gap: 1%;
-  width: 100%; 
-  max-height: 500px; 
+  width: 100%;
+  max-height: 500px;
   position: relative;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;}
+  align-items: center;
+}
 
 .promotion-banner-container-right,
 .promotion-banner-container-left {
   width: 25vw;
   max-width: 607px;
   height: 400px;
-  position: relative; 
-  border-radius: 40px; 
+  position: relative;
+  border-radius: 40px;
   overflow: hidden;
-  display: flex ;
+  display: flex;
   align-items: center;
   flex-direction: column;
-  text-align: center; 
+  text-align: center;
   padding-bottom: 20px;
-  
 }
 
 .promotion-banner-container-right::before,
@@ -140,9 +140,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(315.16deg, rgba(233, 30, 99, 0.5) 19%, rgba(48, 79, 254, 0.5) 86.85%);
-  z-index: 1; 
-  pointer-events: none; 
+  background: linear-gradient(
+    315.16deg,
+    rgba(233, 30, 99, 0.5) 19%,
+    rgba(48, 79, 254, 0.5) 86.85%
+  );
+  z-index: 1;
+  pointer-events: none;
 }
 .promotion-banner-container-right h2,
 .promotion-banner-container-left h2 {
@@ -150,9 +154,9 @@
   flex-direction: column;
   position: absolute;
   z-index: 3;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2vw;
-  color: white; 
+  color: white;
   text-align: center;
   bottom: 10%;
 }
@@ -164,7 +168,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
-
 }
 
 .promotion-banner-container-center {
@@ -182,7 +185,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.0001) -152.12%, rgba(0, 0, 0, 0.64) 90%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.0001) -152.12%,
+    rgba(0, 0, 0, 0.64) 90%
+  );
   z-index: 0;
   pointer-events: none;
 }
@@ -194,33 +201,32 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #304FFE; 
-  opacity: 0.3; 
+  background: #304ffe;
+  opacity: 0.3;
   z-index: 1;
   pointer-events: none;
 }
 .promotion-banner-container-center h2 {
-  position: absolute; 
-  z-index: 3; 
-  font-family: 'Montserrat', sans-serif;
-  color: white; 
-  bottom: 10%; 
-  right: 1%; 
+  position: absolute;
+  z-index: 3;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  bottom: 10%;
+  right: 1%;
 }
 .promotion-banner-container-center h2 span.free {
-  font-size: 3vw; 
+  font-size: 3vw;
   line-height: 1;
   display: block;
   text-align: right;
   margin-right: 20%;
-
 }
 
 .promotion-banner-container-center h2 span.movies {
   font-size: 5vw;
   line-height: 1.2;
   display: block;
-  margin-right: 40px
+  margin-right: 40px;
 }
 
 .promotion-banner-container-center img {
@@ -229,17 +235,17 @@
   height: 100%;
   object-fit: cover;
 }
-.promotion-banner-container-center img[alt="implement-promotion-banner-middle-icon"] {
+.promotion-banner-container-center
+  img[alt="implement-promotion-banner-middle-icon"] {
   position: absolute;
   bottom: calc(8% + 7vw);
   right: 30%;
   z-index: 3;
   width: 7vw;
   height: auto;
-
 }
 
-/* END- Cerenucak/BE-15-implement-promotion-banner */ 
+/* END- Cerenucak/BE-15-implement-promotion-banner */
 /* ====== Büşra - Top Categories Start ====== */
 .top-categories-section {
   max-width: 1200px;
@@ -278,8 +284,8 @@
 .top-categories-section .card img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  position: absolute; 
+  object-fit: cover;
+  position: absolute;
   z-index: 1;
 }
 .top-categories-section .card h2 {
@@ -316,7 +322,7 @@
   background-color: white;
 }
 .top-categories-section .card.large {
-  height: 290px; 
+  height: 290px;
   width: 100%;
 }
 .top-categories-section .card.small {
@@ -362,47 +368,45 @@
 /*deniz-BE18-pricing-plan started*/
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .pricing-section {
   text-align: center;
   padding: 50px 10px;
   position: relative;
-
 }
 
 .price-title h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 54px;
-  font-weight: 600; 
-  color: #2D2D2D;
+  font-weight: 600;
+  color: #2d2d2d;
   text-align: center;
 }
 
 .pricing-section h1 span {
   color: #007bff;
-  display: block; 
-  font-size: 54px
+  display: block;
+  font-size: 54px;
 }
 
 .pricing-cards-container {
-  display:flex;
+  display: flex;
   justify-content: center;
-  gap:0px;
+  gap: 0px;
   flex-wrap: wrap;
   margin-top: 80px;
   width: 100%;
-
 }
 
 .card-basic {
-  height:430px;
-  width:300px;
+  height: 430px;
+  width: 300px;
   background-color: white;
-  border:5px solid rgba(48, 79, 254, 0.05);
+  border: 5px solid rgba(48, 79, 254, 0.05);
   border-radius: 25px;
-  padding:20px;
+  padding: 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   margin-top: 50px;
@@ -421,8 +425,8 @@ body {
 .card-best {
   background-color: #fff;
   border-radius: 25px;
-  border:solid 0.4px  #ff3366;
-  width:300px;
+  border: solid 0.4px #ff3366;
+  width: 300px;
   height: 500px;
   align-self: flex-start;
   position: relative;
@@ -430,50 +434,47 @@ body {
 }
 
 .value-header {
-  background: linear-gradient(80deg, hsl(271, 86%, 40%), #E91E63 );
+  background: linear-gradient(80deg, hsl(271, 86%, 40%), #e91e63);
   color: white;
   clip-path: ellipse(70% 80% at 50% 0%);
   height: 160px;
   font-size: 12px;
-  border-top-left-radius:25px;
-  border-top-right-radius:25px;
-  position: relative; 
-  text-align: center; 
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: relative;
+  text-align: center;
   padding: 20px;
-} 
-.value-header h2{
+}
+.value-header h2 {
   font-size: 24px;
   color: white;
   margin-bottom: 20px;
   font-weight: bold;
-  margin-top: 8px; 
-  text-align: center
-  
+  margin-top: 8px;
+  text-align: center;
 }
 .value-header span {
   display: block;
-  font-size:34px; 
-  margin-right: 5px; 
+  font-size: 34px;
+  margin-right: 5px;
 }
 .value-header span::before {
-  content: '$';
+  content: "$";
   font-size: 0.6em;
   vertical-align: super;
 }
-.card-pro{
+.card-pro {
   width: 300px;
   height: 500px;
   background-color: white;
   border-radius: 25px;
-  padding:20px;
+  padding: 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  border:5px solid rgba(48, 79, 254, 0.05);
- 
+  border: 5px solid rgba(48, 79, 254, 0.05);
 }
 .card-pro h2 {
-  color:rgba(233, 30, 99, 1);
-
+  color: rgba(233, 30, 99, 1);
 }
 
 .card-pro .price {
@@ -481,25 +482,23 @@ body {
   color: #333;
   margin-bottom: 20px;
   font-weight: bold;
-  margin-top:15px;
- 
+  margin-top: 15px;
 }
 .card-pro .price::before {
-  content: '$';
+  content: "$";
   font-size: 0.6em;
   vertical-align: super;
 }
 
-.card-enterprise{
+.card-enterprise {
   width: 300px;
   height: 500px;
   background-color: white;
   border-radius: 25px;
-  padding:20px;
+  padding: 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  border:5px solid rgba(48, 79, 254, 0.05);
- 
+  border: 5px solid rgba(48, 79, 254, 0.05);
 }
 
 .card-enterprise h2 {
@@ -509,36 +508,36 @@ body {
 .card-enterprise .price {
   font-size: 2em;
   color: #333;
-  margin-top:15px;
+  margin-top: 15px;
   margin-bottom: 20px;
   font-weight: bold;
 }
 .card-enterprise .price::before {
-  content: '$';
+  content: "$";
   font-size: 0.6em;
   vertical-align: super;
 }
-.choose-basic{
-  font-family: 'Montserrat', sans-serif;
-  background-color: #304FFE;
+.choose-basic {
+  font-family: "Montserrat", sans-serif;
+  background-color: #304ffe;
   color: white;
   width: 200px;
-  height:50px;
+  height: 50px;
   padding: 10px 20px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  margin-top:10px;
+  margin-top: 10px;
   transition: background-color 0.3s ease;
 }
 
 .choose-best {
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 200px;
-  height:50px;
-  background-color:rgba(233, 30, 99, 1);
+  height: 50px;
+  background-color: rgba(233, 30, 99, 1);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -546,14 +545,14 @@ body {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  margin-top:15px;
+  margin-top: 15px;
   transition: background-color 0.3s ease;
 }
 .choose-pro {
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 200px;
-  height:50px;
-  background-color:rgba(233, 30, 99, 1);
+  height: 50px;
+  background-color: rgba(233, 30, 99, 1);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -561,15 +560,15 @@ body {
   font-weight: 600;
   border-radius: 25px;
   cursor: pointer;
-  margin-top:10px;
+  margin-top: 10px;
   transition: background-color 0.3s ease;
 }
 
 .choose-enterprice {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 200px;
-  height:50px;
-  background-color:   rgba(233, 30, 99, 1);
+  height: 50px;
+  background-color: rgba(233, 30, 99, 1);
   color: white;
   padding: 10px 20px;
   font-size: 16px;
@@ -577,77 +576,74 @@ body {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  margin-top:10px;
+  margin-top: 10px;
   transition: background-color 0.3s ease;
 }
 .choose:hover {
   background-color: #0056b3;
 }
-.card-basic:hover, 
-.card-best:hover, 
-.card-pro:hover, 
+.card-basic:hover,
+.card-best:hover,
+.card-pro:hover,
 .card-enterprise:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.card-best ul{
+.card-best ul {
   margin-top: 0;
 }
 ul {
-  font-family: 'Montserrat',sans-serif;
-  list-style: none; 
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
   padding: 0;
   margin-top: 30px;
   font-size: 18px;
   font-weight: 500;
-  
 }
 li {
-  margin-bottom: 10px; 
-  color:black;
+  margin-bottom: 10px;
+  color: black;
 }
 
-.rectancle-background img{
-  width:100%;
-  height:auto;
+.rectancle-background img {
+  width: 100%;
+  height: auto;
   position: absolute;
-  top:0;
+  top: 0;
   z-index: -1;
   background-size: cover;
-  
 }
 
 .basic-description,
 .pro-description,
-.enterprice-description{
+.enterprice-description {
   margin-top: 65px;
   margin-bottom: 15px;
   font-size: 14px;
   color: #555;
-  font-family: 'Montserrat',sans-serif;
-  font-weight: 400
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
-.best-description{
+.best-description {
   font-size: 14px;
   color: #555;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-top: 45px;
 }
 
-
 .plan-features li:nth-child(2),
 .plan-features li:nth-child(3),
 .plan-features li:nth-child(4) {
-  margin-left: 40px; 
+  margin-left: 40px;
 }
 
 /*deniz-BE18-pricing-plan started*/
 /*deniz-BE18-pricing-plan responssvive started*/
 @media screen and (max-width: 1024px) {
   .pricing-section {
-    background-size: cover; 
+    background-size: cover;
   }
   .price-title h1 {
     font-size: 42px;
@@ -659,16 +655,19 @@ li {
   .pricing-cards-container {
     justify-content: center;
     align-items: center;
-    gap: 0; 
+    gap: 0;
   }
 
-  .card-basic, .card-best, .card-pro, .card-enterprise {
+  .card-basic,
+  .card-best,
+  .card-pro,
+  .card-enterprise {
     width: 260px;
   }
 }
 @media screen and (max-width: 768px) {
   .pricing-section {
-    background-size: cover; 
+    background-size: cover;
   }
   .price-title h1 {
     font-size: 32px;
@@ -677,30 +676,196 @@ li {
     font-size: 32px;
   }
   .pricing-cards-container {
-    align-items: center; 
-    gap: 0; 
-    display:grid;
+    align-items: center;
+    gap: 0;
+    display: grid;
   }
 
-  .card-basic, .card-best, .card-pro, .card-enterprise {
-    width: 100%; 
-    max-width: 350px; 
-    margin:15px;
+  .card-basic,
+  .card-best,
+  .card-pro,
+  .card-enterprise {
+    width: 100%;
+    max-width: 350px;
+    margin: 15px;
   }
 
   .value-header {
-    height: 120px; 
+    height: 120px;
   }
 
   .value-header h2 {
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   .value-header span {
-    font-size: 30px; 
+    font-size: 30px;
   }
 }
 
 /*deniz-BE18-pricing-plan responsive finished*/
 
+/*Melek/BE-20/Implement the FAQ section/Css/Start*/
+.faq-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px;
+}
+.faq-section .megaphone-img {
+  max-width: 400px;
+}
+.faq-section .faq-title {
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Montserrat", sans-serif;
+  line-height: 40px;
+  font-weight: 700;
+}
+.faq-section .faq-subtitle {
+  color: #c5cae9;
+}
+.faq-section .faq-image-div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.faq-section .faq-paragraph {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  font-weight: 500;
+  max-width: 45ch;
+}
+.faq-section .akordiyon-div {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 24px;
+}
+.faq-section .content-box {
+  background-color: rgba(243, 243, 243, 0.87);
+  border-radius: 10px;
+}
+.faq-section .content-title {
+  font-size: 20px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  font-weight: 700;
+}
+.faq-section .content-subtitle {
+  max-width: 40ch;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Montserrat", sans-serif;
+  line-height: 20px;
+  font-weight: 500;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.faq-section .content-title-div {
+  display: flex;
+  flex-direction: row;
+  background-color: #e91e63;
+  padding: 24px;
+  padding-right: 100px;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.faq-section .content-title-div::before {
+  content: "";
+  background-image: url(../images/faq-section/up-ok.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background-size: 20px;
+  right: 20px;
+}
+.faq-section .content-box.active .content-subtitle {
+  height: 70px;
+  padding: 16px;
+  align-content: center;
+}
+.faq-section .content-box.active .content-title-div::before {
+  background-image: url(../images/faq-section/down-ok.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background-size: 20px;
+  right: 20px;
+}
 
+/*Responsive*/
+@media (max-width: 950px) {
+  .faq-section {
+    flex-direction: column;
+  }
+  .faq-section .faq-image-div {
+    align-items: center;
+  }
+  .faq-section .faq-paragraph {
+    max-width: fit-content;
+    align-self: self-start;
+    margin-left: 20px;
+  }
+  .faq-section .faq-title {
+    align-self: self-start;
+    margin-left: 20px;
+  }
+  .faq-section .content-subtitle {
+    max-width: fit-content;
+  }
+}
+@media (max-width: 550px) {
+  .faq-section .megaphone-img {
+    max-width: 300px;
+  }
+  .faq-section .content-title {
+    font-size: 16px;
+  }
+  .faq-section .content-subtitle {
+    font-size: 14px;
+  }
+  .faq-section .faq-title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .faq-section {
+    gap: 10px;
+  }
+  .faq-section .content-subtitle {
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 550px) {
+  .faq-section .megaphone-img {
+    max-width: 300px;
+  }
+  .faq-section .content-title {
+    font-size: 14px;
+  }
+  .faq-section .content-subtitle {
+    font-size: 14px;
+  }
+  .faq-section .faq-title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .faq-section {
+    gap: 10px;
+    margin: 20px;
+  }
+}
+
+/*Melek/BE-20/Implement the FAQ section/Css/End*/
