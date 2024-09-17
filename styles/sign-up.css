@@ -168,9 +168,9 @@
 .line {
   position: relative;
   height: 1px;
-  width: 100%;
+  width: 80%;
   background-color: var(--fc-secondary);
-  margin: 10px;
+  margin: 10px auto;
 }
 .line::before {
   content: "Or register with email";
@@ -289,7 +289,6 @@ input:focus {
   }
   .wave-background {
     background-size: cover;
-    height: auto;
   }
 }
 @media (max-width: 650px) {
@@ -317,6 +316,9 @@ input:focus {
   }
   .privacy-policy {
     font-size: var(--fs-h6);
+  }
+  .line {
+    width: 100%;
   }
   .line::before {
     font-size: var(--fs-h7);
@@ -350,6 +352,9 @@ input:focus {
   }
   .close-icon {
     display: none;
+  }
+  .wave-background {
+    height: auto;
   }
 }
 
