@@ -5,65 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MovieDB</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <script src="index.js"></script>
-    <section class="footer-sctn">
-      <div class="footer-section-card-container">
+    <footer class="footer-section">
+      <div class="footer-section-container">
+
+        <div class="footer-section-video-container">
+          <img src="images/video-logo.svg" alt="video video-logo">
+          <h3 class="footer-section-video-text">Video</h3>
+          <p class="footer-section-video-description">© Luxi Theme 2020</p>
+        </div>
+
+        <div class="footer-section-card-container">
+          <div class="footer-section-card">
+            <h3 class="footer footer-section-card-title">Company</h3>
+            <ul class="footer-section-list">
+              <li class="footer-section-card-list-item">Donec dignissim</li>
+              <li class="footer-section-card-list-item">Curabitur egestas</li>
+              <li class="footer-section-card-list-item">Nam posuere</li>
+              <li class="footer-section-card-list-item">Aenean facilisis</li>
+            </ul>
+          </div>
+          <div class="footer-section-card">
+            <h3 class="footer footer-section-card-title">Services</h3>
+            <ul class="footer-section-list">
+              <li class="footer-section-card-list-item">Cras convallis</li>
+              <li class="footer-section-card-list-item">Vestibulum faucibus</li>
+              <li class="footer-section-card-list-item">Quisque lacinia purus</li>
+              <li class="footer-section-card-list-item">Aliquam nec ex</li>
+            </ul>
+          </div>
+          <div class="footer-section-card">
+            <h3 class="footer footer-section-card-title">Legal</h3>
+            <ul class="footer-section-list">
+              <li class="footer-section-card-list-item">Suspendisse porttitor</li>
+              <li class="footer-section-card-list-item">Nam posuere</li>
+              <li class="footer-section-card-list-item">Curabitur egestas </li>
+            </ul>
+          </div>
+        </div>
         <div class="footer-section-menu">
-            <img src="images/Luxi-Saas-Logo.svg" alt="video image">
-            <h4 class="footer-menu-video">Videos</h4>
-            <p class="footer-menu-theme">@ Luxi Theme 2020</p>
-
-        </div>
-        <div class="footer-section-card">
-          <h5 class="footer-section-card-title">Company</h5>
-          <p class="footer-section-card-subs">Donec dignissim</p>
-          <p class="footer-section-card-subs">Curabitur egestas</p>
-          <p class="footer-section-card-subs">Nam posuere</p>
-          <p class="footer-section-card-subs">Aenean facilisis</p>
-        </div>
-        <div class="footer-section-card">
-          <h5 class="footer-section-card-title">Services</h5>
-          <p class="footer-section-card-subs">Cras convallis</p>
-          <p class="footer-section-card-subs">Vestibulum faucibus</p>
-          <p class="footer-section-card-subs">Quisque lacinia purus</p>
-          <p class="footer-section-card-subs">Aliquam nec ex</p>
-        </div>
-        <div class="footer-section-card">
-          <h5 class="footer-section-card-title">Legal</h5>
-          <p class="footer-section-card-subs">Suspendisse porttitor</p>
-          <p class="footer-section-card-subs">Nam posuere</p>
-          <p class="footer-section-card-subs">Curabitur egestas </p>
-        </div>
-        <div class="footer-section-social-container">
-          <div class="footer-section-social">
-            <a href="https://www.facebook.com" target="_blank">
-              <img src="images/Shape.svg" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-              <img src="images/social-instagram.svg" alt="instagram">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank">
-              <img src="images/social-linkedin.svg" alt="linkedin">
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-              <img src="images/social-twitter.svg" alt="twitter">
-            </a>
-
+          <div class="footer-section-social-container">
+            <a href="https://www.facebook.com" target="_blank"> <img src="images/social-facebook.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com" target="_blank"> <img src="images/social-instagram.svg" alt="instagram logo"></a>
+            <a href="https://www.linkedin.com" target="_blank"> <img src="images/social-linkedin.svg" alt="linkedin logo"></a>
+            <a href="https://www.twitter.com" target="_blank"> <img src="images/social-twitter.svg" alt="twitter logo"></a>
           </div>
-          <div class="language-selector">
-            <select name="language" id="language">
-              <option value="en">English - En</option>
-              <option value="tr">Türkçe - Tr</option>
-              <option value="es">Español - Es</option>
-              <option value="fr">Français - Fr</option>
-            </select>
-          </div>
-            
+           <div class="language-selector"></div>
+           <select name="language" id="language">
+            <option value="en">English-En</option>
+            <option value="tr">Türkçe-Tr</option>
+            <option value="fr">Français-Fr</option>
+           </select>
         </div>
-      </div>
-    </section>
-<!-- Footer Section End -->
+        </div>
+       
+        </div>
+
+    </footer>
   </body>
 </html>
