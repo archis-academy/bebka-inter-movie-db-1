@@ -67,13 +67,14 @@
   height: auto;
 }
 .netflux-home-logo {
-  max-width: 40px;
+  max-width: 35px;
   position: absolute;
   top: 0;
   margin: 40px;
 }
 .netflux-logo {
-  max-width: 120px;
+  max-width: 100px;
+  margin-bottom: 50px;
 }
 .logo-div {
   display: flex;
@@ -129,6 +130,7 @@
   font-size: var(--fs-h5);
   font-weight: var(--fw-reg);
   padding-left: 8px;
+  text-decoration: none;
 }
 .social-media-div {
   display: flex;
