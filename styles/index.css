@@ -224,7 +224,6 @@ video, iframe {
   margin: 30px 10px 30px 10px;
   display: flex;
   gap: 1%;
-  max-height: 500px; 
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -355,7 +354,6 @@ video, iframe {
     grid-template-rows: auto auto; 
     gap: 2%; 
     justify-items: center;
-    margin-bottom: 50%; 
   }
 
   .promotion-banner-container-right,
@@ -391,9 +389,8 @@ video, iframe {
 @media (max-width: 540px) {
   .promotion-banner-container{
     flex-direction: column;
-    gap: 10%;
+    gap: 20%;
     display:flex ;
-    margin-bottom: 10%;
   }
   .promotion-banner-container-right,
   .promotion-banner-container-left {
@@ -408,10 +405,11 @@ video, iframe {
     width: 90%;
     border-radius: 30px;
     align-items: center;
+    margin: 5%; 
   }
   .promotion-banner-container-center img[alt="implement-promotion-banner-middle-icon"] {
     width: 10%;
-    bottom: 30%;
+    bottom: 17%;
     margin-right:-2%;
   }
   .promotion-banner-container-center h2 {
