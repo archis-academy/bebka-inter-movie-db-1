@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="styles/detail.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/afc954cd5f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="detail-container">
+      <div id="background-overlay" class="background-overlay"></div>
+      <div class="container">
+        <div class="movie-header">
+          <div class="movie-info">
+            <p id="tagline">Tagline</p>
+            <h1 id="title">Title</h1>
+            <div class="rating" id="rating">
+              <span id="stars"> </span>
+              <span id="score">0.0</span>
+              <span class="divider"></span>
+              <span id="duration">0h 0m</span>
+            </div>
+            <p style="color: rgba(0, 0, 0, 0.54)" id="genre">Genres</p>
+            <div class="buttons">
+              <a class="watch-trailer" id="watch-trailer">WATCH TRAILER</a>
+              <button class="watch-full-movie" id="watch-full-movie">
+                WATCH FULL MOVIE
+              </button>
+            </div>
+          </div>
+          <div class="movie-poster">
+            <img id="poster" src="images/detail-movie.png" alt="Movie Poster" />
+            <button class="video-button">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </div>
+        <div class="movie-details">
+          <div class="storyline">
+            <h2>Storyline</h2>
+            <p id="storyline">Overview</p>
+            <div class="social-buttons">
+              <a><i class="fa-solid fa-share-nodes"></i> SHARE</a>
+              <a><i class="fa-solid fa-clapperboard"></i> TRIVIA</a>
+              <a><i class="fa-solid fa-star"></i> RATE THIS</a>
+            </div>
+          </div>
+          <div class="credits">
+            <p>DIRECTOR:<br /><span id="director">Director</span></p>
+            <p>WRITERS:<br /><span id="writers">Writers</span></p>
+            <p>STARS:<br /><span id="stars-cast">Stars</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/movieDetails.js"></script>
+  </body>
+</html>
