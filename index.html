@@ -80,50 +80,43 @@
       </div>
   </div>
 
-  <div class="movie-card-container">
-      <div class="first-movie">
-        <div class="card movie">
-          <a class="btn-wrap waves-effect" href="detail-movie.html">
-            <span class="figure">
-              <img src="https://res.cloudinary.com/imajin/image/upload/v1592043744/movie/movie2_cxxamr.jpg" alt="For All Mankind">
-              <span class="figcaption">new</span>
-            </span>
-            <span class="sub-text">Cras convallis lacus</span>
-          </a>
-        </div>
-      </div>
-     
-
-   <div class="second-movie">
-      <div class="card movie" id="play-trailer-card">
+  <div class="movie-card-container" id="movie-cards">
+    <div class="first-movie">
+      <div class="card movie" id="card-1">
         <span class="figure">
-          <i class="fa-solid fa-play"></i> 
-          <img src="https://res.cloudinary.com/imajin/image/upload/v1592043744/movie/movie3_a5wvov.png"> 
+          <img id="poster-1" src="https://res.cloudinary.com/imajin/image/upload/v1592043744/movie/movie2_cxxamr.jpg" alt="For All Mankind">
           <span class="figcaption">new</span>
         </span>
-        <span class="sub-text">Cras convallis lacus</span>
+        <span class="sub-text" id="title-1">Cras convallis lacus</span>
       </div>
     </div>
-
-    <div class="third-movie">
+    
+    <div class="second-movie">
+      <div class="card movie" id="card-2">
+        <span class="figure">
+          <i class="fa-solid fa-play"></i>
+          <img id="poster-2" src="https://res.cloudinary.com/imajin/image/upload/v1592043744/movie/movie3_a5wvov.png" alt="movie poster">
+          <span class="figcaption">new</span>
+        </span>
+        <span class="sub-text" id="title-2">Cras convallis lacus</span>
+      </div>
+    </div>
+    
+    <div class="third-movie" id="card-3">
       <div class="card movie">
-        <a class="btn-wrap waves-effect" href="detail-movie.html">
         <span class="figure">
-          <img src="https://res.cloudinary.com/imajin/image/upload/v1592043731/movie/movie4_gsfgzx.jpg"> 
+          <img id="poster-3" src="https://res.cloudinary.com/imajin/image/upload/v1592043731/movie/movie4_gsfgzx.jpg" alt="movie poster">
           <span class="figcaption">new</span>
         </span>
-          <span class="sub-text">Cras convallis Lacus</span>
-        </a>
+        <span class="sub-text" id="title-3">Cras convallis Lacus</span>
       </div>
     </div>
-           
-  </div>
-
+  </div>  
+</div>
+<script src="js/index.js"></script>
 </section>
+
 <!---deniz-most-watched-movies started -->
-
-
-
 
   <!-- Cerenucak/BE-15-implement-promotion-banner -->
   <div class="promotion-banner-container">
@@ -296,7 +289,6 @@
           </div>
 
       </section>
-       <!--deniz-BE-18-pricing-plan finished-->
-      <script src="index.js"></script>
+    
   </body>
 </html>
