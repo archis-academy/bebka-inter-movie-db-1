@@ -23,7 +23,7 @@ const options = {
   
   function displayMovies(movies) {
     movies.forEach((movie, index) => {
-      le
+      
       const poster = document.getElementById(`poster-${index + 1}`);
       const title = document.getElementById(`title-${index + 1}`);
       const card = document.getElementById(`card-${index + 1}`);
