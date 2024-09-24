@@ -291,11 +291,6 @@ input:focus {
     background-size: cover;
   }
 }
-@media (max-width: 650px) {
-  .wave-background {
-    background-size: cover;
-  }
-}
 @media (max-width: 550px) {
   .welcome-title {
     font-size: var(--fs-h5);
@@ -311,8 +306,8 @@ input:focus {
     font-size: var(--fs-h3);
   }
   .register-button {
-    font-size: var(--fs-h7);
-    padding: 7px;
+    font-size: var(--fs-h6);
+    padding: 12px;
   }
   .privacy-policy {
     font-size: var(--fs-h6);
@@ -353,7 +348,12 @@ input:focus {
   .close-icon {
     display: none;
   }
+  .privacy-continue-button {
+    flex-direction: column;
+    gap: 15px;
+  }
   .wave-background {
+    background-size: cover;
     height: auto;
   }
 }
