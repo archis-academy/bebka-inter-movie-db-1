@@ -210,7 +210,6 @@ input:focus {
 .privacy-continue-button {
   display: flex;
   justify-content: space-around;
-  gap: 30px;
 }
 .privacy-policy {
   font-family: var(--ff-primary);
@@ -224,7 +223,7 @@ input:focus {
   color: var(--bg-white);
   font-size: var(--fs-h6);
   font-weight: var(--fw-bold);
-  padding: 10px 16px;
+  padding: 10px 25px;
   border: none;
   border-radius: 35px;
   cursor: pointer;
@@ -233,6 +232,10 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+.checkbox-section {
+  display: flex;
+  gap: 15px;
 }
 
 /* Responsiveness */
@@ -289,6 +292,7 @@ input:focus {
   }
   .wave-background {
     background-size: cover;
+    overflow: scroll;
   }
 }
 @media (max-width: 550px) {

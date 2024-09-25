@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/sign-up.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--melekmahmutoglu/BE-27/Sign-Up-Html-->
     <section class="wave-background">
       <div class="tranparent-card">
         <div class="welcome-div">
-          <img src="./image/Register/netflux-home.svg" class="netflux-home-logo" alt="netflux-home-logo"/>
+          <img
+            src="./image/Register/netflux-home.svg"
+            class="netflux-home-logo"
+            alt="netflux-home-logo"
+          />
           <div class="logo-div">
-            <img src="./image/Register/Logo.svg" class="netflux-logo" alt="netflux-logo"/>
-            <h1 class="welcome-title">
-              Nice to meet you :) 
-            </h1>
-            <h1 class="welcome-subtitle">
-              Just register to join with us
-            </h1>
+            <img
+              src="./image/Register/Logo.svg"
+              class="netflux-logo"
+              alt="netflux-logo"
+            />
+            <h1 class="welcome-title">Nice to meet you :)</h1>
+            <h1 class="welcome-subtitle">Just register to join with us</h1>
           </div>
         </div>
         <div class="form-area-div">
@@ -30,64 +37,101 @@
             <div class="register-title-div">
               <h3 class="register-title">Register</h3>
               <div class="login-link-div">
-                <img src="./image/Register/Close Icon.svg" class="close-icon" alt="close-icon"/>
-                <a href="#" target="_blank" class="login-link">Already have a account?</a>
+                <img
+                  src="./image/Register/Close Icon.svg"
+                  class="close-icon"
+                  alt="close-icon"
+                />
+                <a href="#" target="_blank" class="login-link"
+                  >Already have a account?</a
+                >
               </div>
             </div>
             <div class="social-media-div">
               <div class="social-container-facebook">
-                <a href="#"  class="social-link">
-                  <img src="./image/Register/social-facebook.svg" alt="Facebook" />
+                <a href="#" class="social-link">
+                  <img
+                    src="./image/Register/social-facebook.svg"
+                    alt="Facebook"
+                  />
                   Facebook
                 </a>
               </div>
               <div class="social-container-twitter">
                 <a href="#" class="social-link">
-                  <img src="./image/Register/social-twitter.svg" alt="Twitter"/>
+                  <img
+                    src="./image/Register/social-twitter.svg"
+                    alt="Twitter"
+                  />
                   Twitter
                 </a>
               </div>
               <div class="social-container-google">
                 <a href="#" class="social-link">
-                  <img src="./image/Register/social-google-outline.svg" alt="Google" />
+                  <img
+                    src="./image/Register/social-google-outline.svg"
+                    alt="Google"
+                  />
                   Google
                 </a>
               </div>
             </div>
             <div class="line"></div>
           </div>
-          <form action="#" class="form-section" >
+          <form action="#" class="form-section">
             <div class="input-field-div">
-              <input type="text" placeholder="Name" class="input-div" id="name"/>
+              <input
+                type="text"
+                placeholder="Name"
+                class="input-div"
+                id="name"
+              />
             </div>
             <div class="input-field-div">
-              <input type="email" placeholder="Email"class="input-div" id="email"/>
+              <input
+                type="email"
+                placeholder="Email"
+                class="input-div"
+                id="email"
+              />
             </div>
             <div class="password-container">
               <div class="input-field-div">
-                <input type="password" placeholder="Password*"
-                class="input-div" id="password"/>
+                <input
+                  type="password"
+                  placeholder="Password*"
+                  class="input-div"
+                  id="password"
+                />
               </div>
               <div class="input-field-div">
-                <input type="password" placeholder="Repeat Password*"class="input-div" id="repeat-password"/>
+                <input
+                  type="password"
+                  placeholder="Repeat Password*"
+                  class="input-div"
+                  id="repeat-password"
+                />
               </div>
             </div>
             <p class="error-message" id="error-message"></p>
             <div class="privacy-continue-button">
-              <label class="privacy-policy">
+              <div class="checkbox-section">
                 <input
                   type="checkbox"
                   id="privacy-policy"
                   name="privacy-policy"
                   required
                 />
-                I have read and accept the Terms of
-                <a target="_blank" href="#">Service & Privacy Policy *</a>
-              </label>
+                <label class="privacy-policy" for="privacy-policy">
+                  I have read and accept the
+                  <a target="_blank" href="#"
+                    >Terms of Service & Privacy Policy *</a
+                  >
+                </label>
+              </div>
               <button type="submit" class="register-button">CONTINUE</button>
             </div>
           </form>
-          </div>
         </div>
       </div>
     </section>
