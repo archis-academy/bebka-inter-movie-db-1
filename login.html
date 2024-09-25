@@ -14,7 +14,10 @@
     <section class="wave-background">
       <div class="tranparent-card">
         <div class="welcome-div">
-          <img src="./image/login/netflux-home.svg" class="netflux-home-logo" alt="netflux-home-logo"/>
+          <a href="#">
+            <img src="./image/login/netflux-home.svg" class="netflux-home-logo" alt="netflux-home-logo"/>
+          </a>
+          
           <div class="logo-div">
             <img src="./image/login/logo.svg" class="netflux-logo" alt="netflux-logo"/>
             <h1 class="welcome-title">
@@ -31,24 +34,24 @@
               <h3 class="login-title">Login</h3>
               <div class="register-link-div">
                 <img src="./image/login/close-icon.svg" class="close-icon" alt="close-icon"/>
-                <a href="#" target="_blank" class="register-link">Create new account</a>
+                <a href="sign-up.html" class="register-link">Create new account</a>
               </div>
             </div>
             <div class="social-media-div">
               <div class="social-container-facebook">
-                <a href="#"  class="social-link">
+                <a href="#"  class="social-link login-facebook">
                   <img src="./image/login/social-facebook.svg" alt="Facebook" />
                   Facebook
                 </a>
               </div>
               <div class="social-container-twitter">
-                <a href="#" class="social-link">
+                <a href="#" class="social-link login-twitter">
                   <img src="./image/login/social-twitter.svg" alt="Twitter"/>
                   Twitter
                 </a>
               </div>
               <div class="social-container-google">
-                <a href="#" class="social-link">
+                <a href="#" class="social-link login-google">
                   <img src="./image/login/social-google-outline.svg" alt="Google" />
                   Google
                 </a>
@@ -58,25 +61,26 @@
           </div>
           <form action="#" class="form-section" >
             <div class="input-field-div">
-              <input type="email" placeholder="Email" class="input-div" name="email" id="email-login"/>
+              <input type="email" placeholder="Email" class="input-div" name="email" id="email-login" required/>
+              <div id="emailError" class="login-error">Please enter a valid email.</div>
             </div>
             <div class="input-field-div">
-              <input type="password" placeholder="Password"class="input-div" name="password" id="password-login" />
+              <input type="password" placeholder="Password"class="input-div" name="password" id="password-login" required/>
+              <div id="passwordError" class="login-error">Password must contain at least 8 characters, including uppercase, lowercase, and a number.</div>
             </div>
             <div class="remember-forgotPassword">
-              <label class="remember">
-                <input
-                  type="checkbox" id="remember-login" name="remember" required/>
-                Remember
-              </label>
+              <label class="remember"><input type="checkbox" id="remember-login" name="remember" required/> Remember </label>
               <a target="_blank" href="#">Forgot password?</a>
             </div>
             <button type="submit" class="login-continue" id="continue-login">CONTINUE</button>
+            <div id="loginSuccess" class="login-success">Login successful!</div>
+            <div id="loginFailed" class="login-error">Invalid email or password.</div>
           </form>
           </div>
         </div>
       </div>
     </section>
+    <script src="./js/login.js"></script>
     <!--hilalseyhan/BE-28/Login-page-->
   </body>
 </html>
