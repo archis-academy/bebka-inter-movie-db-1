@@ -222,6 +222,8 @@ input:focus {
   font-weight: var(--fw-reg);
   max-width: 30ch;
   gap: 10px;
+}
+#remember-login{
   cursor: pointer;
 }
 .login-continue {
@@ -357,7 +359,8 @@ input:focus {
     max-width: 400px;
   }
   .netflux-home-logo {
-    margin: 12px;
+    margin: 25px;
+    max-width: 25px;
   }
   .register-link {
     padding-left: 0px;
