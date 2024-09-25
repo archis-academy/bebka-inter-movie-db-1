@@ -14,6 +14,120 @@
     />
   </head>
   <body>
+    <!-- Büşra - Header Section Start  -->
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="logo"
+          ><img src="img/header_section/header-logo.png" alt="#"
+        /></a>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link active">Featured</a></li>
+            <li><a href="#" class="nav-link">Top Categories</a></li>
+            <li><a href="#" class="nav-link">All Categories</a></li>
+            <li><a href="#" class="nav-link">Pricing</a></li>
+          </ul>
+        </div>
+        <hr class="line" />
+        <div class="main">
+          <a href="#" class="btn-main fs-fw main:hover">LOGIN</a>
+          <a href="#" class="btn-main fs-fw main:hover active">REGISTER</a>
+          <div class="ic-settings"><i class="fa-solid fa-gear fa-xl"></i></div>
+        </div>
+      </nav>
+    </header>
+    <!--  Büşra - Header Section End  -->
+
+    <!--Asli/Hero-Section-Başlangıç-->
+    <section class="hero-section">
+      <div class="hero-overlay">
+        <div class="video-background">
+          <iframe
+            id="myVideo"
+            src="https://www.youtube.com/embed/CqRb4bO-rJw?controls=0&autoplay=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="custom-shape-divider-bottom-1725539209">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <p>Vivamus sit amet interdum elit</p>
+        <h2>Mancing Mania</h2>
+        <h2>The Movie</h2>
+        <p>On the air: 01.11.20</p>
+      </div>
+
+      <div class="hero-button">
+        <p class="hero-button-p">
+          WATCH
+          <button class="watch-trailer-btn" onclick="playVideo()">
+            <img
+              class="play-button"
+              src="images/transparent-play-button.png"
+              alt="play"
+            />
+          </button>
+          TRAILER
+        </p>
+      </div>
+    </section>
+    <!--Asli/Hero-Section-Bitiş-->
+
+    <!-- Cerenucak/BE-15-implement-promotion-banner -->
+    <div class="promotion-banner-container">
+      <div class="promotion-banner-container-right">
+        <h2>
+          <span>FREE</span>
+          <span>Rent 3 Days </span>
+        </h2>
+        <img
+          src="implement-promotion-banner/Bitmap2.png"
+          alt="implement-promotion-banner-left"
+        />
+      </div>
+      <div class="promotion-banner-container-center">
+        <h2>
+          <span class="free">FREE</span>
+          <span class="movies">MOVIES</span>
+        </h2>
+        <img
+          src="implement-promotion-banner/Bitmap1.png"
+          alt="implement-promotion-banner-center-img"
+        />
+        <img
+          src="implement-promotion-banner/coffee.svg"
+          alt="implement-promotion-banner-middle-icon"
+        />
+      </div>
+      <div class="promotion-banner-container-left">
+        <h2>
+          <span>FREE</span>
+          <span>Up to 5 Episodes</span>
+        </h2>
+        <img
+          src="implement-promotion-banner/Bitmap.png"
+          alt="implement-promotion-banner-rigt"
+        />
+      </div>
+    </div>
+    <!-- END Cerenucak/BE-15-implement-promotion-banner -->
     <!------ Büşra - Top Categories Start ------->
     <section class="top-categories-section">
       <div class="top-section">
@@ -40,89 +154,153 @@
     <section>
       <div class="pricing-section">
         <div class="price-title">
-            <h1>Flexible
-             <span>Pricing and Plan</span>
-            </h1>
+          <h1>
+            Flexible
+            <span>Pricing and Plan</span>
+          </h1>
         </div>
-        
-          <div class="pricing-cards-container">
-              <div class="card-basic">
-                  <h2>BASIC</h2>
-                  <p class="price">Free</p>
-                  <ul>
-                      <li>Nam sollicitudin dignissim</li>
-                      <li>Cras convallis lacus</li>
-                      <li>Quisque ut metus</li>
-                  </ul>
-                  <p class="basic-description">
-                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                  </p>
-                  <button class="choose-basic">CHOOSE PLAN</button>
-              </div>
-              
-              <div class="card-best">
-                  <div class="value-header">
-                    <h2>BEST VALUE
-                    <span class="dollar">24</span>
-                    </h2>
-                  </div>
-                  
-                  <ul>
-                      <li>Nam sollicitudin dignissim</li>
-                      <li>Cras convallis lacus</li>
-                      <li>Quisque ut metus</li>
-                      <li>Vivamus sit amet</li>
-                      <li>Cras convallis lacus orci</li>
-                  </ul>
-                  <p class="best-description">
-                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                  </p>
-                  <button class="choose-best">CHOOSE PLAN</button>
-              </div>
-              
-              <div class="card-pro">
-                  <h2>PRO</h2>
-                  <p class="price">54</p>
-                  <ul>
-                      <li>Nam sollicitudin dignissim</li>
-                      <li>Cras convallis lacus</li>
-                      <li>Quisque ut metus</li>
-                      <li>Vivamus sit amet</li>
-                      <li>Cras convallis lacus orci</li>
-                  </ul>
 
-                  <p class="pro-description">
-                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                  </p>
-                  <button class="choose-pro">CHOOSE PLAN</button> 
-              </div>
-              
-              <div class="card-enterprise">
-                  <h2>ENTERPRİSE</h2>
-                  <p class="price">99</p>
-                  <ul>
-                      <li>Nam sollicitudin dignissim</li>
-                      <li>Cras convallis lacus</li>
-                      <li>Quisque ut metus</li>
-                      <li>Vivamus sit amet</li>
-                      <li>Cras convallis lacus orci</li>
-                  </ul>
-                  <p class="enterprice-description">
-                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                  </p>
-                  <button class="choose-enterprice">CHOOSE PLAN</button>
-              </div>
+        <div class="pricing-cards-container">
+          <div class="card-basic">
+            <h2>BASIC</h2>
+            <p class="price">Free</p>
+            <ul>
+              <li>Nam sollicitudin dignissim</li>
+              <li>Cras convallis lacus</li>
+              <li>Quisque ut metus</li>
+            </ul>
+            <p class="basic-description">
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <button class="choose-basic">CHOOSE PLAN</button>
           </div>
+
+          <div class="card-best">
+            <div class="value-header">
+              <h2>
+                BEST VALUE
+                <span class="dollar">24</span>
+              </h2>
+            </div>
+
+            <ul>
+              <li>Nam sollicitudin dignissim</li>
+              <li>Cras convallis lacus</li>
+              <li>Quisque ut metus</li>
+              <li>Vivamus sit amet</li>
+              <li>Cras convallis lacus orci</li>
+            </ul>
+            <p class="best-description">
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <button class="choose-best">CHOOSE PLAN</button>
+          </div>
+
+          <div class="card-pro">
+            <h2>PRO</h2>
+            <p class="price">54</p>
+            <ul>
+              <li>Nam sollicitudin dignissim</li>
+              <li>Cras convallis lacus</li>
+              <li>Quisque ut metus</li>
+              <li>Vivamus sit amet</li>
+              <li>Cras convallis lacus orci</li>
+            </ul>
+
+            <p class="pro-description">
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <button class="choose-pro">CHOOSE PLAN</button>
+          </div>
+
+          <div class="card-enterprise">
+            <h2>ENTERPRİSE</h2>
+            <p class="price">99</p>
+            <ul>
+              <li>Nam sollicitudin dignissim</li>
+              <li>Cras convallis lacus</li>
+              <li>Quisque ut metus</li>
+              <li>Vivamus sit amet</li>
+              <li>Cras convallis lacus orci</li>
+            </ul>
+            <p class="enterprice-description">
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <button class="choose-enterprice">CHOOSE PLAN</button>
+          </div>
+        </div>
       </div>
 
-          <div class="rectancle-background">
-              <img src="images/pricingimgs/rectangleimg.svg">
+      <div class="rectancle-background">
+        <img src="images/pricingimgs/rectangleimg.svg" />
+      </div>
+    </section>
+    <!--deniz-BE-18-pricing-plan finished-->
+    <!--Melek/BE-20/Implement the FAQ section/Html/Start -->
+    <section class="faq-section">
+      <div class="faq-image-div">
+        <h3 class="faq-title">
+          Frequently <br />
+          <span class="faq-subtitle">Answers & Questions</span>
+        </h3>
+        <p class="faq-paragraph">
+          Vestibulum sit amet tortor sit amet libero lobortis semper at et odio.
+        </p>
+        <img
+          src="./images/faq-section/FAQ-megaphone.svg"
+          class="megaphone-img"
+        />
+      </div>
+      <div class="akordiyon-div">
+        <div class="content-box">
+          <div class="content-title-div">
+            <h4 class="content-title">Pellentesque ac bibendum tortor?</h4>
           </div>
-
-      </section>
-      <!--deniz-BE-18-pricing-plan finished-->
-      
-      <script src="js/index.js"></script>
-      <script src="js/fetch-movie-for-categories.js"></script>
+          <p class="content-subtitle">
+            Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus
+            auctor.
+          </p>
+        </div>
+        <div class="content-box">
+          <div class="content-title-div">
+            <h4 class="content-title">In mi nulla, fringilla vestibulum?</h4>
+          </div>
+          <p class="content-subtitle">
+            Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus
+            auctor.
+          </p>
+        </div>
+        <div class="content-box">
+          <div class="content-title-div">
+            <h4 class="content-title">Quisque lacinia purus ut libero?</h4>
+          </div>
+          <p class="content-subtitle">
+            Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus
+            auctor.
+          </p>
+        </div>
+        <div class="content-box">
+          <div class="content-title-div">
+            <h4 class="content-title">Quisque ut metus sit amet augue?</h4>
+          </div>
+          <p class="content-subtitle">
+            Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus
+            auctor.
+          </p>
+        </div>
+        <div class="content-box">
+          <div class="content-title-div">
+            <h4 class="content-title">Pellentesque ac bibendum tortor?</h4>
+          </div>
+          <p class="content-subtitle">
+            Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus
+            auctor.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Melek/BE-20/Implement the FAQ section/Html/End -->
+    <script src="js/index.js"></script>
+    <script src="js/fetch-movie-for-categories.js"></script>
   </body>
 </html>
