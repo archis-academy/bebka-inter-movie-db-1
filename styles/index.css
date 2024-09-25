@@ -14,7 +14,8 @@
 }
 
 .footer-section-card-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
 }
 
 .footer-section-video-container{
@@ -86,4 +87,26 @@
     height: 30px;
 
 }
+
+@media (max-width: 900px){
+    .footer-section-card-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px){
+    .footer-section-card-container{
+        grid-template-columns: 1fr;
+    }
+    .footer-section-card{
+        text-align: center;
+    }
+    .footer-section-video-container{
+        text-align: center;
+    }
+    
+}
+
+
+
 
