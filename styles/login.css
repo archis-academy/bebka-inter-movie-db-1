@@ -250,6 +250,21 @@ input:focus {
   color: green;
   display: none;
 }
+.suggestions {
+  border: 1px solid #ccc;
+  max-height: 100px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+}
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
 
 /* Responsiveness */
 @media (max-width: 1400px) {

@@ -14,7 +14,7 @@
     <section class="wave-background">
       <div class="tranparent-card">
         <div class="welcome-div">
-          <a href="#">
+          <a href="login.html">
             <img src="./image/login/netflux-home.svg" class="netflux-home-logo" alt="netflux-home-logo"/>
           </a>
           
@@ -62,6 +62,7 @@
           <form action="#" class="form-section" >
             <div class="input-field-div">
               <input type="email" placeholder="Email" class="input-div" name="email" id="email-login" required/>
+              <div id="email-suggestions" class="suggestions" style="display:none;"></div>
               <div id="emailError" class="login-error">Please enter a valid email.</div>
             </div>
             <div class="input-field-div">
@@ -69,8 +70,8 @@
               <div id="passwordError" class="login-error">Password must contain at least 8 characters, including uppercase, lowercase, and a number.</div>
             </div>
             <div class="remember-forgotPassword">
-              <div>
-                <input type="checkbox" id="remember-login" name="remember" required/>
+              <div class="remember">
+                <input type="checkbox" id="remember-login" name="remember"/>
                 <label class="remember">Remember </label>
               </div>
               <a target="_blank" href="#">Forgot password?</a>
