@@ -1161,3 +1161,74 @@ li {
 }
 
 /*Melek/BE-20/Implement the FAQ section/Css/End*/
+
+/*Asli/ımplement the events and news section başlangıç*/
+.card-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px; 
+}
+
+.card {
+  display: flex;
+  align-items: center; 
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-basis: 45%; 
+}
+
+.card-image {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.card-title {
+  font-size: 14px;
+  color: gray;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card-link {
+  color: #3b49df;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .card {
+    flex-basis: 100%; 
+    margin-bottom: 20px;
+  }
+}
+/*Asli/ımplement the events and news section bitiş*/
