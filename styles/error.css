@@ -85,3 +85,55 @@ body {
   background-color: #e91e63;
   color: white;
 }
+@media (max-width: 725px) {
+  .error-section {
+    gap: 15px;
+  }
+  .error-code {
+    font-size: 70px;
+  }
+  .error-code-wrapper {
+    width: 172px;
+    height: 200px;
+  }
+  .error-message h1 {
+    font-size: 20px;
+  }
+  .error-message p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 597px) {
+  .error-section {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .divider {
+    display: none;
+  }
+  .error-message {
+    text-align: center;
+    align-items: center;
+  }
+  .error-message .error-btn {
+    align-self: center;
+  }
+}
+@media (max-width: 400px) {
+  .error-code {
+    font-size: 60px;
+  }
+  .error-code-wrapper {
+    width: 140px;
+    height: 161px;
+  }
+  .error-message h1 {
+    font-size: 18px;
+  }
+  .error-message p {
+    font-size: 13px;
+  }
+  .error-message .error-btn {
+    font-size: 14px;
+  }
+}
