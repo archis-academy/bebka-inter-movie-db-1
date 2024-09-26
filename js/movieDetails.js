@@ -77,7 +77,6 @@ function updateStars(voteAverage) {
   }
 }
 
-// Initialize the application
 function init() {
   fetchMovieDetails(MOVIE_ID).then((movie) => updateMovieDetails(movie));
   fetchMovieCredits(MOVIE_ID).then((credits) => updateMovieCredits(credits));
