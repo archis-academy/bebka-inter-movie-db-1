@@ -931,11 +931,9 @@ li {
 /*----deniz most watched movies started---*/
 .featured-space {
   display: flex;
-  padding: 100px;
   background-color:transparent;
   border-radius: 12px;
-  flex-wrap: wrap;
-  max-width: 2800px;
+  max-width: 1800px;
   height: auto;
   margin-bottom: 100px;
   justify-content: space-between;
@@ -1028,12 +1026,12 @@ display: flex;
   position: absolute;
   top: 20px;
   left: 15px;
-  width: 60px;
-  height: 50px;
+  width: 50px;
+  height: 40px;
   background-color: #333131;
   color: rgb(245, 240, 240);
   padding: 15px 10px;
-  font-size: 14px;
+  font-size: 10px;
   border-radius: 15px;
   text-transform: uppercase;
   z-index: 2;
@@ -1120,9 +1118,11 @@ a.btn-wrap {
   border-radius: 50%; 
   z-index: 1; 
   cursor: pointer;
+  display: none;
 }
 
 .second-movie:hover .fa-play {
+  display: block;
   transform: scale(1.1) translate(-50%, -50%);
   transition: transform 0.3s ease; 
 }
