@@ -35,7 +35,8 @@ const options = {
   
      
       card.addEventListener('click', () => {
-        alert(`Film: ${movie.title}\nPoster URL: https://image.tmdb.org/t/p/w500/${movie.poster_path}`);
+        window.location.href = `detail.html?id=${movie.id}`;
       });
     });
   }
+ 
