@@ -35,7 +35,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 30px;
-  gap: 60px;
+  gap: 90px;
 }
 
 .movie-info p {
@@ -107,17 +107,12 @@ body {
 }
 
 .movie-poster img {
-  width: 220px;
+  width: 270px;
   border-radius: 15px;
 }
 .movie-poster {
   position: relative;
   display: inline-block;
-}
-
-.movie-poster img {
-  width: 220px;
-  border-radius: 15px;
 }
 
 .video-button {
@@ -227,9 +222,9 @@ body {
 .close {
   position: absolute;
   color: #595757;
-  right: 0;
+  right: 3px;
   top: 0;
-  font-size: 36px;
+  font-size: 25px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -261,6 +256,10 @@ body {
 }
 
 @media(max-width:860px){
+
+.movie-poster img{
+  width: 240px;
+}
   .movie-header{
     gap: 30px;
   }
@@ -311,7 +310,7 @@ body {
     justify-content: center;
   }
   .movie-poster img{
-    width: 180px;
+    width: 200px;
   }
   .buttons{
     gap: 15px;
@@ -346,7 +345,7 @@ body {
     font-size: 16px;
   }
   .movie-poster img{
-    width: 160px;
+    width: 180px;
   }
   .movie-details{
     font-size: 14px;
