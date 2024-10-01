@@ -115,23 +115,3 @@
 
 }
 
-@media (max-width: 900px){
-    .footer-section-card-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 500px){
-    .footer-section-card-container{
-        grid-template-columns: 1fr;
-    }
-    .footer-section-card{
-        text-align: center;
-    }
-    .footer-section-video-container{
-        text-align: center;
-    }
-    .footer-section-video-image{
-        margin: 0 auto;
-    }
-}
