@@ -212,6 +212,11 @@ iframe {
   height: 70px;
 }
 
+#myVideo{
+  pointer-events:none;
+}
+
+
 /* Asli/Hero-Section-Bitiş */
 
 /* Cerenucak/BE-15-implement-promotion-banner */

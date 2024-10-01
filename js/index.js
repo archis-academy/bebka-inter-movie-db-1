@@ -86,7 +86,7 @@ async function fetchTrailer(movieId) {
     if (videosData.results.length > 0) {
       const trailer = videosData.results.find(video => video.type === 'Trailer');
       if (trailer) {
-        document.getElementById('myVideo').src = `https://www.youtube.com/embed/${trailer.key}?rel=0&autoplay=0`;
+        document.getElementById('myVideo').src = `https://www.youtube.com/embed/${trailer.key}?rel=0`;
       } else {
         console.warn('No trailer found for this movie.');
       }
@@ -106,5 +106,6 @@ function playVideo() {
 
   document.getElementById('watchTrailerBtn').style.visibility = 'hidden';
   document.getElementById('watchTrailerText').style.visibility = 'hidden';
+  iframe.style.pointerEvents= 'auto';
 }
 //Asli/BE-25-Make-Hero-Section-Dynamic-Bitiş
