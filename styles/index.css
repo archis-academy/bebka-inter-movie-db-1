@@ -6,16 +6,13 @@
 /* ----- Büşra - Header Section Start ----- */
 .header {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   font-family: "Montserrat",sans-serif;
   padding-top: 7px;
-  margin: 0 auto;
   padding-left: 12px;
   padding-right: 12px;
   position: relative;
   z-index: 2;
-  
 }
 .header ul {
   list-style: none;
@@ -41,7 +38,9 @@
   max-width: 100%;
 }
 .header .nav-list {
-  font-size: 16px;
+  display: flex;
+  gap: 80px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 46.32px;
   text-align: left;
@@ -54,22 +53,24 @@
 .nav-menu {
   display: flex;
   align-items: center;
+  justify-content: center;
+
 }
 .header .nav {
-  column-gap: 80px;
-}
-.header .nav-list{
-  display: flex;
-  gap: 35px;
+  justify-content: space-between;
   align-items: center;
+  display: flex;
+  width: 100%;
+
 }
 .header .main{
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-right: 60px;
 }
 .fs-fw{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 .header .btn-main{
@@ -106,40 +107,71 @@
 }
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 .mobile-header {
   width: 100%;
-  background-color: transparent;
+  background-color: rgb(250, 212, 218);
   position: absolute;
   top: 0;
   z-index: 3;
   display: none;
   overflow: hidden;
   transition: opacity 0.9s ease, height 0.5s ease;
-
 }
 .nav-list1{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  padding-left: 50px;
+  margin-bottom: 25px;
+  gap: 50px;
 }
-
 .nav-list1:hover{
   color: #E91E63;
 }
+.nav-list-item {
+  margin-left: 20px;
+}
 
-/* Header- Responsiveness */
-@media (max-width: 820px){
+/* Büşra - BE-6 Header Section Responsiveness Start */
+@media (max-width: 1270px){
+  .header{
+    padding: 0;
+  }
   .hamburger {
     display: block;
   }
   .nav-menu {
     display: none;
   }
-  
+  .line{
+    display: none;
+  }
 }
-
+@media (max-width: 610px){
+  .header{
+    padding: 0;
+  }
+  .logo {
+    display: none;
+  }
+.header .nav{
+    justify-content: space-evenly;
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+  .main{
+    justify-content: space-between;
+  }
+}
+@media (max-width: 445px) {
+  .fs-fw{
+    font-size: 16px;
+  }
+}
+/* Büşra - BE-6 Header Section Responsiveness End */
 
 /* ----- Büşra - Header Section End ----- */
 
