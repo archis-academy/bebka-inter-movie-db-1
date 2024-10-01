@@ -1230,6 +1230,7 @@ li {
   .card {
     flex-basis: 100%; 
     margin-bottom: 20px;
+    margin-left: 40px;
   }
 }
 /*Asli/ımplement the events and news section bitiş*/
