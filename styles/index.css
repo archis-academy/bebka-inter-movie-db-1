@@ -1187,6 +1187,7 @@ li {
   object-fit: cover;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  margin-left: 40px;
 }
 
 .card-content {
