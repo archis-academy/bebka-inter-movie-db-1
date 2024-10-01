@@ -986,7 +986,7 @@ justify-content: center;
 
 .first-movie, .third-movie {
   width: 300px;
-  height:450px;
+  height:400px;
   position:relative;
   border-radius: 20px;
   overflow: hidden;
@@ -1044,7 +1044,7 @@ justify-content: center;
 }
 .second-movie {
   width: 300px;
-  height: 450px;
+  height: 400px;
   position:relative;
   border-radius: 20px;
   overflow: hidden;
