@@ -10,11 +10,8 @@ for (var i=0 ; i<akordiyon.length; i++) {
 
 //Melek/BE-20/Implement the FAQ section/JavaScript/End 
 
-
-
-
 //Asli/BE-25-Make-Hero-Section-Dynamic-Başlangıç
-const ACCESS_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMjU2MDg1M2Y5OWVhM2QxNTAwMjRkYTY0MzU0NjJjNiIsIm5iZiI6MTcyNjE3OTkyNy4wMjg2OTYsInN1YiI6IjY2ZTM1NzllOTAxM2ZlODcyMjIzYmZlMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VE4_B-sg_0yz557YA98_GtbwS_ndY8fEz2SdFFNYyHA'; // Kendi erişim tokenınızı buraya ekleyin
+const ACCESS_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMjU2MDg1M2Y5OWVhM2QxNTAwMjRkYTY0MzU0NjJjNiIsIm5iZiI6MTcyNjE3OTkyNy4wMjg2OTYsInN1YiI6IjY2ZTM1NzllOTAxM2ZlODcyMjIzYmZlMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VE4_B-sg_0yz557YA98_GtbwS_ndY8fEz2SdFFNYyHA'; 
 
 async function fetchPopularMovies() {
   try {
@@ -57,22 +54,18 @@ async function fetchMovieData(movieId) {
     const movieData = await response.json();
     console.log('Movie data:', movieData); 
 
-   
     document.getElementById('movieTitle').textContent = movieData.title;
     document.getElementById('releaseDate').textContent = `On the air: ${movieData.release_date}`;
 
-    
     const overview = movieData.overview || 'Açıklama mevcut değil.';
     const shortOverview = overview.length > 100 ? overview.substring(0, 50) + '...' : overview; 
     document.querySelector('.hero-content p').textContent = shortOverview; 
 
-    
     fetchTrailer(movieId);
   } catch (error) {
     console.error('Error fetching movie data:', error);
   }
 }
-
 
 async function fetchTrailer(movieId) {
   try {
@@ -83,7 +76,6 @@ async function fetchTrailer(movieId) {
       },
     });
 
-    
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -91,12 +83,10 @@ async function fetchTrailer(movieId) {
     const videosData = await response.json();
     console.log('Videos data:', videosData); 
 
-    
     if (videosData.results.length > 0) {
       const trailer = videosData.results.find(video => video.type === 'Trailer');
       if (trailer) {
-        
-        document.getElementById('myVideo').src = `https://www.youtube.com/embed/${trailer.key}?autoplay=0`;
+        document.getElementById('myVideo').src = `https://www.youtube.com/embed/${trailer.key}?rel=0&autoplay=0`;
       } else {
         console.warn('No trailer found for this movie.');
       }
@@ -108,12 +98,13 @@ async function fetchTrailer(movieId) {
   }
 }
 
-
 window.onload = fetchPopularMovies;
-
 
 function playVideo() {
   const iframe = document.getElementById('myVideo');
   iframe.src += "&autoplay=1"; 
+
+  document.getElementById('watchTrailerBtn').style.display = 'none';
+  document.getElementById('watchTrailerText').style.display = 'none';
 }
 //Asli/BE-25-Make-Hero-Section-Dynamic-Bitiş
