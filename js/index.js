@@ -104,7 +104,7 @@ function playVideo() {
   const iframe = document.getElementById('myVideo');
   iframe.src += "&autoplay=1"; 
 
-  document.getElementById('watchTrailerBtn').style.display = 'none';
-  document.getElementById('watchTrailerText').style.display = 'none';
+  document.getElementById('watchTrailerBtn').style.visibility = 'hidden';
+  document.getElementById('watchTrailerText').style.visibility = 'hidden';
 }
 //Asli/BE-25-Make-Hero-Section-Dynamic-Bitiş
