@@ -1,39 +1,38 @@
 // Büşra - Header responsiveness - Hamburger menu control - START
-document.getElementById('hamburger').addEventListener('click', function() {
-    let mobile_header = document.getElementById('mobile-header')
-    let login_register_btns = document.querySelectorAll('.btn-main')
-    let logo = document.querySelector('.logo')
-    let settings_icon = document.querySelector('.ic-settings')
+$(document).ready(function(){
+	$('#nav-icon1').click(function(){
+    let nav_icon = $(this)
+    if(nav_icon.hasClass('open')) {
+      nav_icon.removeClass('left-400')
+      nav_icon.removeClass('top--30')
+      nav_icon.removeClass('open')
 
-    mobile_header.style.display = 'block'
-    this.style.visibility = 'hidden'
-    logo.style.visibility = 'hidden'
-    settings_icon.style.visibility = 'hidden'
-    login_register_btns.forEach(function(login_register_btn){
-      login_register_btn.style.visibility = 'hidden'
-    })
+      $('.nav').css('display', 'flex')
+      $('.mobile-header').css('display', 'none')
+      $('.mobile-header').css('transition','2s ease-in-out')
+
+    } else {
+      nav_icon.addClass('left-400')
+      nav_icon.addClass('top--30')
+      nav_icon.addClass('open')
+
+      $('.mobile-header').css('display', 'block')
+    }
+    
+	});
+
+  $(window).resize(function() {
+    let width = $(window).width();
+    if(width > 1270) {
+      $('#nav-icon1').removeClass('left-400')
+      $('#nav-icon1').removeClass('top--30')
+      $('#nav-icon1').removeClass('open')
+
+      $('.nav').css('display', 'flex')
+      $('.mobile-header').css('display', 'none')
+      $('.mobile-header').css('transition','2s ease-in-out')
+    }
   });
-  
-document.addEventListener('click', function(event) {
-  let section = document.getElementById('mobile-header');
-  let hamburger = document.getElementById('hamburger');
-  let login_register_btns = document.querySelectorAll('.btn-main')
-  let logo = document.querySelector('.logo')
-  let settings_icon = document.querySelector('.ic-settings')
-  
-  if (!hamburger.contains(event.target) && !section.contains(event.target)) {
-    let mobile_header = document.getElementById('mobile-header')
-      mobile_header.style.display = 'none'
-      hamburger.style.visibility = 'visible'
-
-      
-    login_register_btns.forEach(function(login_register_btn){
-    login_register_btn.style.visibility = 'visible'
-    })
-
-      logo.style.visibility = 'visible'
-      settings_icon.style.visibility = 'visible'
-  }
 });
 
 // Büşra - Header responsiveness - Hamburger menu control - END
