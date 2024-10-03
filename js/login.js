@@ -9,9 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const rememberCheckbox = document.getElementById('remember-login');
     const emailSuggestions = document.getElementById('email-suggestions');
 
+    let initialEmail = "";
+    let initialPassword = "";
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 
+    // Email input alanına yazı girildiğinde öneriler göster
     emailInput.addEventListener('input', function () {
         const inputValue = emailInput.value;
         emailSuggestions.innerHTML = ''; // Önceki önerileri temizle
@@ -28,17 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     suggestionItem.textContent = user.email;
                     suggestionItem.onclick = function () {
                         emailInput.value = user.email;
-                        passwordInput.value = user.password; // İlgili şifreyi doldur
-                        emailSuggestions.innerHTML = ''; // Önerileri temizle
-                        emailSuggestions.style.display = 'none'; // Öneri listesini gizle
+                        passwordInput.value = user.password;
+                        initialEmail = user.email;
+                        initialPassword = user.password;
+                        emailSuggestions.innerHTML = '';
+                        emailSuggestions.style.display = 'none';
                     };
                     emailSuggestions.appendChild(suggestionItem);
                 });
-                emailSuggestions.style.display = 'block'; // Öneri listesini göster
+                emailSuggestions.style.display = 'block';
             }
         }
     });
 
+    // Form submit edildiğinde hataları kontrol etme ve localStorage işlemleri
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -49,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let valid = true;
 
+        // Email ve şifre regex kontrolleri
         if (!emailRegex.test(emailInput.value)) {
             emailError.style.display = 'block';
             valid = false;
@@ -60,39 +68,40 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (valid) {
-            loginSuccess.style.display = 'block';
-
-            let storedData = JSON.parse(localStorage.getItem('users')) || [];
-            const userIndex = storedData.findIndex(user => user.email === emailInput.value);
-
-            if (userIndex !== -1) {
-                // Email mevcutsa şifreyi güncelle
-                storedData[userIndex].password = passwordInput.value;
-            } else {
-                // Yeni kullanıcı ekle
-                storedData.push({ email: emailInput.value, password: passwordInput.value });
+            if (emailInput.value !== initialEmail) {
+                emailError.style.display = 'block';
+                valid = false;
+                return;
             }
 
-            localStorage.setItem('users', JSON.stringify(storedData));
-
-            if (rememberCheckbox.checked) {
-                localStorage.setItem('email', emailInput.value);
-                localStorage.setItem('password', passwordInput.value);
-                localStorage.setItem('remember', true);
-            } else {
-                localStorage.removeItem('email');
-                localStorage.removeItem('password');
-                localStorage.removeItem('remember');
+            if (passwordInput.value !== initialPassword) {
+                passwordError.style.display = 'block';
+                valid = false;
+                return;
             }
 
-            form.reset(); // Formu temizle
-        } else {
-            loginFailed.style.display = 'block';
+            if (valid) {
+                loginSuccess.style.display = 'block';
+
+                // Eğer kullanıcı "Beni hatırla" işaretlediyse email ve şifreyi kaydet
+                if (rememberCheckbox.checked) {
+                    localStorage.setItem('email', emailInput.value);
+                    localStorage.setItem('password', passwordInput.value);
+                    localStorage.setItem('remember', true);
+                } else {
+                    // Beni hatırla işaretli değilse, localStorage'a kaydetme
+                    localStorage.removeItem('email');
+                    localStorage.removeItem('password');
+                    localStorage.removeItem('remember');
+                }
+
+                form.reset();
+            } else {
+                loginFailed.style.display = 'block';
+            }
         }
     });
 });
-
-
 
 document.querySelector(".login-facebook").addEventListener("click", function () {
     window.location.href = "https://www.facebook.com/login";

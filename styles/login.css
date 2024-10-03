@@ -255,8 +255,10 @@ input:focus {
   max-height: 100px;
   overflow-y: auto;
   position: absolute;
+  margin-top: 37px;
   z-index: 10;
   background-color: white;
+  border-radius: 12px;
 }
 .suggestion-item {
   padding: 8px;
@@ -320,7 +322,7 @@ input:focus {
   }
   .wave-background {
     background-size: cover;
-    height: auto;
+    overflow: scroll;
   }
 }
 @media (max-width: 650px) {
@@ -382,6 +384,10 @@ input:focus {
   }
   .close-icon {
     display: none;
+  }
+  .wave-background {
+    background-size: cover;
+    height: auto;
   }
 }
 /*hilalseyhan/BE-28/Login-page*/
