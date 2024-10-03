@@ -134,12 +134,7 @@
     .footer-section-video-image{
         width: 90px;
     }
-    /* .footer-section-card-list-item{
-        font-size: 14px;
-    } */
-    /* .footer-section-card-title{
-        font-size: 16px;
-    } */
+ 
     .footer-section-card-container{
         flex-wrap: wrap;
     }
@@ -162,18 +157,7 @@
         flex-direction: column;
         gap:30px;
     }
-    /* .footer-section-card-list-item{
-        font-size: 12px;
-    } */
-    /* .footer-section-card-title{
-        font-size: 14px;
-    } */
-    /* .footer-section-video-text{
-        font-size: 1rem;
-    } */
-    /* .footer-section-video-description{
-        font-size: 0.675rem;
-    } */
+    
 }
 
 @media(max-width:360px){
