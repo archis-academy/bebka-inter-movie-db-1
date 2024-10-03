@@ -935,9 +935,9 @@ li {
   max-width: 1400px;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding:80px;
- 
+  margin: 50px auto;
+  gap:50px;
+  
 }
 
 .left-space {
@@ -983,7 +983,6 @@ li {
  gap: 25px;
  width: auto;
  justify-content: center;
- padding: 30px;
 
 }
 
