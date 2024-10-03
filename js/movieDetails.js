@@ -20,9 +20,16 @@ async function fetchMovieDetails(movieId) {
       `${BASE_URL}/${movieId}?language=en-US`,
       options
     );
+
+    if (!response.ok) {
+      window.location.href = "error.html";
+      return;
+    }
+
     return await response.json();
   } catch (err) {
     console.error("Error fetching movie details:", err);
+    window.location.href = "error.html";
   }
 }
 
@@ -30,9 +37,16 @@ async function fetchMovieDetails(movieId) {
 async function fetchMovieCredits(movieId) {
   try {
     const response = await fetch(`${BASE_URL}/${movieId}/credits`, options);
+
+    if (!response.ok) {
+      window.location.href = "error.html";
+      return;
+    }
+
     return await response.json();
   } catch (err) {
     console.error("Error fetching movie credits:", err);
+    window.location.href = "error.html";
   }
 }
 
