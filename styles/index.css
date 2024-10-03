@@ -1354,3 +1354,174 @@ li {
 }
 
 /*Melek/BE-20/Implement the FAQ section/Css/End*/
+.footer-section {
+    display: block;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+
+.footer-section-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-section-card-container{
+    display: flex;
+    justify-content: space-around;
+    gap:40px;
+    max-width: 700px;
+}
+
+.footer-section-video-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+    align-items: center;
+}
+
+.footer-section-video-image{
+    width: 100px;
+}
+
+.footer-section-video-text{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1rem,2.5vw,1.25rem);
+    font-weight: 700;
+    line-height: 2rem;
+    color: #000000DE;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section-video-description{
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.675,2.5vw,0.775rem);
+    font-weight: 500;
+}
+
+.footer-section-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section-card-list-item{
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(12px,2.5vw,16px);
+    font-weight: 500;
+    display: flex;
+    text-align: left;
+}
+
+.footer-section-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-section-card-title{
+    font-family: "Montserrat", sans-serif;
+    align-items: flex-start;
+    font-size: clamp(14px,2.5vw,18px);
+}
+
+.footer-section-social-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button {
+  background-color: #0000001F;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border: none;
+}
+
+.social-img{
+    width: 20px;
+    height: 20px;
+}
+
+
+#language{
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: #304FFE;
+    color: #304FFE;
+    text-align: start;
+    width: 200px;
+    height: 30px;
+
+}
+
+@media(max-width: 970px){
+    .footer-section-menu{
+        flex-direction: row;
+        gap: 120px;
+    }
+
+    .footer-section-container{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+@media(max-width:780px){
+    .footer-section-video-container{
+        flex-direction: row;
+        gap: 20px;
+        order: 3;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:642px){
+    .footer-section-video-image{
+        width: 90px;
+    }
+ 
+    .footer-section-card-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:520px){
+    .footer-section-menu{
+        gap:40px;
+    }
+    .footer-section-list{
+        align-items: center;
+    }
+    .footer-section-card{
+        align-items: center;
+    }
+}
+
+@media(max-width:440px){
+    .footer-section-menu{
+        flex-direction: column;
+        gap:30px;
+    }
+    
+}
+
+@media(max-width:360px){
+    .footer-section-video-container{
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer-section-video-image{
+        width: 80px;
+    }
+}
