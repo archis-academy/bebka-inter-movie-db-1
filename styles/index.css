@@ -234,7 +234,7 @@ iframe {
 }
 
 .trending-movie-card1,
-.trending-movie-card2  {
+.trending-movie-card2 {
   display: flex;
   margin: auto;
   justify-content: center;
@@ -316,13 +316,13 @@ iframe {
 }
 .control-left-btn,
 .control-left-btn2 {
-  left: 225px;
+  left: 18%;
   margin-top: -50px;
 }
 
 .control-right-btn,
 .control-right-btn2 {
-  right: 225px;
+  right: 18%;
   margin-top: -50px;
 
 }
