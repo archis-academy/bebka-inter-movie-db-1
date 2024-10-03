@@ -932,19 +932,19 @@ li {
 .featured-space {
   display: flex;
   background-color:transparent;
-  max-width: 1600px;
-  height: auto;
-  margin: 50px 300px 100px;
+  max-width: 1400px;
+  justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding:80px;
+ 
 }
 
 .left-space {
   display:flex;
   justify-content: center;
-  margin: 0 auto;
-
-
 }
+
 .next-title{
   font-size: 30px;
   display: block;
@@ -980,10 +980,10 @@ li {
 
 .movie-card-container {
  display: flex;
- gap: 20px;
+ gap: 25px;
  width: auto;
  justify-content: center;
- margin: 0 auto;
+ padding: 30px;
 
 }
 
