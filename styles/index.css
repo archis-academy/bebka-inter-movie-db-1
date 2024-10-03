@@ -2,7 +2,6 @@
     display: block;
     justify-content: center;
     padding-top: 24px;
-    margin-top: 300px;
 }
 
 
@@ -33,7 +32,7 @@
 .footer-section-video-text{
     display: flex;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.25rem;
+    font-size: clamp(1rem,2.5vw,1.25rem);
     font-weight: 700;
     line-height: 2rem;
     color: #000000DE;
@@ -43,7 +42,7 @@
 
 .footer-section-video-description{
     font-family: "Montserrat", sans-serif;
-    font-size: 0.775rem;
+    font-size: clamp(0.675,2.5vw,0.775rem);
     font-weight: 500;
 }
 
@@ -62,7 +61,7 @@
 
 .footer-section-card-list-item{
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: clamp(12px,2.5vw,16px);
     font-weight: 500;
     display: flex;
     text-align: left;
@@ -77,7 +76,7 @@
 .footer-section-card-title{
     font-family: "Montserrat", sans-serif;
     align-items: flex-start;
-    font-size: 18px;
+    font-size: clamp(14px,2.5vw,18px);
 }
 
 .footer-section-social-container{
@@ -135,12 +134,12 @@
     .footer-section-video-image{
         width: 90px;
     }
-    .footer-section-card-list-item{
+    /* .footer-section-card-list-item{
         font-size: 14px;
-    }
-    .footer-section-card-title{
+    } */
+    /* .footer-section-card-title{
         font-size: 16px;
-    }
+    } */
     .footer-section-card-container{
         flex-wrap: wrap;
     }
@@ -163,18 +162,18 @@
         flex-direction: column;
         gap:30px;
     }
-    .footer-section-card-list-item{
+    /* .footer-section-card-list-item{
         font-size: 12px;
-    }
-    .footer-section-card-title{
+    } */
+    /* .footer-section-card-title{
         font-size: 14px;
-    }
-    .footer-section-video-text{
+    } */
+    /* .footer-section-video-text{
         font-size: 1rem;
-    }
-    .footer-section-video-description{
+    } */
+    /* .footer-section-video-description{
         font-size: 0.675rem;
-    }
+    } */
 }
 
 @media(max-width:360px){
