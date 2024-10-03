@@ -215,56 +215,60 @@ iframe {
 /* Asli/Hero-Section-Bitiş */
 /* Cerenucakb/BE-12-Create-Trending-Movies-Section */
 
-.trending-movie-section {
-  /* font-family:"Lato", "Open Sans"; */
+.trending-movie-section,
+.trending-movie-section2 {
+  font-family:"Lato", "Open Sans";
   display: flex;
   margin: auto;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 70%;
-  height: 500px;
+  width: 60%;
+  height: 450px;
   border-radius: 25px;
+  margin-bottom: 100px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+  /* margin-top: -200px; */
+  /* z-index: 1; */
 }
 
-/* .trending-movie-card1 {
-  border-radius: 25%;
+.trending-movie-card1,
+.trending-movie-card2  {
+    width: 100%;
+  height: auto;
   overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+}
+.trending-movie1,
+.trending-movie2 {
   display: flex;
-  justify-content:space-around;
-  background-color: #d3d1d1;
-  z-index: 2;
-} */
-
-.trending-movie1 {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 1;
   padding: 20px;
   color: rgb(0, 0, 0);
 }
 
-.tm-info-conteiner {
+.tm-info-conteiner,
+.tm-info-conteiner2 {
   flex-direction: column;
   overflow-wrap: break-word;
 }
-.trending-movie-info1 h4 {
+.trending-movie-info1 h4,
+.trending-movie-info2 h4 {
   margin-bottom: 20px;
   font-weight:normal;
 }
-.trending-movie-info1 h1 {
+.trending-movie-info1 h1,
+.trending-movie-info1 h2 {
   font-size: 5vh;
   max-width: 70%;
   margin-bottom: 10px;
   font-weight: bolder;
 }
 
-.trending-movie-info1 p {
+.trending-movie-info1 p,
+.trending-movie-info2 p {
   margin-top: 15px;
   row-gap: 10px;
   font-size: medium;
@@ -275,7 +279,6 @@ iframe {
 .control-right-btn {
   position:absolute;
   top: 50%;
-  transform: translateY(-50%);
   background-color: rgba(212, 212, 212, 0.5);
   color: rgb(0, 0, 0);
   border: none;
@@ -285,23 +288,42 @@ iframe {
   z-index: 1;
   border-radius: 50%;
 }
-
-.control-left-btn {
+.control-left-btn2,
+.control-right-btn2 {
+  position:absolute;
+  top: 50%;
+  background-color: rgba(212, 212, 212, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+}
+.control-left-btn,
+.control-left-btn2 {
   left: -30px;
 }
 
-.control-right-btn {
+.control-right-btn,
+.control-right-btn2 {
   right: -30px;
 }
 
-.trending-movie-watch-button {
+.trending-movie-watch-button,
+.trending-movie-watch-button2 {
   display: flex;
   margin-top: 20px;
   gap: 30px;
   border-radius: 30%;
+
 }
 
-.tm-watch-full-movie {
+.tm-watch-full-movie,
+.tm-watch-full-movie2 {
+  cursor: pointer;
+
   background-color:#cb0f54cd;
   color: white;
   padding: 10px 20px;
@@ -311,7 +333,9 @@ iframe {
 
 
 }
-.tm-watch-trailer{
+.tm-watch-trailer,
+.tm-watch-trailer2 {
+  cursor: pointer;
   font-family: "lato";
   color: blue;
   background: none;
@@ -319,21 +343,25 @@ iframe {
   font-weight: bold;
   
 }
-.tm-watch-full-movie:hover {
+.tm-watch-full-movie:hover,
+.tm-watch-full-movie2:hover  {
   background-color: #4b0113; 
 }
-.tm-watch-trailer:hover {
+.tm-watch-trailer:hover,
+.tm-watch-trailer2:hover {
   color: #000000; 
 }
 
-.trending-movie-poster img {
+.trending-movie-poster img,
+.trending-movie-poster2 img {
   display: flex;
   width: 200px;
   height: auto;
   justify-content: flex-end;
   border-radius: 10px;
 }
-.trending-movie-card-background {
+.trending-movie-card-background,
+.trending-movie-card-background2 {
   position: absolute;
   top: 0;
   left: 0;
