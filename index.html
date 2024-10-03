@@ -12,30 +12,46 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- Büşra - Header Section Start  -->
     <header class="header">
       <nav class="nav">
-        <a href="index.html" class="logo"
-          ><img src="img/header_section/header-logo.png" alt="#"
-        /></a>
-        <div class="nav-menu">
+        <a href="index.html" class="logo"><img src="img/header_section/header-logo.png" alt="#"></a>
+      <div class="nav-menu">
           <ul class="nav-list">
-            <li><a href="#" class="nav-link active">Featured</a></li>
-            <li><a href="#" class="nav-link">Top Categories</a></li>
+            <li><a href="#" class="nav-link active ">Featured</a></li>
+            <li><a href="#top-categories-section" class="nav-link">Top Categories</a></li>
             <li><a href="#" class="nav-link">All Categories</a></li>
-            <li><a href="#" class="nav-link">Pricing</a></li>
+            <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
           </ul>
-        </div>
-        <hr class="line" />
+      </div>
+        <hr class="line">
         <div class="main">
+          <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <a href="#" class="btn-main fs-fw main:hover">LOGIN</a>
-          <a href="#" class="btn-main fs-fw main:hover active">REGISTER</a>
+          <a href="sign-up.html" class="btn-main fs-fw main:hover active">REGISTER</a>
           <div class="ic-settings"><i class="fa-solid fa-gear fa-xl"></i></div>
         </div>
       </nav>
+      <div class="mobile-header" id="mobile-header">
+        <div class="mobile-nav-menu">
+          <ul class="nav-list1">
+            <li class="nav-list-item"><a href="#" class="nav-link-blc">Featured</a></li>
+            <li class="nav-list-item"><a href="#top-categories-section" class="nav-link-blc">Top Categories</a></li>
+            <li class="nav-list-item"><a href="#" class="nav-link-blc">All Categories</a></li>
+            <li class="nav-list-item"><a href="#pricing-section" class="nav-link-blc">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
+    
     <!--  Büşra - Header Section End  -->
 
     <!--Asli/Hero-Section-Başlangıç-->
@@ -118,79 +134,21 @@
     </div>
     <!-- END Cerenucak/BE-15-implement-promotion-banner -->
     <!------ Büşra - Top Categories Start ------->
-    <section class="top-categories-section">
+    <section class="top-categories-section" id="top-categories-section">
       <div class="top-section">
         <h1 class="title">Top <span>Categories</span></h1>
-        <div class="small-cards">
-          <div class="card small">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/alvin_and_the_chipmunks_the_squeakquel_500x749.jpg?v=1708706299"
-              alt="Academy Awards"
-            />
-            <div class="content">
-              <h2>Academy Awards</h2>
-              <p>2.4K Films</p>
-            </div>
-          </div>
-          <div class="card small">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/ItemP5372_jpg_500x749.jpg?v=1705609307"
-              alt="Animations"
-            />
-            <div class="content">
-              <h2>Animations</h2>
-              <p>2.4K Films</p>
-            </div>
-          </div>
+        <div class="small-cards" id="right-top">
         </div>
       </div>
       <div class="bottom-section">
         <div class="left-card-container">
-          <div class="card large">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_500x749.jpg?v=1707491191"
-              alt="Actions"
-            />
-            <div class="content">
-              <h2>Actions</h2>
-              <p>2.4K Films</p>
-              <a href="#" class="explore-btn">EXPLORE</a>
-            </div>
+          <div class="card large" id="cardLarge">
           </div>
-          <div class="small-cards">
-            <div class="card small">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/avatar-the-way-of-water_zqtfz53g_500x749.jpg?v=1654873098"
-                alt="Romance Drama"
-              />
-              <div class="content">
-                <h2>Romance Drama</h2>
-                <p>2.4K Films</p>
-              </div>
-            </div>
-            <div class="card small">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/919f358d50304b68f23b8a811d6e61f2_52511b40-c062-460b-9939-47a19b73afa4_500x749.jpg?v=1706900166"
-                alt="Comedy"
-              />
-              <div class="content">
-                <h2>Comedy</h2>
-                <p>2.4K Films</p>
-              </div>
-            </div>
+          <div class="small-cards" id="left-bottom">
           </div>
         </div>
         <div class="right-card-container">
-          <div class="card super-heroes">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/spider-man_xl8y8ren_500x749.jpg?v=1687524461"
-              alt="Super Heroes"
-            />
-            <div class="content">
-              <h2>Super Heroes</h2>
-              <p>2.4K Films</p>
-              <a href="#" class="explore-btn">EXPLORE</a>
-            </div>
+          <div class="card large super-heroes" id="super-heroes">
           </div>
         </div>
       </div>
@@ -198,7 +156,7 @@
     <!------ Büşra - Top Categories End ------->
 
     <!--deniz-BE18-pricing-plan started-->
-    <section>
+    <section id="pricing-section">
       <div class="pricing-section">
         <div class="price-title">
           <h1>
@@ -347,7 +305,7 @@
       </div>
     </section>
     <!--Melek/BE-20/Implement the FAQ section/Html/End -->
-    <script src="./js/index.js"></script>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/fetch-movie-for-categories.js"></script>
   </body>
 </html>
