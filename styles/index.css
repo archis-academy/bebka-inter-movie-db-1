@@ -1352,6 +1352,8 @@ li {
     max-width: 200px;
   }
 }
+
+/*Melek/BE-20/Implement the FAQ section/Css/End*/
 /* Asli/ımplement the events and news section başlangıç */
 .card-container {
   display: flex;
@@ -1422,8 +1424,7 @@ li {
     margin-left: 40px; 
   }
 }
-
-/*Melek/BE-20/Implement the FAQ section/Css/End*/
+/* Asli/ımplement the events and news section bitiş */
 .footer-section {
     display: block;
     justify-content: center;
