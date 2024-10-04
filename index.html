@@ -12,71 +12,88 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- Büşra - Header Section Start  -->
     <header class="header">
       <nav class="nav">
-        <a href="index.html" class="logo"
-          ><img src="img/header_section/header-logo.png" alt="#"
-        /></a>
-        <div class="nav-menu">
+        <a href="index.html" class="logo"><img src="img/header_section/header-logo.png" alt="#"></a>
+      <div class="nav-menu">
           <ul class="nav-list">
-            <li><a href="#" class="nav-link active">Featured</a></li>
-            <li><a href="#" class="nav-link">Top Categories</a></li>
+            <li><a href="#" class="nav-link active ">Featured</a></li>
+            <li><a href="#top-categories-section" class="nav-link">Top Categories</a></li>
             <li><a href="#" class="nav-link">All Categories</a></li>
-            <li><a href="#" class="nav-link">Pricing</a></li>
+            <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
           </ul>
-        </div>
-        <hr class="line" />
+      </div>
+        <hr class="line">
         <div class="main">
+          <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <a href="#" class="btn-main fs-fw main:hover">LOGIN</a>
-          <a href="#" class="btn-main fs-fw main:hover active">REGISTER</a>
+          <a href="sign-up.html" class="btn-main fs-fw main:hover active">REGISTER</a>
           <div class="ic-settings"><i class="fa-solid fa-gear fa-xl"></i></div>
         </div>
       </nav>
+      <div class="mobile-header" id="mobile-header">
+        <div class="mobile-nav-menu">
+          <ul class="nav-list1">
+            <li class="nav-list-item"><a href="#" class="nav-link-blc">Featured</a></li>
+            <li class="nav-list-item"><a href="#top-categories-section" class="nav-link-blc">Top Categories</a></li>
+            <li class="nav-list-item"><a href="#" class="nav-link-blc">All Categories</a></li>
+            <li class="nav-list-item"><a href="#pricing-section" class="nav-link-blc">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
+    
     <!--  Büşra - Header Section End  -->
 
     <!--Asli/Hero-Section-Başlangıç-->
-    <section class="hero-section">
-      <div class="hero-overlay">
-        <div class="video-background">
-          <iframe
-            id="myVideo"
-            src=""
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <div class="custom-shape-divider-bottom-1725539209">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-          </div>
-        </div>
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="video-background">
+      <iframe
+        id="myVideo"
+        src=""
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <div class="custom-shape-divider-bottom-1725539209">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
       </div>
-    
-      <div class="hero-content">
-        <p>Vivamus sit amet interdum elit</p>
-        <h2 id="movieTitle">Mancing Mania</h2>
-        <h2>The Movie</h2>
-        <p id="releaseDate">On the air: 01.11.20</p>
-      </div>
-    
-      <div class="hero-button">
-        <p class="hero-button-p">
-          WATCH
-          <button class="watch-trailer-btn" onclick="playVideo()">
-            <img class="play-button" src="images/transparent-play-button.png" alt="play" />
-          </button>
-          TRAILER
-        </p>
-      </div>
-    </section>
-    <!--Asli/Hero-Section-Bitiş-->
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <p>Vivamus sit amet interdum elit</p>
+    <h2 id="movieTitle">Mancing Mania</h2>
+    <h2>The Movie</h2>
+    <p id="releaseDate">On the air: 01.11.20</p>
+  </div>
+
+  <div class="hero-button">
+    <p id="watchTrailerText" class="hero-button-p">
+      WATCH
+      <button class="watch-trailer-btn" id="watchTrailerBtn" onclick="playVideo()">
+        <img class="play-button" src="images/transparent-play-button.png" alt="play" />
+      </button>
+      TRAILER
+    </p>
+  </div>
+</section>
+<!--Asli/Hero-Section-Bitiş-->
+
     
     <!-- Cerenucak/BE-15-implement-promotion-banner -->
     <div class="promotion-banner-container">
@@ -117,79 +134,21 @@
     </div>
     <!-- END Cerenucak/BE-15-implement-promotion-banner -->
     <!------ Büşra - Top Categories Start ------->
-    <section class="top-categories-section">
+    <section class="top-categories-section" id="top-categories-section">
       <div class="top-section">
         <h1 class="title">Top <span>Categories</span></h1>
-        <div class="small-cards">
-          <div class="card small">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/alvin_and_the_chipmunks_the_squeakquel_500x749.jpg?v=1708706299"
-              alt="Academy Awards"
-            />
-            <div class="content">
-              <h2>Academy Awards</h2>
-              <p>2.4K Films</p>
-            </div>
-          </div>
-          <div class="card small">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/ItemP5372_jpg_500x749.jpg?v=1705609307"
-              alt="Animations"
-            />
-            <div class="content">
-              <h2>Animations</h2>
-              <p>2.4K Films</p>
-            </div>
-          </div>
+        <div class="small-cards" id="right-top">
         </div>
       </div>
       <div class="bottom-section">
         <div class="left-card-container">
-          <div class="card large">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_500x749.jpg?v=1707491191"
-              alt="Actions"
-            />
-            <div class="content">
-              <h2>Actions</h2>
-              <p>2.4K Films</p>
-              <a href="#" class="explore-btn">EXPLORE</a>
-            </div>
+          <div class="card large" id="cardLarge">
           </div>
-          <div class="small-cards">
-            <div class="card small">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/avatar-the-way-of-water_zqtfz53g_500x749.jpg?v=1654873098"
-                alt="Romance Drama"
-              />
-              <div class="content">
-                <h2>Romance Drama</h2>
-                <p>2.4K Films</p>
-              </div>
-            </div>
-            <div class="card small">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/919f358d50304b68f23b8a811d6e61f2_52511b40-c062-460b-9939-47a19b73afa4_500x749.jpg?v=1706900166"
-                alt="Comedy"
-              />
-              <div class="content">
-                <h2>Comedy</h2>
-                <p>2.4K Films</p>
-              </div>
-            </div>
+          <div class="small-cards" id="left-bottom">
           </div>
         </div>
         <div class="right-card-container">
-          <div class="card super-heroes">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/spider-man_xl8y8ren_500x749.jpg?v=1687524461"
-              alt="Super Heroes"
-            />
-            <div class="content">
-              <h2>Super Heroes</h2>
-              <p>2.4K Films</p>
-              <a href="#" class="explore-btn">EXPLORE</a>
-            </div>
+          <div class="card large super-heroes" id="super-heroes">
           </div>
         </div>
       </div>
@@ -197,7 +156,7 @@
     <!------ Büşra - Top Categories End ------->
 
     <!--deniz-BE18-pricing-plan started-->
-    <section>
+    <section id="pricing-section">
       <div class="pricing-section">
         <div class="price-title">
           <h1>
@@ -282,6 +241,29 @@
       </div>
     </section>
     <!--deniz-BE-18-pricing-plan finished-->
+     <!--Asli/Be-4/Implement-the-Events-and-News-section Başlangıç-->
+     <div class="card-container">
+      <div class="card">
+        <img src="images/event.png" alt="Event Image" class="card-image">
+        <div class="card-content">
+          <h3 class="card-title">EVENT</h3>
+          <p class="card-description">Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
+          <a href="#" class="card-link">READ MORE</a>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="images/news.png" alt="News Image" class="card-image">
+        <div class="card-content">
+          <h3 class="card-title">NEWS</h3>
+          <p class="card-description">Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
+          <a href="#" class="card-link">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!--Asli/Be-4/Implement-the-Events-and-News-section Bitiş-->
     <!--Melek/BE-20/Implement the FAQ section/Html/Start -->
     <section class="faq-section">
       <div class="faq-image-div">
@@ -345,33 +327,88 @@
         </div>
       </div>
     </section>
+    <footer class="footer-section">
+      <div class="footer-section-container">
+
+        <div class="footer-section-video-container">
+          <img src="images/video-logo.svg" alt="video video-logo" class="footer-section-video-image">
+          <h3 class="footer-section-video-text">Video</h3>
+          <p class="footer-section-video-description">© Luxi Theme 2020</p>
+        </div>
+
+        <div class="footer-section-card-container">
+          <div class="footer-section-card">
+            <h3 class="footer footer-section-card-title">COMPANY</h3>
+            <ul class="footer-section-list">
+              <li class="footer-section-card-list-item">Donec dignissim</li>
+              <li class="footer-section-card-list-item">Curabitur egestas</li>
+              <li class="footer-section-card-list-item">Nam posuere</li>
+              <li class="footer-section-card-list-item">Aenean facilisis</li>
+            </ul>
+          </div>
+          <div class="footer-section-card">
+            <h3 class="footer footer-section-card-title">SERVICES</h3>
+            <ul class="footer-section-list">
+              <li class="footer-section-card-list-item">Cras convallis</li>
+              <li class="footer-section-card-list-item">Vestibulum faucibus</li>
+              <li class="footer-section-card-list-item">Quisque lacinia purus</li>
+              <li class="footer-section-card-list-item">Aliquam nec ex</li>
+            </ul>
+          </div>
+          <div class="footer-section-card">
+            <h3 class="footer footer-section-card-title">LEGAL</h3>
+            <ul class="footer-section-list">
+              <li class="footer-section-card-list-item">Suspendisse porttitor</li>
+              <li class="footer-section-card-list-item">Nam posuere</li>
+              <li class="footer-section-card-list-item">Curabitur egestas </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-section-menu">
+          <div class="footer-section-social-container">
+             <button class="button">
+                <a
+                  ><img src="images/social-facebook.svg" alt="#" class="social-img"
+                /></a>
+              </button>
+              <button class="button">
+                <a
+                  ><img src="images/social-linkedin.svg" alt="#" class="social-img"
+                /></a>
+              </button>
+              <button class="button">
+                <a
+                  ><img src="images/social-twitter.svg" alt="#" class="social-img"
+                /></a>
+              </button>
+              <button class="button">
+                <a
+                  ><img
+                    src="images/social-instagram.svg" class="social-img"
+                    alt="#"
+                /></a>
+              </button>
+
+          </div>
+           <div class="language-selector">
+             <select name="language" id="language" class="language-selector">
+              <option value="en">🌐English-En</option>
+              <option value="tr">🌐Türkçe-Tr</option>
+              <option value="fr">🌐Français-Fr</option>
+             </select>
+              
+             
+           </div>
+           
+        </div>
+        </div>
+       
+        </div>
+
+    </footer>
+
     <!--Melek/BE-20/Implement the FAQ section/Html/End -->
-
-
-    <!--Asli/Be-4/Implement-the-Events-and-News-section Başlangıç-->
-    <div class="card-container">
-      <div class="card">
-        <img src="images/event.png" alt="Event Image" class="card-image">
-        <div class="card-content">
-          <h3 class="card-title">EVENT</h3>
-          <p class="card-description">Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
-          <a href="#" class="card-link">READ MORE</a>
-        </div>
-      </div>
-    
-      <div class="card">
-        <img src="images/news.png" alt="News Image" class="card-image">
-        <div class="card-content">
-          <h3 class="card-title">NEWS</h3>
-          <p class="card-description">Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
-          <a href="#" class="card-link">READ MORE</a>
-        </div>
-      </div>
-    </div>
-    
-    
-    <!--Asli/Be-4/Implement-the-Events-and-News-section Bitiş-->
-    <script src="./js/index.js"></script>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/fetch-movie-for-categories.js"></script>
   </body>
 </html>
