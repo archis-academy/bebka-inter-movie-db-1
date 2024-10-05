@@ -1752,3 +1752,41 @@ a.btn-wrap {
 }
 
 /*----deniz most watched movies finised---*/
+/*-----deniz most watched responsive started---*/
+@media screen and (max-width: 970px) {
+  .featured-space {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-space {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .main-paragraph {
+    font-size: 16px;
+    max-width: 100%;
+  }
+ 
+  .first-movie, .second-movie, .third-movie {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .main-paragraph {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .movie-card-container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .first-movie, .second-movie, .third-movie {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*-----deniz most watched responsive finished---*/
