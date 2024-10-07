@@ -1355,7 +1355,7 @@ li {
 
 /*Melek/BE-20/Implement the FAQ section/Css/End*/
 /* Asli/ımplement the events and news section başlangıç */
-.card-container {
+.card-new-container {
   display: flex;
   justify-content: center; 
   align-items: center; 
@@ -1373,7 +1373,7 @@ li {
   flex-basis: 45%; 
 }
 
-.card-image {
+.card-new-image {
   width: 150px; 
   height: 150px; 
   object-fit: cover;
@@ -1381,44 +1381,44 @@ li {
   border-bottom-left-radius: 15px;
 }
 
-.card-content {
+.card-new-content {
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center; 
 }
 
-.card-title {
+.card-new-title {
   font-size: 14px;
   color: gray;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.card-description {
+.card-new-description {
   font-size: 14px;
   color: #333;
   margin-bottom: 20px;
 }
 
-.card-link {
+.card-new-link {
   color: #3b49df;
   text-decoration: none;
   font-weight: bold;
 }
 
-.card-link:hover {
+.card-new-link:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-  .card-container {
+  .card-new-container {
     flex-direction: column;
     align-items: center; 
     gap: 20px; 
   }
 
-  .card {
+  .card-new {
     flex-basis: 100%; 
     margin-bottom: 20px; 
     margin-left: 40px; 
