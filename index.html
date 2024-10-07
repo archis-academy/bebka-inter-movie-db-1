@@ -5,18 +5,466 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MovieDB</title>
     <link rel="stylesheet" href="styles/index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--  Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <!-- melike/BE-21-footer-top section started -->
-    <section class="get-started">
-      <div class="content">
-        <p>What are you waiting for?</p>
-        <a href="#" class="btn">GET STARTED</a>
+    <!-- Büşra - Header Section Start  -->
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="logo"><img src="img/header_section/header-logo.png" alt="#"></a>
+      <div class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link active ">Featured</a></li>
+            <li><a href="#top-categories-section" class="nav-link">Top Categories</a></li>
+            <li><a href="#" class="nav-link">All Categories</a></li>
+            <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
+          </ul>
+      </div>
+        <hr class="line">
+        <div class="main">
+          <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a href="#" class="btn-main fs-fw main:hover">LOGIN</a>
+          <a href="sign-up.html" class="btn-main fs-fw main:hover active">REGISTER</a>
+          <div class="ic-settings"><i class="fa-solid fa-gear fa-xl"></i></div>
+        </div>
+      </nav>
+      <div class="mobile-header" id="mobile-header">
+        <div class="mobile-nav-menu">
+          <ul class="nav-list1">
+            <li class="nav-list-item"><a href="#" class="nav-link-blc">Featured</a></li>
+            <li class="nav-list-item"><a href="#top-categories-section" class="nav-link-blc">Top Categories</a></li>
+            <li class="nav-list-item"><a href="#" class="nav-link-blc">All Categories</a></li>
+            <li class="nav-list-item"><a href="#pricing-section" class="nav-link-blc">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <!--  Büşra - Header Section End  -->
+
+    <!--Asli/Hero-Section-Başlangıç-->
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="video-background">
+      <iframe
+        id="myVideo"
+        src=""
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <div class="custom-shape-divider-bottom-1725539209">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <p>Vivamus sit amet interdum elit</p>
+    <h2 id="movieTitle">Mancing Mania</h2>
+    <h2>The Movie</h2>
+    <p id="releaseDate">On the air: 01.11.20</p>
+  </div>
+
+  <div class="hero-button">
+    <p id="watchTrailerText" class="hero-button-p">
+      WATCH
+      <button class="watch-trailer-btn" id="watchTrailerBtn" onclick="playVideo()">
+        <img class="play-button" src="images/transparent-play-button.png" alt="play" />
+      </button>
+      TRAILER
+    </p>
+  </div>
+</section>
+<!--Asli/Hero-Section-Bitiş-->
+<section class="featured-space" id="featured" style="overflow: hidden;">
+        
+  <div class="left-space">
+      <div class="text-watched">
+        <div class="title-main align-left">
+          <h4 class="primary-title"> The Most Watched</h4>
+          <h4 class="next-title">Movies</h4>
+        </div>
+        <p class="main-paragraph"> Cras vonvallis lacus orci, trsitique tincidunt magna consequat in.</p>
+      </div>
+  </div>
+
+  <div class="movie-card-container">
+      <div class="first-movie">
+        <div class="card movie">
+          <a class="btn-wrap waves-effect" href="detail-movie.html">
+            <span class="figure">
+              <img src="https://res.cloudinary.com/imajin/image/upload/v1592043744/movie/movie2_cxxamr.jpg" alt="For All Mankind">
+              <span class="figcaption">new</span>
+            </span>
+            <span class="sub-text">Cras convallis lacus</span>
+          </a>
+        </div>
+      </div>
+   <div class="second-movie">
+      <div class="card movie" id="play-trailer-card">
+        <span class="figure">
+          <i class="fa-solid fa-play"></i> 
+          <img src="https://res.cloudinary.com/imajin/image/upload/v1592043744/movie/movie3_a5wvov.png"> 
+          <span class="figcaption">new</span>
+          <i class="fas fa-play play-icon"></i>
+        </span>
+        <span class="sub-text">Cras convallis lacus</span>
+      </div>
+    </div>
+
+    <div class="third-movie">
+      <div class="card movie">
+        <a class="btn-wrap waves-effect" href="detail-movie.html">
+        <span class="figure">
+          <img src="https://res.cloudinary.com/imajin/image/upload/v1592043731/movie/movie4_gsfgzx.jpg"> 
+          <span class="figcaption">new</span>
+        </span>
+          <span class="sub-text">Cras convallis Lacus</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!---deniz-most-watched-movies started -->
+
+    <!-- Cerenucak/BE-15-implement-promotion-banner -->
+    <div class="promotion-banner-container">
+      <div class="promotion-banner-container-right">
+        <h2>
+          <span>FREE</span>
+          <span>Rent 3 Days </span>
+        </h2>
+        <img
+          src="implement-promotion-banner/Bitmap2.png"
+          alt="implement-promotion-banner-left"
+        />
+      </div>
+      <div class="promotion-banner-container-center">
+        <h2>
+          <span class="free">FREE</span>
+          <span class="movies">MOVIES</span>
+        </h2>
+        <img
+          src="implement-promotion-banner/Bitmap1.png"
+          alt="implement-promotion-banner-center-img"
+        />
+        <img
+          src="implement-promotion-banner/coffee.svg"
+          alt="implement-promotion-banner-middle-icon"
+        />
+      </div>
+      <div class="promotion-banner-container-left">
+        <h2>
+          <span>FREE</span>
+          <span>Up to 5 Episodes</span>
+        </h2>
+        <img
+          src="implement-promotion-banner/Bitmap.png"
+          alt="implement-promotion-banner-rigt"
+        />
+      </div>
+    </div>
+    <!-- END Cerenucak/BE-15-implement-promotion-banner -->
+    <!------ Büşra - Top Categories Start ------->
+    <section class="top-categories-section" id="top-categories-section">
+      <div class="top-section">
+        <h1 class="title">Top <span>Categories</span></h1>
+        <div class="small-cards" id="right-top">
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="left-card-container">
+          <div class="card large" id="cardLarge">
+          </div>
+          <div class="small-cards" id="left-bottom">
+          </div>
+        </div>
+        <div class="right-card-container">
+          <div class="card large super-heroes" id="super-heroes">
+          </div>
+        </div>
       </div>
     </section>
-    <!-- melike/BE-21-footer-top section finished -->
+    <!------ Büşra - Top Categories End ------->
 
-    <script src="index.js"></script>
+    <!--deniz-BE18-pricing-plan started-->
+    <section id="pricing-section">
+      <div class="pricing-section">
+        <div class="price-title">
+          <h1>
+            Flexible
+            <span>Pricing and Plan</span>
+          </h1>
+        </div>
+
+        <div class="pricing-cards-container">
+          <div class="card-basic">
+            <h2>BASIC</h2>
+            <p class="price">Free</p>
+            <ul>
+              <li>Nam sollicitudin dignissim</li>
+              <li>Cras convallis lacus</li>
+              <li>Quisque ut metus</li>
+            </ul>
+            <p class="basic-description">
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <button class="choose-basic">CHOOSE PLAN</button>
+          </div>
+
+          <div class="card-best">
+            <div class="value-header">
+              <h2>
+                BEST VALUE
+                <span class="dollar">24</span>
+              </h2>
+            </div>
+
+            <ul>
+              <li>Nam sollicitudin dignissim</li>
+              <li>Cras convallis lacus</li>
+              <li>Quisque ut metus</li>
+              <li>Vivamus sit amet</li>
+              <li>Cras convallis lacus orci</li>
+            </ul>
+            <p class="best-description">
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <button class="choose-best">CHOOSE PLAN</button>
+          </div>
+
+          <div class="card-pro">
+            <h2>PRO</h2>
+            <p class="price">54</p>
+            <ul>
+              <li>Nam sollicitudin dignissim</li>
+              <li>Cras convallis lacus</li>
+              <li>Quisque ut metus</li>
+              <li>Vivamus sit amet</li>
+              <li>Cras convallis lacus orci</li>
+            </ul>
+
+            <p class="pro-description">
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <button class="choose-pro">CHOOSE PLAN</button>
+          </div>
+
+          <div class="card-enterprise">
+            <h2>ENTERPRİSE</h2>
+            <p class="price">99</p>
+            <ul>
+              <li>Nam sollicitudin dignissim</li>
+              <li>Cras convallis lacus</li>
+              <li>Quisque ut metus</li>
+              <li>Vivamus sit amet</li>
+              <li>Cras convallis lacus orci</li>
+            </ul>
+            <p class="enterprice-description">
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <button class="choose-enterprice">CHOOSE PLAN</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="rectancle-background">
+        <img src="images/pricingimgs/rectangleimg.svg" />
+      </div>
+    </section>
+    <!--deniz-BE-18-pricing-plan finished-->
+    <!--Melek/BE-20/Implement the FAQ section/Html/Start -->
+    <section class="faq-section">
+      <div class="faq-image-div">
+        <h3 class="faq-title">
+          Frequently <br />
+          <span class="faq-subtitle">Answers & Questions</span>
+        </h3>
+        <p class="faq-paragraph">
+          Vestibulum sit amet tortor sit amet libero lobortis semper at et odio.
+        </p>
+        <img
+          src="./images/faq-section/FAQ-megaphone.svg"
+          class="megaphone-img"
+        />
+      </div>
+      <div class="akordiyon-div">
+        <div class="content-box">
+          <div class="content-title-div">
+            <h4 class="content-title">Pellentesque ac bibendum tortor?</h4>
+          </div>
+          <p class="content-subtitle">
+            Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus
+            auctor.
+          </p>
+        </div>
+        <div class="content-box">
+          <div class="content-title-div">
+            <h4 class="content-title">In mi nulla, fringilla vestibulum?</h4>
+          </div>
+          <p class="content-subtitle">
+            Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus
+            auctor.
+          </p>
+        </div>
+        <div class="content-box">
+          <div class="content-title-div">
+            <h4 class="content-title">Quisque lacinia purus ut libero?</h4>
+          </div>
+          <p class="content-subtitle">
+            Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus
+            auctor.
+          </p>
+        </div>
+        <div class="content-box">
+          <div class="content-title-div">
+            <h4 class="content-title">Quisque ut metus sit amet augue?</h4>
+          </div>
+          <p class="content-subtitle">
+            Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus
+            auctor.
+          </p>
+        </div>
+        <div class="content-box">
+          <div class="content-title-div">
+            <h4 class="content-title">Pellentesque ac bibendum tortor?</h4>
+          </div>
+          <p class="content-subtitle">
+            Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus
+            auctor.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Melek/BE-20/Implement the FAQ section/Html/End -->
+<!--Asli/Be-4/Implement-the-Events-and-News-section Başlangıç-->
+<div class="card-new-container">
+  <div class="card-new">
+    <img src="images/event.png" alt="Event Image" class="card-new-image">
+    <div class="card-new-content">
+      <h3 class="card-new-title">EVENT</h3>
+      <p class="card-new-description">Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
+      <a href="#" class="card-new-link">READ MORE</a>
+    </div>
+  </div>
+
+  <div class="card-new">
+    <img src="images/news.png" alt="News Image" class="card-new-image">
+    <div class="card-new-content">
+      <h3 class="card-new-title">NEWS</h3>
+      <p class="card-new-description">Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
+      <a href="#" class="card-new-link">READ MORE</a>
+    </div>
+  </div>
+</div>
+<!--Asli/Be-4/Implement-the-Events-and-News-section Bitiş-->
+<!-- melike/BE-21-footer-top section started -->
+<section class="get-started">
+  <div class="content">
+    <p>What are you waiting for?</p>
+    <a href="#" class="btn">GET STARTED</a>
+  </div>
+</section>
+<!-- melike/BE-21-footer-top section finished -->
+    <footer class="footer-section">
+      <div class="footer-section-container">
+
+        <div class="footer-section-video-container">
+          <img src="images/video-logo.svg" alt="video video-logo" class="footer-section-video-image">
+          <h3 class="footer-section-video-text">Video</h3>
+          <p class="footer-section-video-description">© Luxi Theme 2020</p>
+        </div>
+
+        <div class="footer-section-card-container">
+          <div class="footer-section-card">
+            <h3 class="footer footer-section-card-title">COMPANY</h3>
+            <ul class="footer-section-list">
+              <li class="footer-section-card-list-item">Donec dignissim</li>
+              <li class="footer-section-card-list-item">Curabitur egestas</li>
+              <li class="footer-section-card-list-item">Nam posuere</li>
+              <li class="footer-section-card-list-item">Aenean facilisis</li>
+            </ul>
+          </div>
+          <div class="footer-section-card">
+            <h3 class="footer footer-section-card-title">SERVICES</h3>
+            <ul class="footer-section-list">
+              <li class="footer-section-card-list-item">Cras convallis</li>
+              <li class="footer-section-card-list-item">Vestibulum faucibus</li>
+              <li class="footer-section-card-list-item">Quisque lacinia purus</li>
+              <li class="footer-section-card-list-item">Aliquam nec ex</li>
+            </ul>
+          </div>
+          <div class="footer-section-card">
+            <h3 class="footer footer-section-card-title">LEGAL</h3>
+            <ul class="footer-section-list">
+              <li class="footer-section-card-list-item">Suspendisse porttitor</li>
+              <li class="footer-section-card-list-item">Nam posuere</li>
+              <li class="footer-section-card-list-item">Curabitur egestas </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-section-menu">
+          <div class="footer-section-social-container">
+             <button class="button">
+                <a
+                  ><img src="images/social-facebook.svg" alt="#" class="social-img"
+                /></a>
+              </button>
+              <button class="button">
+                <a
+                  ><img src="images/social-linkedin.svg" alt="#" class="social-img"
+                /></a>
+              </button>
+              <button class="button">
+                <a
+                  ><img src="images/social-twitter.svg" alt="#" class="social-img"
+                /></a>
+              </button>
+              <button class="button">
+                <a
+                  ><img
+                    src="images/social-instagram.svg" class="social-img"
+                    alt="#"
+                /></a>
+              </button>
+
+          </div>
+           <div class="language-selector">
+             <select name="language" id="language" class="language-selector">
+              <option value="en">🌐English-En</option>
+              <option value="tr">🌐Türkçe-Tr</option>
+              <option value="fr">🌐Français-Fr</option>
+             </select>
+              
+             
+           </div>
+           
+        </div>
+        </div>
+       
+        </div>
+
+    </footer>
+
+    
+    <script src="js/index.js"></script>
+    <script src="js/fetch-movie-for-categories.js"></script>
   </body>
 </html>

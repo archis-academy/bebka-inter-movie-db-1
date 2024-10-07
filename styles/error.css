@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.error-section {
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  gap: 30px;
+}
+.error-code-wrapper {
+  position: relative;
+  width: 211px;
+  height: 246px;
+  margin-bottom: 20px;
+}
+.error-code {
+  font-weight: 700;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: #880e4f;
+  z-index: 1;
+}
+.error-image {
+  width: 100%;
+  height: 100%;
+  background: url("../images/error-bg.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 8px;
+}
+.divider {
+  height: 160px;
+  width: 2px;
+  background-color: #d3d3d3;
+  margin: 0px 20px;
+}
+.error-message {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.error-message h1 {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.error-message p {
+  font-weight: 500;
+  margin: 10px 0;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 16px;
+  max-width: 28ch;
+  line-height: 22px;
+}
+.error-message .error-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #e91e63;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #e91e63;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  align-self: flex-start;
+}
+.error-message .error-btn:hover {
+  background-color: #e91e63;
+  color: white;
+}
+@media (max-width: 725px) {
+  .error-section {
+    gap: 15px;
+  }
+  .error-code {
+    font-size: 70px;
+  }
+  .error-code-wrapper {
+    width: 172px;
+    height: 200px;
+  }
+  .error-message h1 {
+    font-size: 20px;
+  }
+  .error-message p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 597px) {
+  .error-section {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .divider {
+    display: none;
+  }
+  .error-message {
+    text-align: center;
+    align-items: center;
+  }
+  .error-message .error-btn {
+    align-self: center;
+  }
+}
+@media (max-width: 400px) {
+  .error-code {
+    font-size: 60px;
+  }
+  .error-code-wrapper {
+    width: 140px;
+    height: 161px;
+  }
+  .error-message h1 {
+    font-size: 18px;
+  }
+  .error-message p {
+    font-size: 13px;
+  }
+  .error-message .error-btn {
+    font-size: 14px;
+  }
+}
