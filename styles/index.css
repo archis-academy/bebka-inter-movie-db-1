@@ -1426,9 +1426,10 @@ li {
 }
 /* Asli/ımplement the events and news section bitiş */
 .footer-section {
-    display: block;
-    justify-content: center;
-    padding-top: 24px;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  padding-top: 24px;
 }
 
 
@@ -1476,6 +1477,7 @@ li {
 .footer-section-card{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer-section-list{
@@ -1548,7 +1550,7 @@ li {
         gap: 20px;
     }
 }
-@media(max-width:780px){
+@media(max-width:830px){
     .footer-section-video-container{
         flex-direction: row;
         gap: 20px;
@@ -1827,22 +1829,33 @@ a.btn-wrap {
 .get-started {
   background-image: url("../images/Rectangle.png"); 
   background-size: cover; 
-  background-position: center;
+  background-position: top ;
   height: 130vh;
   display: flex;
+  justify-content: space-around;
+  text-align: center;
+  overflow: hidden; 
+  flex-direction: column;
+  gap: 30px;
+}
+
+.get-started .content{
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: hidden; 
+  padding-top: 100px;
 }
 
 
-.get-started p {
+.get-started-title{
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 30px;
   color: rgba(0, 0, 0, 0.87);
-  margin-block: 50px;
+  padding-top: 50px;
+  margin-block: 35px;
 }
 
 .get-started .btn {
@@ -1852,7 +1865,7 @@ a.btn-wrap {
   text-decoration: none;
   color: #FFFFFF;
   background-color: rgba(48, 79, 254, 1);
-  padding: 20px 60px;
+  padding: 16px 50px;
   border-radius: 50px;
   transition: background-color 0.8s ease;
 }
@@ -1869,9 +1882,10 @@ a.btn-wrap {
 
 @media(max-width: 1000px){
   .get-started{
-    background-size: calc(100% + 15px)100%;
+    background-size: calc(126% + 30px) 100%;
+    height: 120vh;
   }
-  .get-started p{
+  .get-started-title{
     font-size: 25px;
   }
 }
@@ -1879,10 +1893,9 @@ a.btn-wrap {
 @media(max-width: 720px){
   .get-started{
     background-size: cover;
-    height: 100vh;
 
   }
-  .get-started p{
+  .get-started-title{
     font-size: 20px;
   }
   .get-started .btn{
@@ -1893,14 +1906,30 @@ a.btn-wrap {
 @media(max-width: 550px){
   .get-started{
     background-position: right;
+    height: 135vh;
   }
-  .get-started p{
+  .get-started .content{
+    padding-top: 0;
+  }
+  .get-started-title{
     font-size: 18px;
-    margin-block: 35px;
   }
   .get-started .btn{
     font-size: 16px;
     padding: 12px 30px;
+  }
+}
+
+@media(max-width: 360px){
+  .get-started{
+    background-position: center;
+    justify-content: flex-end;
+    height: 180vh;
+  }
+  
+  .get-started .btn{
+    font-size: 14px;
+    padding: 10px 25px;
   }
 }
 /* melike/BE-21-footer-top section finished */
