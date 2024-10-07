@@ -1364,7 +1364,7 @@ li {
   max-width: 1200px; 
 }
 
-.card {
+.card-new {
   display: flex;
   align-items: center; 
   background-color: white;
