@@ -1354,6 +1354,77 @@ li {
 }
 
 /*Melek/BE-20/Implement the FAQ section/Css/End*/
+/* Asli/ımplement the events and news section başlangıç */
+.card-new-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 40px; 
+  margin: 20px auto;
+  max-width: 1200px; 
+}
+
+.card-new {
+  display: flex;
+  align-items: center; 
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-basis: 45%; 
+}
+
+.card-new-image {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.card-new-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.card-new-title {
+  font-size: 14px;
+  color: gray;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.card-new-description {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card-new-link {
+  color: #3b49df;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-new-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card-new-container {
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+  }
+
+  .card-new {
+    flex-basis: 100%; 
+    margin-bottom: 20px; 
+    margin-left: 40px; 
+  }
+}
+/* Asli/ımplement the events and news section bitiş */
 .footer-section {
     display: block;
     justify-content: center;
@@ -1525,7 +1596,6 @@ li {
         width: 80px;
     }
 }
-
  /*----deniz most watched movies started---*/
  .featured-space {
   display: flex;
