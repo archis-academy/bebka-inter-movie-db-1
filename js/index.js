@@ -150,3 +150,79 @@ function playVideo() {
   iframe.style.pointerEvents = 'auto';
 }
 //Asli/BE-25-Make-Hero-Section-Dynamic-Bitiş
+
+
+//Melek/BE-2-Implement-hte-all-categories-section-Start
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMjU2MDg1M2Y5OWVhM2QxNTAwMjRkYTY0MzU0NjJjNiIsIm5iZiI6MTcyNjE3OTkyNy4wMjg2OTYsInN1YiI6IjY2ZTM1NzllOTAxM2ZlODcyMjIzYmZlMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VE4_B-sg_0yz557YA98_GtbwS_ndY8fEz2SdFFNYyHA',
+  }
+};
+
+let displayedPosters = new Set();
+
+
+fetch('https://api.themoviedb.org/3/genre/movie/list', options)
+  .then(response => response.json())
+  .then(data => {
+     const genres = data.genres; 
+     
+
+     genres.forEach(genre => {
+        fetchMoviesByGenre(genre);
+     });
+  })
+  .catch(err => console.error(err));
+
+function fetchMoviesByGenre(genre) {
+  fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${genre.id}`, options)
+    .then(response => response.json())
+    .then(data => {
+      if (data.results && data.results.length > 0) {
+        const movie = findUniquePoster(data.results); 
+
+        if (movie) {
+          addCategory(genre, movie);
+        }
+      }
+    })
+    .catch(err => console.error(err));
+}
+
+function findUniquePoster(movies) {
+  for (let movie of movies) {
+    if (!displayedPosters.has(movie.poster_path)) {  
+
+      displayedPosters.add(movie.poster_path); 
+      return movie; 
+    }
+  }
+  return null;
+}
+
+function addCategory(genre, movie) {
+  const sliderTagsId = document.getElementById("slider-tags-id");
+  
+  const categoryItem = document.querySelector(".movie-categories-class").cloneNode(true);
+  categoryItem.querySelector(".categories-image").src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+  categoryItem.querySelector(".categories-tags").textContent = genre.name;
+  
+  sliderTagsId.appendChild(categoryItem);
+}
+
+//Slider:
+const leftSlider = document.getElementById("left-ok");
+const rightSlider = document.getElementById("right-ok");
+const sliderDiv = document.getElementById("slider-tags-id");
+
+leftSlider.addEventListener('click', () => {
+  sliderDiv.scrollLeft -= 150;
+});
+
+rightSlider.addEventListener('click', () => {
+  sliderDiv.scrollLeft += 150;
+});
+
+//Melek/BE-2-Implement-hte-all-categories-section-End
