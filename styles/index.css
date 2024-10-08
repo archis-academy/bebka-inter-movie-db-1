@@ -1451,6 +1451,7 @@ li {
     flex-direction: column;
     max-width: 220px;
     align-items: center;
+    gap: 15px;
 }
 
 .footer-section-video-image{
@@ -1463,7 +1464,7 @@ li {
     font-size: clamp(1rem,2.5vw,1.25rem);
     font-weight: 700;
     line-height: 2rem;
-    color: #000000DE;
+    color: white;
     justify-content: center;
     align-items: center;
 }
@@ -1472,6 +1473,7 @@ li {
     font-family: "Montserrat", sans-serif;
     font-size: clamp(0.675,2.5vw,0.775rem);
     font-weight: 500;
+    color: white;
 }
 
 .footer-section-card{
@@ -1544,7 +1546,9 @@ li {
         flex-direction: row;
         gap: 120px;
     }
-
+    .footer-section-video-description, .footer-section-video-text{
+      color: rgba(0, 0, 0, 0.8);
+    }
     .footer-section-container{
         flex-wrap: wrap;
         gap: 20px;
