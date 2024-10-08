@@ -20,7 +20,7 @@ document.querySelector('.control-left-btn').addEventListener('click', () => {
 });
 function updateFirstMovieCard() {
   const item = movies[0];  
-  const card = document.querySelector('.trending-movie-card1');  
+  const card = document.querySelector('.trending-movie-card');  
   card.querySelector('h1').textContent = item.title;
   card.querySelector('.trending-movie-details span').textContent = `★★★★★ ${item.vote_average}`;
   card.querySelector('.trending-movie-details span:nth-child(2)').textContent = item.runtime ? `| ${item.runtime} mins` : '| Runtime unknown';
@@ -49,7 +49,7 @@ function addMovieToSlider(index) {
     const existingCard = tmSlider.querySelectorAll('.trending-movie-card');  
     if (existingCard.length >= index + 1) return;  
     const item = movies[index];   
-    const card = document.querySelector('.trending-movie-card1').cloneNode(true);   
+    const card = document.querySelector('.trending-movie-card').cloneNode(true);   
     card.querySelector('h1').textContent = item.title;   
     card.querySelector('.trending-movie-details span').textContent = `★★★★★ ${item.vote_average}`;   
     card.querySelector('.trending-movie-details span:nth-child(2)').textContent = item.runtime ? `| ${item.runtime} mins` : '| Runtime unknown';
