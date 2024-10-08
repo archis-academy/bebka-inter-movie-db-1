@@ -15,15 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 
-    // Email input alanına yazı girildiğinde öneriler göster
     emailInput.addEventListener('input', function () {
         const inputValue = emailInput.value;
-        emailSuggestions.innerHTML = ''; // Önceki önerileri temizle
+        emailSuggestions.innerHTML = '';
         emailSuggestions.style.display = 'none';
 
         if (inputValue) {
             const storedData = JSON.parse(localStorage.getItem('users')) || [];
-            const filteredSuggestions = storedData.filter(user => user.email.startsWith(inputValue));
+            const filteredSuggestions = storedData.filter(user => user.email.startsWith(inputValue) && user.remember);
 
             if (filteredSuggestions.length > 0) {
                 filteredSuggestions.forEach(user => {
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Form submit edildiğinde hataları kontrol etme ve localStorage işlemleri
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -56,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let valid = true;
 
-        // Email ve şifre regex kontrolleri
         if (!emailRegex.test(emailInput.value)) {
             emailError.style.display = 'block';
             valid = false;
@@ -68,40 +65,42 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (valid) {
-            if (emailInput.value !== initialEmail) {
-                emailError.style.display = 'block';
-                valid = false;
-                return;
-            }
+            let storedData = JSON.parse(localStorage.getItem('users')) || [];
+            const foundUser = storedData.find(user => user.email === emailInput.value);
 
-            if (passwordInput.value !== initialPassword) {
-                passwordError.style.display = 'block';
-                valid = false;
-                return;
-            }
-
-            if (valid) {
+            if (!foundUser) {
+                storedData.push({
+                    email: emailInput.value,
+                    password: passwordInput.value,
+                    remember: rememberCheckbox.checked
+                });
+                localStorage.setItem('users', JSON.stringify(storedData));
                 loginSuccess.style.display = 'block';
-
-                // Eğer kullanıcı "Beni hatırla" işaretlediyse email ve şifreyi kaydet
-                if (rememberCheckbox.checked) {
-                    localStorage.setItem('email', emailInput.value);
-                    localStorage.setItem('password', passwordInput.value);
-                    localStorage.setItem('remember', true);
-                } else {
-                    // Beni hatırla işaretli değilse, localStorage'a kaydetme
-                    localStorage.removeItem('email');
-                    localStorage.removeItem('password');
-                    localStorage.removeItem('remember');
-                }
-
                 form.reset();
             } else {
-                loginFailed.style.display = 'block';
+                if (emailInput.value !== foundUser.email) {
+                    emailError.style.display = 'block';
+                    valid = false;
+                }
+
+                if (passwordInput.value !== foundUser.password) {
+                    passwordError.style.display = 'block';
+                    valid = false;
+                }
+
+                if (valid) {
+                    loginSuccess.style.display = 'block';
+                    form.reset();
+                } else {
+                    loginFailed.style.display = 'block';
+                }
             }
         }
     });
 });
+
+
+
 
 document.querySelector(".login-facebook").addEventListener("click", function () {
     window.location.href = "https://www.facebook.com/login";
