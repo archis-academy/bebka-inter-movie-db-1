@@ -101,7 +101,7 @@
   margin: 0 auto;
   cursor: pointer;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 .header .line {
   height: 20px;
@@ -217,6 +217,113 @@
   .left-400{
   left: 400px;
 }
+.theme-switcher {
+  font-size: 22px;
+}
+
+/* Büşra- BE-22 - Dark mode Settings Start  */
+body.dark-mode {
+  background-color: #303030;
+  color: white;
+}
+body.dark-mode .header {
+  background-color: #303030;
+}
+
+body.dark-mode .card-basic {
+  background-color: #424242;
+}
+
+body.dark-mode .card-best {
+  background-color: #424242;
+}
+
+body.dark-mode .card-pro {
+  background-color: #424242;
+}
+
+body.dark-mode .card-enterprise {
+  background-color: #424242;
+}
+body.dark-mode .primary-title{
+  color: white;
+}
+body.dark-mode .main-paragraph{
+  color: white;
+}
+body.dark-mode .next-title {
+  color:#c5cae9 ;
+}
+body.dark-mode .card.movie .sub-text {
+  background-color: #424242;
+  color: white;
+}
+body.dark-mode .top-categories-section .title span{
+  color: #c5cae9;
+}
+body.dark-mode .pricing-section h1 span{
+  color: #c5cae9;
+}
+body.dark-mode .faq-section .faq-title{
+  color: white;
+}
+body.dark-mode .faq-section .faq-paragraph{
+  color: white;
+}
+body.dark-mode .faq-section .content-box.active {
+  background-color: #424242;
+}
+body.dark-mode .faq-section .content-box.active .content-subtitle{
+  color: white;
+}
+body.dark-mode .card-new{
+  background-color: #303030;
+}
+body.dark-mode .card-new-description{
+  color: white;
+}
+body.dark-mode .card-enterprise li {
+  color: white;
+}
+body.dark-mode .card-pro li {
+  color: white;
+}
+body.dark-mode .card-basic li {
+  color: white;
+}
+body.dark-mode .card-best li {
+  color: white;
+}
+body.dark-mode .basic-description {
+  color: white;
+}
+body.dark-mode .best-description {
+  color: white;
+}
+body.dark-mode .pro-description {
+  color: white;
+}
+body.dark-mode .enterprice-description {
+  color: white;
+}
+body.dark-mode .pricing-section .price {
+  color: white;
+}
+body.dark-mode .price-title h1{
+  color: white;
+}
+body.dark-mode .nav-link {
+  color: white;
+}
+
+body.dark-mode .btn-main {
+  color: white;
+}
+
+body.dark-mode .footer-section-card-list-item {
+  color: white;
+}
+/* Büşra- BE-22 - Dark mode Settings End  */
 
 /* Büşra - BE-6 Header Section Responsiveness Start */
 @media (max-width: 1270px){
@@ -254,6 +361,18 @@
   .main{
     justify-content: space-between;
   }
+}
+@media (max-width: 490px){
+  .ic-settings{
+    font-size: 10px;
+  }
+  .theme-switcher {
+    font-size: 15px;
+  }
+  .header .main {
+    gap:20px;
+  }
+
 }
 @media (max-width: 445px) {
   .fs-fw{
