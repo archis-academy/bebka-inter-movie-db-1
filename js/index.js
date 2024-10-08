@@ -153,7 +153,7 @@ function playVideo() {
 
 
 //Melek/BE-2-Implement-hte-all-categories-section-Start
-const options = {
+const fetchAPI = {
   method: 'GET',
   headers: {
     accept: 'application/json',
@@ -164,7 +164,7 @@ const options = {
 let displayedPosters = new Set();
 
 
-fetch('https://api.themoviedb.org/3/genre/movie/list', options)
+fetch('https://api.themoviedb.org/3/genre/movie/list', fetchAPI)
   .then(response => response.json())
   .then(data => {
      const genres = data.genres; 
@@ -177,7 +177,7 @@ fetch('https://api.themoviedb.org/3/genre/movie/list', options)
   .catch(err => console.error(err));
 
 function fetchMoviesByGenre(genre) {
-  fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${genre.id}`, options)
+  fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${genre.id}`, fetchAPI)
     .then(response => response.json())
     .then(data => {
       if (data.results && data.results.length > 0) {
