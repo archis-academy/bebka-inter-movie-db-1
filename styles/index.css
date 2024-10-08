@@ -227,6 +227,11 @@ iframe {
 #tm-slider {
   display: flex;
   transition: transform 0.5s ease;
+  opacity: 0;
+}
+
+#tm-slider.visible {
+  opacity: 1;
 }
 
 .trending-movie-section {
