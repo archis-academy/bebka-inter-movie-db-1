@@ -219,6 +219,7 @@
 }
 .theme-switcher {
   font-size: 22px;
+  cursor: pointer;
 }
 
 /* Büşra- BE-22 - Dark mode Settings Start  */
