@@ -27,14 +27,16 @@ fetch(url, {
     .then(response => response.json())
     .then(data => {
       movies = data.results.slice(0, 20);  
-      addMovieToSlider(currentSlide);   
+      movies.map((movie,index) => {
+        addMovieToSlider(index);   
+      })
     })
     .catch(err => console.error('Error fetching data:', err));
 
 function addMovieToSlider(index) {
     const tmSlider = document.querySelector('#tm-slider');
     const existingCard = tmSlider.querySelectorAll('.trending-movie-card');  
-    // if (existingCard.length >= index + 1) return;  
+    if (existingCard.length >= index + 1) return;  
     const item = movies[index];   
     const card = document.querySelector('.trending-movie-card1').cloneNode(true);   
     card.querySelector('h1').textContent = item.title;   
@@ -42,8 +44,20 @@ function addMovieToSlider(index) {
     card.querySelector('.trending-movie-details span:nth-child(2)').textContent = item.runtime ? `| ${item.runtime} mins` : '| Runtime unknown';
     card.querySelector('p').textContent = item.overview;  
     card.querySelector('img').src = `https://image.tmdb.org/t/p/w500${item.poster_path}`;  
+    card.querySelector('.control-right-btn').addEventListener('click', () => {
+      currentSlide++;
+      if (currentSlide > movies.length - 1) currentSlide = movies.length - 1;
+      slider.style.transform = `translateX(-${currentSlide * 850}px)`;
+  });
+
+  card.querySelector('.control-left-btn').addEventListener('click', () => {
+      currentSlide--;
+      if (currentSlide < 0) currentSlide = 0;
+      slider.style.transform = `translateX(-${currentSlide * 850}px)`;
+  });
     tmSlider.appendChild(card); 
 }
+
 
 //Melek/BE-20/Implement the FAQ section/JavaScript/Start
 const akordiyon = document.getElementsByClassName("content-box");
