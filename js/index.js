@@ -8,16 +8,18 @@ let movies = [];
 
 document.querySelector('.control-right-btn').addEventListener('click', () => {
     currentSlide++;
+    const cardWidth = document.querySelector(".trending-movie-card").clientWidth;
     if (currentSlide > movies.length)  currentSlide = 0;  
-    slider.style.transform = `translateX(-${currentSlide * 850}px)`;   
+    slider.style.transform = `translateX(-${currentSlide * cardWidth}px)`;   
     addMovieToSlider(currentSlide);  
 });
 
 document.querySelector('.control-left-btn').addEventListener('click', () => {
     currentSlide--;
+    const cardWidth = document.querySelector(".trending-movie-card").clientWidth;
     if (currentSlide < 0) currentSlide = movies.length - 1;  
-    slider.style.transform = `translateX(-${currentSlide * 850}px)`;  
-});
+    slider.style.transform = `translateX(-${currentSlide * cardWidth}px)`; 
+  });
 function updateFirstMovieCard() {
   const item = movies[0];  
   const card = document.querySelector('.trending-movie-card');  
@@ -59,15 +61,17 @@ function addMovieToSlider(index) {
     
   addEventListener('click', () => {
       currentSlide++;
+      const cardWidth = document.querySelector(".trending-movie-card").clientWidth;
       if (currentSlide > movies.length - 1) currentSlide = 0;
-      slider.style.transform = `translateX(-${currentSlide * 850}px)`;
-  });
+      slider.style.transform = `translateX(-${currentSlide * cardWidth}px)`; 
+      });
 
   card.querySelector('.control-left-btn').addEventListener('click', () => {
       currentSlide--;
+      const cardWidth = document.querySelector(".trending-movie-card").clientWidth;
       if (currentSlide < 0) currentSlide = movies.length - 1;
-      slider.style.transform = `translateX(-${currentSlide * 850}px)`;
-  });
+      slider.style.transform = `translateX(-${currentSlide * cardWidth}px)`; 
+      });
     tmSlider.appendChild(card); 
 }
 
