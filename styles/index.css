@@ -772,6 +772,7 @@ iframe {
 .left-slider {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .categories-section .categories-tags {
