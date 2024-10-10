@@ -211,9 +211,18 @@ iframe {
   width: 70px;
   height: 70px;
 }
-
+#tm-align-div {
+  position: relative;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+}
 /* Asli/Hero-Section-Bitiş */
 /* Cerenucakb/BE-12-Create-Trending-Movies-Section */
+#tm-wrapper {
+    position: absolute;
+    bottom: 0;
+}
 #tm-container {
   width: 800px;
   height: 470px;
@@ -411,6 +420,9 @@ iframe {
 }
 
 @media (max-width: 820px) {
+  #tm-align-div {
+    height: 50px;
+  }
   #tm-container {
     width: 650px;
     height: 350px;
@@ -457,6 +469,9 @@ iframe {
   }
 }
 @media (max-width: 650px) {
+  #tm-align-div {
+    height: 510px;
+  }
   #tm-container {
     width: 500px;
     height: 850px;
@@ -519,6 +534,9 @@ iframe {
   }
 }
 @media (max-width: 500px) {
+  #tm-align-div {
+    height: 470px;
+  }
   #tm-container {
     width: 320px;
     height: 850px;
