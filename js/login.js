@@ -9,9 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const rememberCheckbox = document.getElementById('remember-login');
     const emailSuggestions = document.getElementById('email-suggestions');
 
-    let initialEmail = "";
-    let initialPassword = "";
-
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 
@@ -32,8 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     suggestionItem.onclick = function () {
                         emailInput.value = user.email;
                         passwordInput.value = user.password;
-                        initialEmail = user.email;
-                        initialPassword = user.password;
                         emailSuggestions.innerHTML = '';
                         emailSuggestions.style.display = 'none';
                     };
@@ -100,18 +95,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
-
-
-document.querySelector(".login-facebook").addEventListener("click", function () {
-    window.location.href = "https://www.facebook.com/login";
-});
-
-document.querySelector(".login-twitter").addEventListener("click", function () {
-    window.location.href = "https://twitter.com/login";
-});
-
-document.querySelector(".login-google").addEventListener("click", function () {
-    window.location.href = "https://accounts.google.com/login";
-});
