@@ -324,6 +324,10 @@ body.dark-mode .btn-main {
 body.dark-mode .footer-section-card-list-item {
   color: white;
 }
+body.dark-mode .custom-shape-divider-bottom-1725539209 .shape-fill {
+  fill: #303030 !important;
+}
+
 /* Büşra- BE-22 - Dark mode Settings End  */
 
 /* Büşra - BE-6 Header Section Responsiveness Start */
