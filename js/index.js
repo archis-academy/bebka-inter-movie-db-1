@@ -28,6 +28,10 @@ function updateFirstMovieCard() {
   card.querySelector('.trending-movie-details span:nth-child(2)').textContent = item.runtime ? `| ${item.runtime} mins` : '| Runtime unknown';
   card.querySelector('p').textContent = item.overview;
   card.querySelector('img').src = `https://image.tmdb.org/t/p/w500${item.poster_path}`;
+  const backgroundDiv = card.querySelector('.trending-movie-card-background');
+  if (backgroundDiv) {
+    backgroundDiv.style.backgroundImage = `url(https://image.tmdb.org/t/p/w500${item.poster_path})`;
+  }
 }
 
 fetch(url, {
@@ -56,7 +60,11 @@ function addMovieToSlider(index) {
     card.querySelector('.trending-movie-details span').textContent = `★★★★★ ${item.vote_average}`;   
     card.querySelector('.trending-movie-details span:nth-child(2)').textContent = item.runtime ? `| ${item.runtime} mins` : '| Runtime unknown';
     card.querySelector('p').textContent = item.overview;  
-    card.querySelector('img').src = `https://image.tmdb.org/t/p/w500${item.poster_path}`;  
+    card.querySelector('img').src = `https://image.tmdb.org/t/p/w500${item.poster_path}`;
+    const backgroundDiv = card.querySelector('.trending-movie-card-background');
+  if (backgroundDiv) {
+    backgroundDiv.style.backgroundImage = `url(https://image.tmdb.org/t/p/w500${item.poster_path})`;
+  }  
     card.querySelector('.control-right-btn').
     
   addEventListener('click', () => {
