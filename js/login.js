@@ -68,16 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let storedData = JSON.parse(localStorage.getItem('users')) || [];
             const foundUser = storedData.find(user => user.email === emailInput.value);
 
-            if (!foundUser) {
-                storedData.push({
-                    email: emailInput.value,
-                    password: passwordInput.value,
-                    remember: rememberCheckbox.checked
-                });
-                localStorage.setItem('users', JSON.stringify(storedData));
-                loginSuccess.style.display = 'block';
-                form.reset();
-            } else {
+            if (foundUser) {
                 if (emailInput.value !== foundUser.email) {
                     emailError.style.display = 'block';
                     valid = false;
@@ -90,14 +81,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (valid) {
                     loginSuccess.style.display = 'block';
+                    setTimeout(function() {
+                        window.location.href = 'index.html';
+                    }, 1000);
                     form.reset();
                 } else {
                     loginFailed.style.display = 'block';
                 }
+
+                if (rememberCheckbox.checked) {
+                    foundUser.remember = true;
+                    localStorage.setItem('users', JSON.stringify(storedData));
+                }
+            } else {
+                loginFailed.style.display = 'block';
             }
         }
     });
 });
+
 
 
 
