@@ -294,7 +294,7 @@ iframe {
   font-weight:normal;
 }
 .trending-movie-info1 h1 {
-  font-size: 5vh;
+  font-size: 3.5vh;
   max-width: 70%;
   margin-bottom: 10px;
   font-weight: bolder;
@@ -302,7 +302,7 @@ iframe {
 }
 
 .trending-movie-info1 p {
-  margin-top: 15px;
+  margin-top: 13px;
   row-gap: 10px;
   font-size: medium;
   max-width: 400px;
@@ -432,11 +432,14 @@ iframe {
     max-height: 450px;
   }
   .trending-movie-info1 h1 {
-    font-size: 4vh;
+    font-size: 3vh;
   }
   .trending-movie-info1 p {
-    font-size: 15px;
+    font-size: 13px;
   }
+  .trending-movie-details {
+    font-size: 14px;}
+
   .control-left-btn{
     left: 1.5%;
   }
@@ -448,7 +451,7 @@ iframe {
 
   }
   .tm-watch-trailer {
-    font-size: 14px;
+    font-size: 13px;
   }
   .trending-movie-poster img{
     width: 190px;
@@ -478,13 +481,13 @@ iframe {
     max-height: 700px;
   }
   .trending-movie-info1 h1 {
-    font-size: 5vh;
+    font-size: 3vh;
   }
   .trending-movie-info1 p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .trending-movie-details {
-    font-size: 16px;
+    font-size: 13px;
     display: flex;
     flex-direction: column;
    }
@@ -498,7 +501,7 @@ iframe {
     gap: 40px;
   }
   .tm-watch-trailer {
-    font-size: 14px;
+    font-size: 12px;
   }
   .trending-movie-poster img{
     width: 220px;
@@ -508,12 +511,12 @@ iframe {
   }
   
   .tm-watch-full-movie{
-    font-size: 14px;
+    font-size: 11px;
     padding: 5px 20px;
   
   }
   .tm-watch-trailer {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 @media (max-width: 500px) {
@@ -540,13 +543,13 @@ iframe {
     max-height: 700px;
   }
   .trending-movie-info1 h1 {
-    font-size: 3vh;
+    font-size: 2vh;
   }
   .trending-movie-info1 p {
-    font-size: 14px;
+    font-size: 10px;
   }
   .trending-movie-details {
-   font-size: 14px;
+   font-size: 10px;
    display: flex;
    flex-direction: column;
   }
@@ -561,19 +564,19 @@ iframe {
     gap: 10px;
   }
   .tm-watch-trailer {
-    font-size: 6px;
+    font-size: 5px;
   }
   .trending-movie-poster img{
     width: 200px;
   }
  
   .tm-watch-full-movie{
-    font-size: 12px;
+    font-size: 10px;
     padding: 5px 5px;
   
   }
   .tm-watch-trailer {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 /* END-Cerenucakb/BE-12-Create-Trending-Movies-Section */
