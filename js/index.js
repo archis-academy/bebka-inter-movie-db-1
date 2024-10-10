@@ -151,6 +151,53 @@ function playVideo() {
 }
 //Asli/BE-25-Make-Hero-Section-Dynamic-Bitiş
 
+//Deniz/BE-24-Most watched-Dynamic-started
+const trendingOptions = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMjU2MDg1M2Y5OWVhM2QxNTAwMjRkYTY0MzU0NjJjNiIsIm5iZiI6MTcyNjE3OTkyNy4wMjg2OTYsInN1YiI6IjY2ZTM1NzllOTAxM2ZlODcyMjIzYmZlMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VE4_B-sg_0yz557YA98_GtbwS_ndY8fEz2SdFFNYyHA'
+  }
+};
+
+fetch("https://api.themoviedb.org/3/trending/movie/day?language=en-US", trendingOptions)
+  .then(response => response.json())
+  .then(data => {
+    let randomMovies = getRandomTrendingMovies(data.results, 3); 
+    displayTrendingMovies(randomMovies); 
+  })
+  .catch(error => console.error('Error fetching trending movies:', error));
+
+function getRandomTrendingMovies(movies, num) {
+  if (movies.length < num) {
+    console.error("Yeterli sayıda film yok");
+    return movies;
+  }
+  const shuffled = movies.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, num);
+}
+
+function displayTrendingMovies(movies) {
+  movies.forEach((movie, index) => {
+    const poster = document.getElementById(`poster-${index + 1}`);
+    const title = document.getElementById(`title-${index + 1}`);
+    const card = document.getElementById(`card-${index + 1}`);
+
+    if (poster && title && card) {
+      poster.src = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+      poster.alt = movie.title;
+      title.textContent = movie.title;
+
+      card.addEventListener('click', () => {
+        window.location.href = `detail.html?id=${movie.id}`;
+      });
+    } else {
+      console.error(`Poster, title veya card elementi bulunamadı: poster-${index + 1}, title-${index + 1}, card-${index + 1}`);
+    }
+  });
+}
+//Deniz/BE-24-Most watched-Dynamic-finished
+
 
 //Melek/BE-2-Implement-hte-all-categories-section-Start
 const fetchAPI = {

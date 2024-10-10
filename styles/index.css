@@ -873,7 +873,6 @@ iframe {
   }
 }
 /*Melek/BE-2/Implement hte all categories section/Css/End*/
-
 /* Asli/Hero-Section-Başlangıç */
 .hero-section {
   font-family: "Montserrat", sans-serif;
@@ -1563,6 +1562,7 @@ li {
 }
 /* Asli/ımplement the events and news section bitiş */
 .footer-section {
+  width: 100%;
   display: block;
   justify-content: center;
   padding-top: 24px;
@@ -1586,6 +1586,7 @@ li {
   flex-direction: column;
   max-width: 220px;
   align-items: center;
+  gap: 15px;
 }
 
 .footer-section-video-image {
@@ -1598,7 +1599,7 @@ li {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: 700;
   line-height: 2rem;
-  color: #000000de;
+  color: white;
   justify-content: center;
   align-items: center;
 }
@@ -1607,11 +1608,13 @@ li {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(0.675, 2.5vw, 0.775rem);
   font-weight: 500;
+  color: white;
 }
 
 .footer-section-card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer-section-list {
@@ -1676,13 +1679,16 @@ li {
     flex-direction: row;
     gap: 120px;
   }
-
+  .footer-section-video-description,
+  .footer-section-video-text {
+    color: rgba(0, 0, 0, 0.8);
+  }
   .footer-section-container {
     flex-wrap: wrap;
     gap: 20px;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 830px) {
   .footer-section-video-container {
     flex-direction: row;
     gap: 20px;
@@ -1953,3 +1959,175 @@ a.btn-wrap {
 }
 
 /*----deniz most watched movies finised---*/
+/*-----deniz most watched responsive started---*/
+
+@media screen and (max-width: 1240px) {
+  .featured-space {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-space {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .main-paragraph {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .first-movie,
+  .second-movie,
+  .third-movie {
+    width: 100%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .featured-space {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-space {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .main-paragraph {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .first-movie,
+  .second-movie,
+  .third-movie {
+    width: 90%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .main-paragraph {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .movie-card-container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .first-movie,
+  .second-movie,
+  .third-movie {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*-----deniz most watched responsive finished---*/
+/* melike/BE-21-footer-top section started */
+.get-started {
+  background-image: url("../images/Rectangle.png");
+  background-size: cover;
+  background-position: top;
+  height: 130vh;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.get-started .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.get-started-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.87);
+  padding-top: 50px;
+  margin-block: 35px;
+}
+
+.get-started .btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(48, 79, 254, 1);
+  padding: 16px 50px;
+  border-radius: 50px;
+  transition: background-color 0.8s ease;
+}
+
+.get-started .btn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1200px) {
+  .get-started {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .get-started {
+    background-size: calc(126% + 30px) 100%;
+    height: 120vh;
+  }
+  .get-started-title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 720px) {
+  .get-started {
+    background-size: cover;
+  }
+  .get-started-title {
+    font-size: 20px;
+  }
+  .get-started .btn {
+    padding: 15px 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .get-started {
+    background-position: right;
+    height: 135vh;
+  }
+  .get-started .content {
+    padding-top: 0;
+  }
+  .get-started-title {
+    font-size: 18px;
+  }
+  .get-started .btn {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .get-started {
+    background-position: center;
+    justify-content: flex-end;
+    height: 180vh;
+  }
+
+  .get-started .btn {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}
+/* melike/BE-21-footer-top section finished */

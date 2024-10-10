@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--hilalseyhan/BE-28/Login-page-->
+    <section class="wave-background">
+      <div class="tranparent-card">
+        <div class="welcome-div">
+          <a href="login.html">
+            <img src="./image/login/netflux-home.svg" class="netflux-home-logo" alt="netflux-home-logo"/>
+          </a>
+          
+          <div class="logo-div">
+            <img src="./image/login/logo.svg" class="netflux-logo" alt="netflux-logo"/>
+            <h1 class="welcome-title">
+              Welcome back
+            </h1>
+            <h1 class="welcome-subtitle">
+              Please login to continue
+            </h1>
+          </div>
+        </div>
+        <div class="form-area-div">
+          <div class="login-first-area-div">
+            <div class="login-title-div">
+              <h3 class="login-title">Login</h3>
+              <div class="register-link-div">
+                <img src="./image/login/close-icon.svg" class="close-icon" alt="close-icon"/>
+                <a href="sign-up.html" class="register-link">Create new account</a>
+              </div>
+            </div>
+            <div class="social-media-div">
+              <div class="social-container-facebook">
+                <a href="#"  class="social-link login-facebook">
+                  <img src="./image/login/social-facebook.svg" alt="Facebook" />
+                  Facebook
+                </a>
+              </div>
+              <div class="social-container-twitter">
+                <a href="#" class="social-link login-twitter">
+                  <img src="./image/login/social-twitter.svg" alt="Twitter"/>
+                  Twitter
+                </a>
+              </div>
+              <div class="social-container-google">
+                <a href="#" class="social-link login-google">
+                  <img src="./image/login/social-google-outline.svg" alt="Google" />
+                  Google
+                </a>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+          <form action="#" class="form-section" >
+            <div class="input-field-div">
+              <input type="email" placeholder="Email" class="input-div" name="email" id="email-login" required/>
+              <div id="email-suggestions" class="suggestions" style="display:none;"></div>
+              <div id="emailError" class="login-error">Please enter a valid email.</div>
+            </div>
+            <div class="input-field-div">
+              <input type="password" placeholder="Password"class="input-div" name="password" id="password-login" required/>
+              <div id="passwordError" class="login-error">Password must contain at least 8 characters, including uppercase, lowercase, and a number.</div>
+            </div>
+            <div class="remember-forgotPassword">
+              <div class="remember">
+                <input type="checkbox" id="remember-login" name="remember"/>
+                <label class="remember">Remember </label>
+              </div>
+              <a target="_blank" href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="login-continue" id="continue-login">CONTINUE</button>
+            <div id="loginSuccess" class="login-success">Login successful!</div>
+            <div id="loginFailed" class="login-error">Invalid email or password.</div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/login.js"></script>
+    <!--hilalseyhan/BE-28/Login-page-->
+  </body>
+</html>
