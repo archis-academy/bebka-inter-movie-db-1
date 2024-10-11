@@ -1,5 +1,4 @@
-/*melekmahmutoglu/BE-27/Sign-Up-Css */
-
+/*hilalseyhan/BE-28/Login-page*/
 * {
   margin: 0;
   padding: 0;
@@ -38,8 +37,8 @@
 }
 
 .wave-background {
-  background-image: url(../image/Register/pink-wave.svg),
-    url(../image/Register/blue-wave.svg);
+  background-image: url(../image/login/pink-wave.svg),
+    url(../image/login/blue-wave.svg);
   background-repeat: no-repeat;
   background-position: left top, right center;
   background-color: var(--bg-primary);
@@ -68,13 +67,14 @@
   height: auto;
 }
 .netflux-home-logo {
-  max-width: 40px;
+  max-width: 30px;
   position: absolute;
   top: 0;
   margin: 40px;
 }
 .netflux-logo {
-  max-width: 120px;
+  max-width: 100px;
+  margin-bottom: 50px;
 }
 .logo-div {
   display: flex;
@@ -105,31 +105,32 @@
   justify-content: center;
   gap: 30px;
 }
-.register-title-div {
+.login-title-div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.register-title {
+.login-title {
   font-family: var(--ff-primary);
   font-size: var(--fs-h2);
   font-weight: var(--fw-bold);
   color: var(--fc-black);
 }
-.login-link-div {
+.register-link-div {
   display: flex;
   justify-content: center;
 }
 .close-icon {
   max-width: 16px;
 }
-.login-link {
+.register-link {
   color: var(--fc-third);
   font-family: var(--ff-primary);
   font-size: var(--fs-h5);
   font-weight: var(--fw-reg);
   padding-left: 8px;
+  text-decoration: none;
 }
 .social-media-div {
   display: flex;
@@ -168,9 +169,9 @@
 .line {
   position: relative;
   height: 1px;
-  width: 80%;
+  width: 60%;
   background-color: var(--fc-secondary);
-  margin: 10px auto;
+  margin: 5px auto;
 }
 .line::before {
   content: "Or register with email";
@@ -185,7 +186,7 @@
 .form-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .input-field-div {
   display: flex;
@@ -207,35 +208,64 @@ input:focus {
 .password-container {
   display: flex;
 }
-.privacy-continue-button {
+.remember-forgotPassword {
   display: flex;
   justify-content: space-around;
+  gap: 30px;
 }
-.privacy-policy {
+.remember-forgotPassword{
+  justify-content: space-between;
+}
+.remember {
   font-family: var(--ff-primary);
   font-size: var(--fs-h5);
   font-weight: var(--fw-reg);
   max-width: 30ch;
   gap: 10px;
 }
-.register-button {
+#remember-login{
+  cursor: pointer;
+}
+.login-continue {
   background-color: var(--fc-third);
   color: var(--bg-white);
   font-size: var(--fs-h6);
   font-weight: var(--fw-bold);
-  padding: 10px 25px;
+  padding: 10px 16px;
   border: none;
   border-radius: 35px;
   cursor: pointer;
 }
-.register-first-area-div {
+.login-first-area-div {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.checkbox-section {
-  display: flex;
-  gap: 15px;
+
+.login-error {
+  color: red;
+  display: none;
+}
+.login-success {
+  color: green;
+  display: none;
+}
+.suggestions {
+  border: 1px solid #ccc;
+  max-height: 100px;
+  overflow-y: auto;
+  position: absolute;
+  margin-top: 37px;
+  z-index: 10;
+  background-color: white;
+  border-radius: 12px;
+}
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+.suggestion-item:hover {
+  background-color: #f0f0f0;
 }
 
 /* Responsiveness */
@@ -260,16 +290,16 @@ input:focus {
   .form-area-div {
     padding: 16px;
   }
-  .register-title {
+  .login-title {
     font-size: var(--fs-h3);
   }
   .input-div {
     padding: 8px;
   }
-  .register-button {
+  .login-continue {
     font-size: var(--fs-h5);
   }
-  .privacy-policy {
+  .remember {
     font-size: var(--fs-h5);
   }
   .line::before {
@@ -295,6 +325,11 @@ input:focus {
     overflow: scroll;
   }
 }
+@media (max-width: 650px) {
+  .wave-background {
+    background-size: cover;
+  }
+}
 @media (max-width: 550px) {
   .welcome-title {
     font-size: var(--fs-h5);
@@ -306,18 +341,15 @@ input:focus {
     max-width: 400px;
     gap: 15px;
   }
-  .register-title {
+  .login-title {
     font-size: var(--fs-h3);
   }
-  .register-button {
-    font-size: var(--fs-h6);
-    padding: 12px;
+  .login-continue {
+    font-size: var(--fs-h7);
+    padding: 7px;
   }
-  .privacy-policy {
+  .remember {
     font-size: var(--fs-h6);
-  }
-  .line {
-    width: 100%;
   }
   .line::before {
     font-size: var(--fs-h7);
@@ -326,7 +358,7 @@ input:focus {
     flex-direction: column;
     align-items: center;
   }
-  .register-title-div {
+  .login-title-div {
     flex-direction: column;
     gap: 10px;
   }
@@ -337,73 +369,25 @@ input:focus {
   .form-section {
     gap: 15px;
   }
-  .register-first-area-div {
+  .login-first-area-div {
     gap: 20px;
   }
   .welcome-div {
     max-width: 400px;
   }
   .netflux-home-logo {
-    margin: 12px;
+    margin: 25px;
+    max-width: 25px;
   }
-  .login-link {
+  .register-link {
     padding-left: 0px;
   }
   .close-icon {
     display: none;
-  }
-  .privacy-continue-button {
-    flex-direction: column;
-    gap: 15px;
   }
   .wave-background {
     background-size: cover;
     height: auto;
   }
 }
-
-/*ERROR*/
-
-.error-message-password,
-.error-message-mail {
-  color: red;
-  display: none;
-  font-family: var(--ff-primary);
-  font-size: var(--fs-h6);
-  margin-top: 5px;
-  padding-left: 10px;
-}
-
-/*melekmahmutoglu/BE-27/Sign-Up-Css */
-
-/* Büşra- BE-22 - Dark mode Settings Start  */
-
-body.dark-mode .form-area-div{
-  background-color: #424242;
-}
-body.dark-mode .form-area-div .register-title{
-  
-  color: white;
-}
-body.dark-mode .form-area-div .login-link-div a{
-  
-  color: white;
-}
-
-body.dark-mode .form-area-div input{
-  background-color: #424242;
-  border: 1px solid white;
-}
-
-body.dark-mode .line::before {
-  background-color: #424242;
-  color: white;
-}
-body.dark-mode .privacy-policy {
-  color: white;
-}
-body.dark-mode .privacy-policy a {
-  color: white;
-}
-
-/* Büşra- BE-22 - Dark mode Settings End  */
+/*hilalseyhan/BE-28/Login-page*/
