@@ -1165,6 +1165,7 @@ iframe {
 .top-categories-section {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 100px;
   padding: 20px;
   font-family: "Montserrat", sans-serif;
 }
@@ -1397,11 +1398,13 @@ iframe {
     width: 60px;
     height: 60px;
   }
-  .categories-name h3,
-  span {
+  .categories-section .categories-name h3 {
     font-size: 16px;
   }
-  .categories-name {
+  .categories-section .categories-name span {
+    font-size: 16px;
+  }
+  .categories-section .categories-name {
     width: 10ch;
   }
   .categories-section .categories-tags {
@@ -1419,11 +1422,13 @@ iframe {
     width: 40px;
     height: 40px;
   }
-  .categories-name h3,
-  span {
+  .categories-section .categories-name h3 {
     font-size: 12px;
   }
-  .categories-name {
+  .categories-section .categories-name span {
+    font-size: 12px;
+  }
+  .categories-section .categories-name {
     width: 12ch;
   }
   .categories-section .categories-tags {
