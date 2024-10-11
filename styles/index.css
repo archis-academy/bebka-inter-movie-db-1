@@ -325,7 +325,49 @@ body.dark-mode .footer-section-card-list-item {
 body.dark-mode .custom-shape-divider-bottom-1725539209 .shape-fill {
   fill: #303030 !important;
 }
-
+body.dark-mode #tm-card1 {
+  background-color: #424242;
+}
+body.dark-mode .trending-movie-card-background {
+  opacity: 100%;
+}
+body.dark-mode .trending-movie1 {
+  color: white;
+}
+body.dark-mode .control-left-btn{
+  background-color: black;
+  color: white;
+}
+body.dark-mode .control-right-btn{
+  background-color: black;
+  color: white;
+}
+body.dark-mode .tm-watch-trailer {
+  color: #c5cae9 ;
+}
+body.dark-mode .categories-name h3 {
+  color: white;
+}
+body.dark-mode .categories-name span {
+  color: #c5cae9;
+}
+body.dark-mode .categories-section .right-arrow {
+  font-size: 30px;
+  color: white;
+}
+body.dark-mode .categories-section .left-arrow {
+  font-size: 30px;
+  color: white;
+}
+body.dark-mode .get-started-title {
+  color: white;
+}
+body.dark-mode .card-new-title {
+  color: white;
+}
+body.dark-mode .card-new-link {
+  color: #c5cae9;
+}
 /* Büşra- BE-22 - Dark mode Settings End  */
 
 /* Büşra - BE-6 Header Section Responsiveness Start */
@@ -1320,6 +1362,12 @@ iframe {
   display: none;
 }
 
+.categories-section .left-arrow {
+  font-size: 25px;
+}
+.categories-section .right-arrow {
+  font-size: 25px;
+}
 /* Responsiveness */
 @media (max-width: 1200px) {
   .categories-section .slider-div {
