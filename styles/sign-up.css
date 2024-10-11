@@ -185,7 +185,7 @@
 .form-section {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 .input-field-div {
   display: flex;
@@ -364,12 +364,13 @@ input:focus {
 
 /*ERROR*/
 
-.error-message {
+.error-message-password,
+.error-message-mail {
   color: red;
   display: none;
   font-family: var(--ff-primary);
   font-size: var(--fs-h6);
-  margin-top: -20px;
+  margin-top: 5px;
   padding-left: 10px;
 }
 

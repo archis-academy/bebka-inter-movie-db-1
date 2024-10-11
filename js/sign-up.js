@@ -3,11 +3,28 @@ document.querySelector(".form-section").addEventListener("submit",
         event.preventDefault();
 
 
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-        const passwordConfirmation = document.getElementById("repeat-password").value;
-        const errorMessage = document.getElementById("error-message");
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const passwordConfirmation = document.getElementById("repeat-password").value.trim();
+        const errorMessageMail = document.getElementById("error-message-mail");
+        const errorMessagePassword = document.getElementById("error-message-password");
+
+
+       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+       const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+
+    
+       function validateEmail(email) {
+        return emailRegex.test(email);
+      }
+
+        function validatePassword(password) {
+        return passwordRegex.test(password);
+      }
+
+
+
 
         if (!name || !email || !password || !passwordConfirmation) {
             alert("Name, Email, Password fields cannot be empty!");
@@ -19,13 +36,24 @@ document.querySelector(".form-section").addEventListener("submit",
             email: email,
             password: password,
         }
+
+        if (!validateEmail(email) || !validatePassword(password)) {
+            errorMessageMail.style.display = 'block';
+            errorMessagePassword.style.display = 'block';
+            errorMessagePassword.textContent = "Password must contain at least 8 characters, including uppercase, lowercase, and a number.";
+            errorMessageMail.textContent = "Please enter a valid email.";
+            return;
+        } else {
+            errorMessageMail.style.display = 'none';
+            errorMessagePassword.style.display = 'none';
+        }
         
         if(password !== passwordConfirmation){
-            errorMessage.textContent = "Password do not match";
-            errorMessage.style.display = "block";
+            errorMessagePassword.textContent = "Password do not match";
+            errorMessagePassword.style.display = "block";
             return;
         }else if(password === passwordConfirmation){
-            errorMessage.style.display = "none";
+            errorMessagePassword.style.display = "none";
         }
     
 
@@ -45,6 +73,8 @@ document.querySelector(".form-section").addEventListener("submit",
 
 
           localStorage.setItem("users", JSON.stringify(users));
+
+          window.location.href = "index.html";
         }
     }
 )
