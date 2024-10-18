@@ -68,10 +68,11 @@
   height: auto;
 }
 .netflux-home-logo {
-  max-width: 40px;
+  max-width: 35px;
   position: absolute;
   top: 0;
   margin: 40px;
+  cursor: pointer;
 }
 .netflux-logo {
   max-width: 120px;
@@ -185,7 +186,7 @@
 .form-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .input-field-div {
   display: flex;
@@ -362,16 +363,13 @@ input:focus {
   }
 }
 
-/*ERROR*/
-
-.error-message-password,
-.error-message-mail {
+.error-message {
   color: red;
   display: none;
   font-family: var(--ff-primary);
   font-size: var(--fs-h6);
-  margin-top: 5px;
+  margin-top: -20px;
   padding-left: 10px;
 }
 
-/*melekmahmutoglu/BE-27/Sign-Up-Css */
+/*melekmahmutoglu/BE-27/Sign-Up-Css */
