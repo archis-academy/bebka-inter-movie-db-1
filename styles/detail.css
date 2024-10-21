@@ -358,3 +358,50 @@ body {
     margin: 40% auto;
   }
 }
+
+/* Büşra- BE-22 - Dark mode Settings Start  */
+
+body.dark-mode {
+  background-color: #303030;
+  color: white;
+}
+body.dark-mode .header {
+  background-color: #303030;
+}
+body.dark-mode .movie-details{
+  background-color: grey;
+}
+body.dark-mode .social-buttons a{
+  color:#c5cae9 ;
+}
+body.dark-mode  .storyline h2{
+  color: white;
+}
+body.dark-mode .storyline p {
+  color: white;
+}
+body.dark-mode .credits p {
+  color: white;
+}
+body.dark-mode .movie-info h1 {
+  color: white;
+}
+body.dark-mode .movie-info p {
+  color: white;
+}
+body.dark-mode .watch-trailer {
+  color:#c5cae9 ;
+}
+
+body.dark-mode .nav-link {
+  color: white;
+}
+
+body.dark-mode .btn-main {
+  color: white;
+}
+
+body.dark-mode .footer-section-card-list-item {
+  color: white;
+}
+/* Büşra- BE-22 - Dark mode Settings End  */
