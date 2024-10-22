@@ -372,4 +372,37 @@ input:focus {
   padding-left: 10px;
 }
 
-/*melekmahmutoglu/BE-27/Sign-Up-Css */
+/*melekmahmutoglu/BE-27/Sign-Up-Css */
+
+
+/* Büşra- BE-22 - Dark mode Settings Start  */
+
+body.dark-mode .form-area-div{
+  background-color: #424242;
+}
+body.dark-mode .form-area-div .register-title{
+  
+  color: white;
+}
+body.dark-mode .form-area-div .login-link-div a{
+  
+  color: white;
+}
+
+body.dark-mode .form-area-div input{
+  background-color: #424242;
+  border: 1px solid white;
+}
+
+body.dark-mode .line::before {
+  background-color: #424242;
+  color: white;
+}
+body.dark-mode .privacy-policy {
+  color: white;
+}
+body.dark-mode .privacy-policy a {
+  color: white;
+}
+
+/* Büşra- BE-22 - Dark mode Settings End  */

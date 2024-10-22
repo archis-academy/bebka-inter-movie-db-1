@@ -594,3 +594,30 @@ border: none;
       width: 80px;
   }
 }
+
+/* Büşra- BE-22 - Dark mode Settings Start  */
+
+body.dark-mode {
+  background-color: #303030;
+  color: white;
+}
+body.dark-mode .header {
+  background-color: #303030;
+}
+body.dark-mode .error-message h1{
+  color: white;
+}
+body.dark-mode .error-message p{
+  color: white;
+}
+body.dark-mode .nav-link {
+  color: white;
+}
+body.dark-mode .btn-main {
+  color: white;
+}
+body.dark-mode .footer-section-card-list-item {
+  color: white;
+}
+
+/* Büşra- BE-22 - Dark mode Settings End  */
