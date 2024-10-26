@@ -64,11 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const foundUser = storedData.find(user => user.email === emailInput.value);
 
             if (foundUser) {
-                if (emailInput.value !== foundUser.email) {
-                    emailError.style.display = 'block';
-                    valid = false;
-                }
-
                 if (passwordInput.value !== foundUser.password) {
                     passwordError.style.display = 'block';
                     valid = false;
@@ -76,6 +71,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (valid) {
                     loginSuccess.style.display = 'block';
+                    
+                    if (rememberCheckbox.checked) {
+                        foundUser.remember = true;
+                    } else {
+                        foundUser.remember = false;
+                    }
+
+                    localStorage.setItem('users', JSON.stringify(storedData));
                     setTimeout(function() {
                         window.location.href = 'index.html';
                     }, 1000);
@@ -83,15 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else {
                     loginFailed.style.display = 'block';
                 }
-
-                if (rememberCheckbox.checked) {
-                    foundUser.remember = true;
-                    localStorage.setItem('users', JSON.stringify(storedData));
-                }
             } else {
                 loginFailed.style.display = 'block';
             }
         }
     });
 });
-
